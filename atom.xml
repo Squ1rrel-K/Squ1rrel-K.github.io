@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>且听风吟</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://squ1rrel.com/"/>
+  <updated>2020-05-18T10:52:28.469Z</updated>
+  <id>http://squ1rrel.com/</id>
+  
+  <author>
+    <name>Jack Kong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>终于修好了</title>
+    <link href="http://squ1rrel.com/2020/05/18/%E7%BB%88%E4%BA%8E%E4%BF%AE%E5%A5%BD%E4%BA%86/"/>
+    <id>http://squ1rrel.com/2020/05/18/%E7%BB%88%E4%BA%8E%E4%BF%AE%E5%A5%BD%E4%BA%86/</id>
+    <published>2020-05-18T10:52:52.000Z</published>
+    <updated>2020-05-18T10:52:28.469Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;博客终于修好了&quot;&gt;&lt;a href=&quot;#博客终于修好了&quot; class=&quot;headerlink&quot; title=&quot;博客终于修好了&quot;&gt;&lt;/a&gt;博客终于修好了&lt;/h1&gt;&lt;p&gt;问题是我用的别的博主的主题，本身是一个 git 仓库，github 的仓库嵌套，内层会被
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 读书笔记</title>
+    <link href="http://squ1rrel.com/2020/04/20/Bootstrap4-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://squ1rrel.com/2020/04/20/Bootstrap4-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-04-20T12:34:00.000Z</published>
+    <updated>2020-04-20T12:35:07.817Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Bootstrap4-学习笔记&quot;&gt;&lt;a href=&quot;#Bootstrap4-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 学习笔记&quot;&gt;&lt;/a&gt;Bootstrap4
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>逆矩阵</title>
+    <link href="http://squ1rrel.com/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/"/>
+    <id>http://squ1rrel.com/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/</id>
+    <published>2020-02-23T08:24:46.000Z</published>
+    <updated>2020-04-20T12:26:36.614Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;逆矩阵&quot;&gt;&lt;a href=&quot;#逆矩阵&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="线性代数" scheme="http://squ1rrel.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>矩阵性质</title>
+    <link href="http://squ1rrel.com/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/"/>
+    <id>http://squ1rrel.com/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/</id>
+    <published>2020-02-19T08:20:26.000Z</published>
+    <updated>2020-04-20T12:26:36.613Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;矩阵的基本性质&quot;&gt;&lt;a href=&quot;#矩阵的基本性质&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="线性代数" scheme="http://squ1rrel.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1007</title>
+    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1007/"/>
+    <id>http://squ1rrel.com/2020/01/29/PAT-B-1007/</id>
+    <published>2020-01-29T10:56:48.000Z</published>
+    <updated>2020-04-20T12:26:36.610Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1007-素数对猜想&quot;&gt;&lt;a href=&quot;#1007-素数对猜想&quot; class=&quot;headerlink&quot; title=&quot;1007 素数对猜想&quot;&gt;&lt;/a&gt;1007 素数对猜想&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1006</title>
+    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1006/"/>
+    <id>http://squ1rrel.com/2020/01/29/PAT-B-1006/</id>
+    <published>2020-01-29T10:52:35.000Z</published>
+    <updated>2020-04-20T12:26:36.609Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1006-换个格式输出整数&quot;&gt;&lt;a href=&quot;#1006-换个格式输出整数&quot; class=&quot;headerlink&quot; title=&quot;1006 换个格式输出整数&quot;&gt;&lt;/a&gt;1006 换个格式输出整数&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>行列式性质</title>
+    <link href="http://squ1rrel.com/2020/01/29/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://squ1rrel.com/2020/01/29/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <published>2020-01-29T08:57:26.000Z</published>
+    <updated>2020-04-20T12:26:36.614Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;特殊行列式&quot;&gt;&lt;a href=&quot;#特殊行列式&quot; class=&quot;headerlink&quot; title=&quot;特殊行列式&quot;&gt;&lt;/a&gt;特殊行列式&lt;/h2&gt;&lt;h3 id=&quot;三角形行列式：&quot;&gt;&lt;a href=&quot;#三角形行列式：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="线性代数" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+    
+      <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新年计划</title>
+    <link href="http://squ1rrel.com/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/"/>
+    <id>http://squ1rrel.com/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/</id>
+    <published>2020-01-27T14:51:50.000Z</published>
+    <updated>2020-04-20T12:26:36.612Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;新年计划&quot;&gt;&lt;a href=&quot;#新年计划&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>行列式基础</title>
+    <link href="http://squ1rrel.com/2020/01/27/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://squ1rrel.com/2020/01/27/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2020-01-27T14:46:43.000Z</published>
+    <updated>2020-04-20T12:26:36.613Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;线性代数&quot;&gt;&lt;a href=&quot;#线性代数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="线性代数" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+    
+      <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1004</title>
+    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1004/"/>
+    <id>http://squ1rrel.com/2020/01/27/PAT-B-1004/</id>
+    <published>2020-01-27T11:16:17.000Z</published>
+    <updated>2020-04-20T12:26:36.609Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1004-成绩排名-20分&quot;&gt;&lt;a href=&quot;#1004-成绩排名-20分&quot; class=&quot;headerlink&quot; title=&quot;1004 成绩排名 (20分)&quot;&gt;&lt;/a&gt;1004 成绩排名 (20分)&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1003</title>
+    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1003/"/>
+    <id>http://squ1rrel.com/2020/01/27/PAT-B-1003/</id>
+    <published>2020-01-27T11:13:52.000Z</published>
+    <updated>2020-04-20T12:26:36.608Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1003-我要通过！&quot;&gt;&lt;a href=&quot;#1003-我要通过！&quot; class=&quot;headerlink&quot; title=&quot;1003 我要通过！&quot;&gt;&lt;/a&gt;1003 我要通过！&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1002</title>
+    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1002/"/>
+    <id>http://squ1rrel.com/2020/01/27/PAT-B-1002/</id>
+    <published>2020-01-27T11:05:22.000Z</published>
+    <updated>2020-04-20T12:26:36.607Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1002-写出这个数-20分&quot;&gt;&lt;a href=&quot;#1002-写出这个数-20分&quot; class=&quot;headerlink&quot; title=&quot;1002 写出这个数 (20分)&quot;&gt;&lt;/a&gt;1002 写出这个数 (20分)&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用数学工具来定义</title>
+    <link href="http://squ1rrel.com/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/"/>
+    <id>http://squ1rrel.com/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/</id>
+    <published>2020-01-26T10:23:24.000Z</published>
+    <updated>2020-04-20T12:26:36.610Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;算法复杂度：-S-n-与-T-n&quot;&gt;&lt;a href=&quot;#算法复杂度：-S-n-与-T-n&quot; class=&quot;headerlink&quot; title=&quot;算法复杂度：$S(n)$ 与 $T(n)$&quot;&gt;&lt;/a&gt;算法复杂度：$S(n)$ 与
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我们为什么要学习数据结构和算法</title>
+    <link href="http://squ1rrel.com/2020/01/25/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"/>
+    <id>http://squ1rrel.com/2020/01/25/%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</id>
+    <published>2020-01-25T20:20:33.000Z</published>
+    <updated>2020-04-20T12:26:36.611Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;首先做一个小小的假设&quot;&gt;&lt;a href=&quot;#首先做一个小小的假设&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我爱学习</title>
+    <link href="http://squ1rrel.com/2020/01/25/%E6%88%91%E7%88%B1%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://squ1rrel.com/2020/01/25/%E6%88%91%E7%88%B1%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-01-25T20:17:41.000Z</published>
+    <updated>2020-04-20T12:26:36.612Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-B-1001</title>
+    <link href="http://squ1rrel.com/2020/01/25/PAT-B-1001/"/>
+    <id>http://squ1rrel.com/2020/01/25/PAT-B-1001/</id>
+    <published>2020-01-25T19:32:38.000Z</published>
+    <updated>2020-04-20T12:26:36.607Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1001-害死人不偿命的-3n-1-猜想-15分&quot;&gt;&lt;a href=&quot;#1001-害死人不偿命的-3n-1-猜想-15分&quot; class=&quot;headerlink&quot; title=&quot;1001 害死人不偿命的(3n+1)猜想 (15分)&quot;&gt;&lt;/a&gt;1001
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://squ1rrel.com/2020/01/25/Hello-World/"/>
+    <id>http://squ1rrel.com/2020/01/25/Hello-World/</id>
+    <published>2020-01-25T19:22:46.000Z</published>
+    <updated>2020-04-20T12:26:36.607Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;$xyz$&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="others" scheme="http://squ1rrel.com/tags/others/"/>
+    
+  </entry>
+  
+</feed>
