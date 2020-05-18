@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>设计模式读书笔记</title>
+    <url>/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>我一直持有一个观点：代码首先是给人看的，其次才是给机器读的，不然搞什么面向对象又是面向过程，一个文件塞满理论上也能满足计算机的要求，但是想让人看懂，易于操控，就需要理解语言创造者的苦心。而对于进阶的编程爱好者，对于设计模式的理解便显得弥足珍贵了，本文为多语言各种设计模式的横纵向比较分析与记录。</p>
+]]></content>
+      <categories>
+        <category>读书笔记</category>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>终于修好了</title>
     <url>/2020/05/18/%E7%BB%88%E4%BA%8E%E4%BF%AE%E5%A5%BD%E4%BA%86/</url>
     <content><![CDATA[<h1 id="博客终于修好了"><a href="#博客终于修好了" class="headerlink" title="博客终于修好了"></a>博客终于修好了</h1><p>问题是我用的别的博主的主题，本身是一个 git 仓库，github 的仓库嵌套，内层会被 <code>git add -A</code> 忽略。</p>
