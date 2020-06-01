@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>考研复习计划书</title>
+    <url>/2020/05/31/%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B9%A6/</url>
+    <content><![CDATA[<h1 id="考研复习计划书"><a href="#考研复习计划书" class="headerlink" title="考研复习计划书"></a>考研复习计划书</h1><p>未来几个月的学习规划</p>
+<h2 id="总范围"><a href="#总范围" class="headerlink" title="总范围"></a>总范围</h2><h3 id="数学一"><a href="#数学一" class="headerlink" title="数学一"></a>数学一</h3><p>高等数学</p>
+<p>线性代数</p>
+<p>概率论</p>
+<h3 id="英语一"><a href="#英语一" class="headerlink" title="英语一"></a>英语一</h3><h3 id="政治"><a href="#政治" class="headerlink" title="政治"></a>政治</h3><p>马概</p>
+<p>毛论</p>
+<p>近代史</p>
+<p>思修</p>
+<h3 id="计算机综合"><a href="#计算机综合" class="headerlink" title="计算机综合"></a>计算机综合</h3><p>计组</p>
+<p>DS</p>
+<p>OS</p>
+<p>计网</p>
+]]></content>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>设计模式读书笔记</title>
     <url>/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>我一直持有一个观点：代码首先是给人看的，其次才是给机器读的，不然搞什么面向对象又是面向过程，一个文件塞满理论上也能满足计算机的要求，但是想让人看懂，易于操控，就需要理解语言创造者的苦心。而进阶的编程爱好者，对于设计模式的理解便显得弥足珍贵了，本文为多语言各种设计模式的横纵向比较分析与记录。</p>
