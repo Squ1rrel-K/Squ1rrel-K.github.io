@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2020-07-27T01:50:44.900Z</updated>
+  <updated>2020-07-27T09:38:29.804Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PATA1003</title>
+    <link href="http://squ1rrel.com/2020/07/27/PATA1003/"/>
+    <id>http://squ1rrel.com/2020/07/27/PATA1003/</id>
+    <published>2020-07-27T08:29:21.000Z</published>
+    <updated>2020-07-27T09:38:29.804Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-1003&quot;&gt;&lt;a href=&quot;#PAT-A-1003&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1003&quot;&gt;&lt;/a&gt;PAT-A-1003&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PATA1002</title>
+    <link href="http://squ1rrel.com/2020/07/27/PATA1002/"/>
+    <id>http://squ1rrel.com/2020/07/27/PATA1002/</id>
+    <published>2020-07-27T07:58:18.000Z</published>
+    <updated>2020-07-27T08:29:23.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-1002&quot;&gt;&lt;a href=&quot;#PAT-A-1002&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1002&quot;&gt;&lt;/a&gt;PAT-A-1002&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>晴神笔记</title>
@@ -77,11 +135,11 @@
   </entry>
   
   <entry>
-    <title>PAT甲1001</title>
-    <link href="http://squ1rrel.com/2020/06/13/PAT%E7%94%B21001/"/>
-    <id>http://squ1rrel.com/2020/06/13/PAT%E7%94%B21001/</id>
+    <title>PAT-A-1001</title>
+    <link href="http://squ1rrel.com/2020/06/13/PATA1001/"/>
+    <id>http://squ1rrel.com/2020/06/13/PATA1001/</id>
     <published>2020-06-13T12:52:38.000Z</published>
-    <updated>2020-06-13T12:50:52.679Z</updated>
+    <updated>2020-07-27T08:06:09.999Z</updated>
     
     <summary type="html">
     
@@ -89,7 +147,7 @@
       
         
         
-          &lt;h1 id=&quot;PAT-A-1001&quot;&gt;&lt;a href=&quot;#PAT-A-1001&quot; class=&quot;headerlink&quot; title=&quot;PAT A 1001&quot;&gt;&lt;/a&gt;PAT A
+          &lt;h1 id=&quot;PAT-A-1001&quot;&gt;&lt;a href=&quot;#PAT-A-1001&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1001&quot;&gt;&lt;/a&gt;PAT-A-1001&lt;/h1&gt;&lt;p&gt;&lt;a
         
       
     
@@ -522,64 +580,6 @@
       <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
     
       <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1002</title>
-    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1002/"/>
-    <id>http://squ1rrel.com/2020/01/27/PAT-B-1002/</id>
-    <published>2020-01-27T11:05:22.000Z</published>
-    <updated>2020-04-20T12:26:36.607Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1002-写出这个数-20分&quot;&gt;&lt;a href=&quot;#1002-写出这个数-20分&quot; class=&quot;headerlink&quot; title=&quot;1002 写出这个数 (20分)&quot;&gt;&lt;/a&gt;1002 写出这个数 (20分)&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用数学工具来定义</title>
-    <link href="http://squ1rrel.com/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/"/>
-    <id>http://squ1rrel.com/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/</id>
-    <published>2020-01-26T10:23:24.000Z</published>
-    <updated>2020-04-20T12:26:36.610Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;算法复杂度：-S-n-与-T-n&quot;&gt;&lt;a href=&quot;#算法复杂度：-S-n-与-T-n&quot; class=&quot;headerlink&quot; title=&quot;算法复杂度：$S(n)$ 与 $T(n)$&quot;&gt;&lt;/a&gt;算法复杂度：$S(n)$ 与
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>

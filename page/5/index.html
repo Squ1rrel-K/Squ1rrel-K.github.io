@@ -68,6 +68,166 @@
     
     
     
+    <article id="post-PAT-B-1002" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/27/PAT-B-1002/"
+    >PAT-B-1002</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/01/27/PAT-B-1002/" class="article-date">
+  <time datetime="2020-01-27T11:05:22.000Z" itemprop="datePublished">2020-01-27</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-B/">PAT B</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h1 id="1002-写出这个数-20分"><a href="#1002-写出这个数-20分" class="headerlink" title="1002 写出这个数 (20分)"></a>1002 写出这个数 (20分)</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>读入一个正整数 n，计算其各位数字之和，用汉语拼音写出和的每一位数字。</p>
+<h2 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h2><p>每个测试输入包含 1 个测试用例，即给出自然数 n 的值。这里保证 n 小于 10^100</p>
+<h2 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h2><p>在一行内输出 n 的各位数字之和的每一位，拼音数字间有 1 空格，但一行中最后一个拼音数字后没有空格。</p>
+<h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><p>1234567890987654321123456789</p>
+<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><p>yi san wu</p>
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>考察的重点其实是 string char 和 int 来回转换</p>
+<p>读取求和即可，注意末位没有空格</p>
+<h2 id="举一反三"><a href="#举一反三" class="headerlink" title="举一反三"></a>举一反三</h2><p>一个利用 ASCII 取巧的方法：</p>
+<p>本质上是各字符编码的号的距离</p>
+<p>想从<code>char</code> 获得<code>int</code>，使用<code>-&#39;0&#39;</code></p>
+<p>如 <code>1 = &#39;1&#39;-&#39;0&#39;</code></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> input;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">string</span> arr[<span class="number">10</span>] = &#123;</span><br><span class="line">            <span class="string">"ling"</span>, <span class="string">"yi"</span>, <span class="string">"er"</span>, <span class="string">"san"</span>, <span class="string">"si"</span>, <span class="string">"wu"</span>, <span class="string">"liu"</span>, <span class="string">"qi"</span>, <span class="string">"ba"</span>, <span class="string">"jiu"</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; input;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; input.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        sum += input[i] - <span class="string">'0'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">string</span> res = to_string(sum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; res.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        <span class="comment">// If reach the end, cout end</span></span><br><span class="line">        <span class="keyword">if</span> (i == res.<span class="built_in">size</span>() - <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; arr[res[i] - <span class="string">'0'</span>];</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">            <span class="comment">// else print number and space</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; arr[res[i] - <span class="string">'0'</span>];</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span>;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://squ1rrel.com/2020/01/27/PAT-B-1002/" data-id="ckacdco5l0004zvrr8rrg0z3u"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-使用数学工具来定义" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/"
+    >使用数学工具来定义</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/" class="article-date">
+  <time datetime="2020-01-26T10:23:24.000Z" itemprop="datePublished">2020-01-26</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <h2 id="算法复杂度：-S-n-与-T-n"><a href="#算法复杂度：-S-n-与-T-n" class="headerlink" title="算法复杂度：$S(n)$ 与 $T(n)$"></a>算法复杂度：$S(n)$ 与 $T(n)$</h2><p>复杂度的观察应该是宏观的，不用纠结于每行代码运行时的消耗，而是从另一个高度把握。</p>
+<h3 id="空间复杂度-S-n"><a href="#空间复杂度-S-n" class="headerlink" title="空间复杂度 $S(n)$"></a>空间复杂度 $S(n)$</h3><p>我们做一个简单的规定：$S(n)$ 为算法的空间复杂度，观察程序执行时占用储存单元的长度。n 即为数据的规模，显然复杂度过高会吃爆内存造成程序中断。</p>
+<p>现代计算机 pc 内存多以 GB 为单位，程序的空间占用不是这么紧缺。换言之，空间复杂度为一般程序次要的考察因素。</p>
+<p>嵌入式开发，大型服务器运维，仍需要考虑空间分配。</p>
+<h3 id="时间复杂度-T-n"><a href="#时间复杂度-T-n" class="headerlink" title="时间复杂度 $T(n)$"></a>时间复杂度 $T(n)$</h3><p>$T(n)$ 关注的是程序的运行时间与数据规模 n 的 关系，无论时代如何发展，只要人们不能减速时间，时间消耗就还是最重要的程序消耗，当然，计算机的发展会加快计算速度，并提升 cpu 带宽，但是与如今程序规模的发展相比，仍是杯水车薪。大量并发，亿万级大数据已成主流，时间就是金钱。</p>
+<p>所以，对程序时间消耗有更强的掌控力已经是程序员的必修课。</p>
+<h3 id="最小上界-O-n"><a href="#最小上界-O-n" class="headerlink" title="最小上界 $O(n)$"></a>最小上界 $O(n)$</h3><p>关于上下界的严格数学证明不再赘述</p>
+<p>引入 $O(n)$ 作为对程序时间复杂度的粗略上界估计，$O(n)$ 为最小上界</p>
+<h3 id="算法的渐进表示"><a href="#算法的渐进表示" class="headerlink" title="算法的渐进表示"></a>算法的渐进表示</h3><ol>
+<li>算法加和，考虑更慢的一边</li>
+<li>算法的嵌套，复杂度做乘法</li>
+<li>$T(n)$ 是 n 的 k 阶多项式，$T(n)=\Theta(n^k)$</li>
+<li>for 循环嵌套，$T(n)$ 为各层循环次数的积再乘以循环体复杂度</li>
+<li>if-else 结构考虑条件，两个分支，三者中最慢的一个。</li>
+</ol>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://squ1rrel.com/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/" data-id="ckacdco5s000hzvrr7f3x9hsl"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-我们为什么要学习数据结构和算法" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -289,77 +449,13 @@
 
 </article>
     
-    <article id="post-Hello-World" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/01/25/Hello-World/"
-    >Hello World</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/01/25/Hello-World/" class="article-date">
-  <time datetime="2020-01-25T19:22:46.000Z" itemprop="datePublished">2020-01-25</time>
-</a>
-      
-      
-      
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>$xyz$</p>
-
-      
-      <!-- 打赏 -->
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://squ1rrel.com/2020/01/25/Hello-World/" data-id="ckacdco5h0001zvrr18xef7uw"
-        class="article-share-link">分享</a>
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/others/" rel="tag">others</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/4/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/4/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">下一页</a>
   </nav>
   
 </section>

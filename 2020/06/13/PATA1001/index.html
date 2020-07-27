@@ -10,7 +10,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>
-        PAT甲1001 |
+        PAT-A-1001 |
         
         且听风吟
     </title>
@@ -38,7 +38,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-PAT甲1001" class="article article-type-post" itemscope
+  <article id="post-PATA1001" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -46,7 +46,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  PAT甲1001
+  PAT-A-1001
 </h1>
   
 
@@ -55,7 +55,7 @@
 
     
     <div class="article-meta">
-      <a href="/2020/06/13/PAT%E7%94%B21001/" class="article-date">
+      <a href="/2020/06/13/PATA1001/" class="article-date">
   <time datetime="2020-06-13T12:52:38.000Z" itemprop="datePublished">2020-06-13</time>
 </a>
       
@@ -70,7 +70,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">3字</span>
+            <span class="post-count">180字</span>
         </span>
     </span>
 
@@ -105,7 +105,17 @@
       
 
       
-      <h1 id="PAT-A-1001"><a href="#PAT-A-1001" class="headerlink" title="PAT A 1001"></a>PAT A 1001</h1>
+      <h1 id="PAT-A-1001"><a href="#PAT-A-1001" class="headerlink" title="PAT-A-1001"></a>PAT-A-1001</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇："><a href="#生僻词汇：" class="headerlink" title="生僻词汇："></a>生僻词汇：</h2><p>Comma 逗号</p>
+<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给定 $a$，$b$，未超出 <code>int</code> 范围</p>
+<p>计算出和，按要求格式化输出</p>
+<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>整数范围的把握</p>
+<p>整数转字符串</p>
+<p>字符串格式化处理</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>用 C++ <code>string</code> 更方便</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a, b, sum;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    sum = a + b;</span><br><span class="line">    <span class="built_in">string</span> str = to_string(sum);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//如果 sum 是负数，位数应减去1</span></span><br><span class="line">    <span class="keyword">int</span> comma;</span><br><span class="line">    <span class="keyword">if</span> (sum &lt; <span class="number">0</span>) comma = (<span class="keyword">int</span>) (str.length() - <span class="number">2</span>) / <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">else</span> comma = (<span class="keyword">int</span>) (str.length() - <span class="number">1</span>) / <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//从尾部向前 3*i 位加逗号</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = comma; i &gt;= <span class="number">1</span>; i--) &#123;</span><br><span class="line">        str.insert(str.length() - <span class="number">3</span> * i, <span class="string">","</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
       <!-- 打赏 -->
       
@@ -115,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://squ1rrel.com/2020/06/13/PAT%E7%94%B21001/" data-id="ckbdn4kvt0000yjrrh5mf3nkg"
+      <a data-url="http://squ1rrel.com/2020/06/13/PATA1001/" data-id="ckd4br90300010vrr72kn645m"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
