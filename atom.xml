@@ -106,17 +106,36 @@
   </entry>
   
   <entry>
-    <title>数据结构读书笔记</title>
+    <title>数据结构-线性表</title>
     <link href="http://squ1rrel.com/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://squ1rrel.com/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
     <published>2020-06-13T00:31:43.000Z</published>
-    <updated>2020-06-13T00:29:31.169Z</updated>
+    <updated>2020-07-27T01:51:32.146Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;线性表&quot;&gt;&lt;a href=&quot;#线性表&quot; class=&quot;headerlink&quot; title=&quot;线性表&quot;&gt;&lt;/a&gt;线性表&lt;/h1&gt;&lt;p&gt;同一类型元素&lt;/p&gt;
+&lt;p&gt;有序&lt;/p&gt;
+&lt;p&gt;线性结构&lt;/p&gt;
+&lt;h1 id=&quot;线性表顺序存储&quot;&gt;&lt;a
+        
+      
     
     </summary>
     
     
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="线性表" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
   </entry>
   
