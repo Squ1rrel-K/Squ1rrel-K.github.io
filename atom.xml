@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2020-07-27T09:38:29.804Z</updated>
+  <updated>2020-07-28T11:03:36.369Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>免费博客制作教程</title>
+    <link href="http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
+    <id>http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</id>
+    <published>2020-07-28T11:02:03.000Z</published>
+    <updated>2020-07-28T11:03:36.369Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PATA1004</title>
+    <link href="http://squ1rrel.com/2020/07/27/PATA1004/"/>
+    <id>http://squ1rrel.com/2020/07/27/PATA1004/</id>
+    <published>2020-07-27T12:32:35.000Z</published>
+    <updated>2020-07-27T12:41:31.348Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-1004&quot;&gt;&lt;a href=&quot;#PAT-A-1004&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1004&quot;&gt;&lt;/a&gt;PAT-A-1004&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>PATA1003</title>
@@ -525,64 +569,6 @@
     
     
       <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1004</title>
-    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1004/"/>
-    <id>http://squ1rrel.com/2020/01/27/PAT-B-1004/</id>
-    <published>2020-01-27T11:16:17.000Z</published>
-    <updated>2020-04-20T12:26:36.609Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1004-成绩排名-20分&quot;&gt;&lt;a href=&quot;#1004-成绩排名-20分&quot; class=&quot;headerlink&quot; title=&quot;1004 成绩排名 (20分)&quot;&gt;&lt;/a&gt;1004 成绩排名 (20分)&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1003</title>
-    <link href="http://squ1rrel.com/2020/01/27/PAT-B-1003/"/>
-    <id>http://squ1rrel.com/2020/01/27/PAT-B-1003/</id>
-    <published>2020-01-27T11:13:52.000Z</published>
-    <updated>2020-04-20T12:26:36.608Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1003-我要通过！&quot;&gt;&lt;a href=&quot;#1003-我要通过！&quot; class=&quot;headerlink&quot; title=&quot;1003 我要通过！&quot;&gt;&lt;/a&gt;1003 我要通过！&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
   </entry>
   
