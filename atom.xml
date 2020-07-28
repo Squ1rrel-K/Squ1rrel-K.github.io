@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2020-07-28T11:22:34.736Z</updated>
+  <updated>2020-07-28T11:28:08.632Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT模板</title>
+    <link href="http://squ1rrel.com/2020/07/28/PAT%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://squ1rrel.com/2020/07/28/PAT%E6%A8%A1%E6%9D%BF/</id>
+    <published>2020-07-28T11:27:18.000Z</published>
+    <updated>2020-07-28T11:28:08.632Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-xxxx&quot;&gt;&lt;a href=&quot;#PAT-A-xxxx&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-xxxx&quot;&gt;&lt;/a&gt;PAT-A-xxxx&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-A-1005</title>
+    <link href="http://squ1rrel.com/2020/07/28/PAT-A-1005/"/>
+    <id>http://squ1rrel.com/2020/07/28/PAT-A-1005/</id>
+    <published>2020-07-28T11:24:56.000Z</published>
+    <updated>2020-07-28T11:36:30.267Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-1005&quot;&gt;&lt;a href=&quot;#PAT-A-1005&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1005&quot;&gt;&lt;/a&gt;PAT-A-1005&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>免费博客制作教程</title>
@@ -44,11 +96,11 @@
   </entry>
   
   <entry>
-    <title>PATA1004</title>
+    <title>PAT-A-1004</title>
     <link href="http://squ1rrel.com/2020/07/27/PATA1004/"/>
     <id>http://squ1rrel.com/2020/07/27/PATA1004/</id>
     <published>2020-07-27T12:32:35.000Z</published>
-    <updated>2020-07-27T12:41:31.348Z</updated>
+    <updated>2020-07-28T11:25:00.779Z</updated>
     
     <summary type="html">
     
@@ -73,11 +125,11 @@
   </entry>
   
   <entry>
-    <title>PATA1003</title>
+    <title>PAT-A-1003</title>
     <link href="http://squ1rrel.com/2020/07/27/PATA1003/"/>
     <id>http://squ1rrel.com/2020/07/27/PATA1003/</id>
     <published>2020-07-27T08:29:21.000Z</published>
-    <updated>2020-07-27T09:38:29.804Z</updated>
+    <updated>2020-07-28T11:25:09.720Z</updated>
     
     <summary type="html">
     
@@ -102,11 +154,11 @@
   </entry>
   
   <entry>
-    <title>PATA1002</title>
+    <title>PAT-A-1002</title>
     <link href="http://squ1rrel.com/2020/07/27/PATA1002/"/>
     <id>http://squ1rrel.com/2020/07/27/PATA1002/</id>
     <published>2020-07-27T07:58:18.000Z</published>
-    <updated>2020-07-27T08:29:23.108Z</updated>
+    <updated>2020-07-28T11:25:09.031Z</updated>
     
     <summary type="html">
     
@@ -515,60 +567,6 @@
         
         
           &lt;h2 id=&quot;特殊行列式&quot;&gt;&lt;a href=&quot;#特殊行列式&quot; class=&quot;headerlink&quot; title=&quot;特殊行列式&quot;&gt;&lt;/a&gt;特殊行列式&lt;/h2&gt;&lt;h3 id=&quot;三角形行列式：&quot;&gt;&lt;a href=&quot;#三角形行列式：&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="线性代数" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新年计划</title>
-    <link href="http://squ1rrel.com/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/"/>
-    <id>http://squ1rrel.com/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/</id>
-    <published>2020-01-27T14:51:50.000Z</published>
-    <updated>2020-04-20T12:26:36.612Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;新年计划&quot;&gt;&lt;a href=&quot;#新年计划&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>行列式基础</title>
-    <link href="http://squ1rrel.com/2020/01/27/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://squ1rrel.com/2020/01/27/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89/</id>
-    <published>2020-01-27T14:46:43.000Z</published>
-    <updated>2020-04-20T12:26:36.613Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;线性代数&quot;&gt;&lt;a href=&quot;#线性代数&quot; class=&quot;headerlink&quot;
         
       
     
