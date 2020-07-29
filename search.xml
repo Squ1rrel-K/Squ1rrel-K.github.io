@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>复习随笔-数学</title>
+    <url>/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/</url>
+    <content><![CDATA[<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="核心工具"><a href="#核心工具" class="headerlink" title="核心工具"></a>核心工具</h2><p>定义法</p>
+<p>无穷小比较 -&gt;等价无穷小</p>
+<p>夹逼定理</p>
+<p>单调有界</p>
+<p>四则运算</p>
+<p>洛必达</p>
+<p>泰勒公式</p>
+<p>积分和式</p>
+<h2 id="极限存在讨论"><a href="#极限存在讨论" class="headerlink" title="极限存在讨论"></a>极限存在讨论</h2><p>夹逼定理</p>
+<p>单调有界</p>
+<h2 id="计算极限"><a href="#计算极限" class="headerlink" title="计算极限"></a>计算极限</h2><p>加减拆开前提：两个儿子极限<strong>都存在</strong></p>
+<p>等价无穷小条件：<strong>乘除因子</strong>才能使用</p>
+<p>洛必达条件：0 比 0 或 $\infty$  比 $\infty$ ，<strong>去心邻域可导</strong>，分母导不为 0</p>
+<p>泰勒公式条件：在 $x_0$ 存在 <strong>$n$ 阶导</strong></p>
+<h3 id="方法论"><a href="#方法论" class="headerlink" title="方法论"></a>方法论</h3><p>加减和式勇敢试一试极限是否存在，是就直接求了</p>
+<p>整个一个因式极限存在且不为 0，直接先求出来再说</p>
+<p>不要憨憨疯狂洛必达，中间可以等价无穷小的要先化简</p>
+<p>泰勒比等价无穷小精细，比洛必达条件更弱，因此泛用性更强</p>
+<p>泰勒展开只针对项，比等价无穷小牛逼</p>
+<p>0 比 0 或 $\infty$  比 $\infty$ 形式更容易处理，考虑各种通分</p>
+<h2 id="做题技巧"><a href="#做题技巧" class="headerlink" title="做题技巧"></a>做题技巧</h2><p>选择题合适时直接带入答案，节省时间</p>
+<p>带根号项的长因式，多考虑通分，凑出来分子正好消掉根号</p>
+<p>$(x+b)^{cx+d}$  等类似情况，考虑化成 $e^{sth.}$ 搞，再求 $sth.$ 极限就成</p>
+<p>告诉了未知函数的极限存在，往往有隐含信息，如可以泰勒，洛必达</p>
+<p>求参数题考虑无穷小的定义</p>
+<p>已知极限求极限，先尝试凑得式，直接求 $f(x)$ 往往就会累死</p>
+]]></content>
+      <categories>
+        <category>考研</category>
+        <category>数学</category>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PAT模板</title>
     <url>/2020/07/28/PAT%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h1 id="PAT-A-xxxx"><a href="#PAT-A-xxxx" class="headerlink" title="PAT-A-xxxx"></a>PAT-A-xxxx</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
@@ -447,10 +486,9 @@
       </tags>
   </entry>
   <entry>
-    <title>考研政治读书笔记</title>
+    <title>考研政治笔记</title>
     <url>/2020/06/04/%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="马原"><a href="#马原" class="headerlink" title="马原"></a>马原</h1><p>大致分三部分</p>
-<p>马哲，政治经济学，科学社会主义</p>
+    <content><![CDATA[<h1 id="马原大致分三部分"><a href="#马原大致分三部分" class="headerlink" title="马原大致分三部分"></a>马原大致分三部分</h1><p>马哲，政治经济学，科学社会主义</p>
 <h2 id="总论-第一章"><a href="#总论-第一章" class="headerlink" title="总论 第一章"></a>总论 第一章</h2><h3 id="产生原因"><a href="#产生原因" class="headerlink" title="产生原因"></a>产生原因</h3><ol>
 <li>经济历史原因（客观条件）：资本主义发展</li>
 <li>阶级实践基础（现实需求）：无产阶级自觉，需要科学理论指导</li>
