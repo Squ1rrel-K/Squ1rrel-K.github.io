@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2020-07-29T07:47:40.721Z</updated>
+  <updated>2021-01-12T15:17:43.840Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>新年第一篇</title>
+    <link href="http://squ1rrel.com/2021/01/12/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+    <id>http://squ1rrel.com/2021/01/12/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</id>
+    <published>2021-01-12T15:05:10.000Z</published>
+    <updated>2021-01-12T15:17:43.840Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;新年第一篇&quot;&gt;&lt;a href=&quot;#新年第一篇&quot; class=&quot;headerlink&quot; title=&quot;新年第一篇&quot;&gt;&lt;/a&gt;新年第一篇&lt;/h1&gt;&lt;p&gt;本来该去年12月27号考完研写的博客，拖到了现在，脑子很乱，借着键盘梳理一下&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT-A-1134</title>
+    <link href="http://squ1rrel.com/2020/08/28/PAT-A-1134/"/>
+    <id>http://squ1rrel.com/2020/08/28/PAT-A-1134/</id>
+    <published>2020-08-28T02:47:40.000Z</published>
+    <updated>2020-08-28T11:52:18.864Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PAT-A-1134&quot;&gt;&lt;a href=&quot;#PAT-A-1134&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1134&quot;&gt;&lt;/a&gt;PAT-A-1134&lt;/h1&gt;&lt;p&gt;bad Code&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
     <title>复习随笔-数学</title>
     <link href="http://squ1rrel.com/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/"/>
     <id>http://squ1rrel.com/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/</id>
-    <published>2020-07-29T07:07:36.000Z</published>
-    <updated>2020-07-29T07:47:40.721Z</updated>
+    <published>2020-07-28T23:07:36.000Z</published>
+    <updated>2020-08-01T00:55:00.315Z</updated>
     
     <summary type="html">
     
@@ -217,8 +273,8 @@
     <title>晴神笔记</title>
     <link href="http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/"/>
     <id>http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-07-27T01:49:43.000Z</published>
-    <updated>2020-07-27T01:50:44.900Z</updated>
+    <published>2020-07-26T17:49:43.000Z</published>
+    <updated>2020-09-04T15:17:11.616Z</updated>
     
     <summary type="html">
     
@@ -368,8 +424,8 @@
   
   <entry>
     <title>考研复习计划书</title>
-    <link href="http://squ1rrel.com/2020/05/31/%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B9%A6/"/>
-    <id>http://squ1rrel.com/2020/05/31/%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B9%A6/</id>
+    <link href="http://squ1rrel.com/2020/06/01/%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B9%A6/"/>
+    <id>http://squ1rrel.com/2020/06/01/%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92%E4%B9%A6/</id>
     <published>2020-05-31T23:56:44.000Z</published>
     <updated>2020-06-03T08:27:20.968Z</updated>
     
@@ -522,64 +578,6 @@
       <category term="读书笔记" scheme="http://squ1rrel.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="线性代数" scheme="http://squ1rrel.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1007</title>
-    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1007/"/>
-    <id>http://squ1rrel.com/2020/01/29/PAT-B-1007/</id>
-    <published>2020-01-29T10:56:48.000Z</published>
-    <updated>2020-04-20T12:26:36.610Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1007-素数对猜想&quot;&gt;&lt;a href=&quot;#1007-素数对猜想&quot; class=&quot;headerlink&quot; title=&quot;1007 素数对猜想&quot;&gt;&lt;/a&gt;1007 素数对猜想&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1006</title>
-    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1006/"/>
-    <id>http://squ1rrel.com/2020/01/29/PAT-B-1006/</id>
-    <published>2020-01-29T10:52:35.000Z</published>
-    <updated>2020-04-20T12:26:36.609Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1006-换个格式输出整数&quot;&gt;&lt;a href=&quot;#1006-换个格式输出整数&quot; class=&quot;headerlink&quot; title=&quot;1006 换个格式输出整数&quot;&gt;&lt;/a&gt;1006 换个格式输出整数&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
   </entry>
   
