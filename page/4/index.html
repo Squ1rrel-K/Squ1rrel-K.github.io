@@ -404,7 +404,7 @@
 
 </article>
     
-    <article id="post-逆矩阵" class="article article-type-post" itemscope
+    <article id="post-矩阵性质" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -412,8 +412,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/"
-    >逆矩阵</a
+  <a class="article-title" href="/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/"
+    >矩阵性质</a
   >
 </h2>
   
@@ -423,8 +423,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/" class="article-date">
-  <time datetime="2020-02-23T08:24:46.000Z" itemprop="datePublished">2020-02-23</time>
+      <a href="/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" class="article-date">
+  <time datetime="2020-02-19T08:20:26.000Z" itemprop="datePublished">2020-02-19</time>
 </a>
       
       
@@ -442,13 +442,46 @@
       
 
       
-      <h1 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h1>
+      <h1 id="矩阵的基本性质"><a href="#矩阵的基本性质" class="headerlink" title="矩阵的基本性质"></a>矩阵的基本性质</h1><p>比起其他结构，矩阵的优点在于自带空间结构关系，通过线性变化使复杂的关系明晰化，其自身性质又可进一步优化计算，尤其使复杂线性方程组的计算简便化。</p>
+<p>进而，线性方程组，矩阵，行列式的暧昧关系，便不得不聊聊了。</p>
+<h3 id="矩阵的核心思想"><a href="#矩阵的核心思想" class="headerlink" title="矩阵的核心思想"></a>矩阵的核心思想</h3><p>矩阵是表示关系的数表，而非表示结果，所以矩阵是一个结构，而非像行列式一样可以计算为一个值。</p>
+<h2 id="特殊的矩阵"><a href="#特殊的矩阵" class="headerlink" title="特殊的矩阵"></a>特殊的矩阵</h2><h3 id="对角矩阵"><a href="#对角矩阵" class="headerlink" title="对角矩阵:"></a>对角矩阵:</h3><p>$\Lambda = diag(\Lambda_1,\Lambda_2,\cdots,\Lambda_n)$</p>
+<p>除了对角线都是 0</p>
+<h3 id="单位矩阵"><a href="#单位矩阵" class="headerlink" title="单位矩阵:"></a>单位矩阵:</h3><p>二阶形式</p>
+<script type="math/tex; mode=display">E = \begin{pmatrix}1&0\\0&1\end{pmatrix}</script><p>对角全为1的对角矩阵</p>
+<h3 id="对称矩阵："><a href="#对称矩阵：" class="headerlink" title="对称矩阵："></a>对称矩阵：</h3><p>$A=A^T$</p>
+<p>元素以对角线为轴一 一对应相等</p>
+<h2 id="矩阵的计算"><a href="#矩阵的计算" class="headerlink" title="矩阵的计算"></a>矩阵的计算</h2><h3 id="加法："><a href="#加法：" class="headerlink" title="加法："></a>加法：</h3><p>仅同型矩阵可加和</p>
+<p>满足交换律</p>
+<p>满足结合律</p>
+<p>满足分配律</p>
+<h3 id="乘法："><a href="#乘法：" class="headerlink" title="乘法："></a>乘法：</h3><p>当且仅当，前矩阵列数 = 后矩阵行数，可相乘</p>
+<p><strong>不满足交换律</strong></p>
+<p>满足结合律</p>
+<p>满足分配律</p>
+<h3 id="幂运算："><a href="#幂运算：" class="headerlink" title="幂运算："></a>幂运算：</h3><p>只有方阵幂运算有意义</p>
+<h3 id="转置运算："><a href="#转置运算：" class="headerlink" title="转置运算："></a>转置运算：</h3><p>矩阵顺时针旋转 $90^\circ$</p>
+<p>记作 $A^T$</p>
+<p>$(A^T)^T=A$</p>
+<p>$(A+B)^T=A^T+B^T$</p>
+<p>$(\lambda A)^T=\lambda A^T$</p>
+<p><strong>注意：</strong>$(AB)^T=B^TA^T$ </p>
+<h2 id="矩阵的行列式"><a href="#矩阵的行列式" class="headerlink" title="矩阵的行列式"></a>矩阵的行列式</h2><p>因为行列式必须为 $n^2$ 个元素组成</p>
+<p>所以仅讨论方阵的行列式有意义！</p>
+<h3 id="表示方式："><a href="#表示方式：" class="headerlink" title="表示方式："></a>表示方式：</h3><p>$|A|$</p>
+<h3 id="性质："><a href="#性质：" class="headerlink" title="性质："></a>性质：</h3><p>$|A^T|=|A|$</p>
+<p><strong>注意：</strong>$|\lambda A|=\lambda^n|A|$ （$n$ 为矩阵阶数）</p>
+<p>$|AB|=|A| |B|=|BA|$</p>
+<h2 id="伴随矩阵-A"><a href="#伴随矩阵-A" class="headerlink" title="伴随矩阵 $A^*$"></a>伴随矩阵 $A^*$</h2><p>$A^*$ 为 $|A|$ 求出各元素代数余子式排列，按对角线翻折。 </p>
+<p>$AA^<em>=A^</em>A=|A|E$</p>
+<p>由行列式性质易证</p>
+
       
       <!-- 打赏 -->
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://squ1rrel.com/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/" data-id="ckacdco60000xzvrr664d03s8"
+      <a data-url="http://squ1rrel.com/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/" data-id="ckacdco5y000szvrralog578z"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag">线性代数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag">读书笔记</a></li></ul>
@@ -473,7 +506,7 @@
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
   </nav>
   
 </section>

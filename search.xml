@@ -688,15 +688,6 @@
       </tags>
   </entry>
   <entry>
-    <title>逆矩阵</title>
-    <url>/2020/02/23/%E9%80%86%E7%9F%A9%E9%98%B5/</url>
-    <content><![CDATA[<h1 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h1>]]></content>
-      <tags>
-        <tag>读书笔记</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>矩阵性质</title>
     <url>/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/</url>
     <content><![CDATA[<h1 id="矩阵的基本性质"><a href="#矩阵的基本性质" class="headerlink" title="矩阵的基本性质"></a>矩阵的基本性质</h1><p>比起其他结构，矩阵的优点在于自带空间结构关系，通过线性变化使复杂的关系明晰化，其自身性质又可进一步优化计算，尤其使复杂线性方程组的计算简便化。</p>
@@ -778,31 +769,6 @@
       </tags>
   </entry>
   <entry>
-    <title>行列式性质</title>
-    <url>/2020/01/29/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="特殊行列式"><a href="#特殊行列式" class="headerlink" title="特殊行列式"></a>特殊行列式</h2><h3 id="三角形行列式："><a href="#三角形行列式：" class="headerlink" title="三角形行列式："></a>三角形行列式：</h3><script type="math/tex; mode=display">
-\begin{vmatrix}a&0&0\\a&a&0\\a&a&a\end{vmatrix}=a^3</script><p>主对角线以下（上）均为零。</p>
-<p>其值为主对角线各值的积。</p>
-<h3 id="对角行列式"><a href="#对角行列式" class="headerlink" title="对角行列式:"></a>对角行列式:</h3><script type="math/tex; mode=display">
-\begin{vmatrix}a&0&0\\0&a&0\\0&0&a\end{vmatrix}=a^3</script><h3 id="范德蒙德行列式："><a href="#范德蒙德行列式：" class="headerlink" title="范德蒙德行列式："></a>范德蒙德行列式：</h3><script type="math/tex; mode=display">
-D_{n}=\begin{vmatrix}1&1&\cdots&1\\x_{1}&x_{2}&\cdots&x_{n}\\\vdots&\vdots&&\vdots\\x_{1}^{n-1}&x_{2}^{n-1}&\cdots&x_{n}^{n-1}\end{vmatrix}=\prod_{n\geq i>j\geq 1}(x_i-x_j)</script><h2 id="行列式的性质"><a href="#行列式的性质" class="headerlink" title="行列式的性质"></a>行列式的性质</h2><p>必须是 $n^2$ 个元素。</p>
-<p>行列式等于其转置行列式：$D=D^T$。</p>
-<p>对换行列式两行（列），其变号。</p>
-<p>如果行列式有两行（列）完全相同，其值为 0。</p>
-<p>某一行（列）的公因子可以提出去。</p>
-<p>某一行各元素乘以一个数加到另一行，其值不变。</p>
-<h2 id="代数余子式"><a href="#代数余子式" class="headerlink" title="代数余子式"></a>代数余子式</h2><p>一行（列）各元素 * 对应的代数余子式 $=$ 行列式值</p>
-<p>一行（列）各元素 <em> <em>*非</em></em>对应的代数余子式 $= 0$</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>study</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新年计划</title>
     <url>/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<h1 id="新年计划"><a href="#新年计划" class="headerlink" title="新年计划"></a>新年计划</h1><p>新的一年，最大的愿望就是摆脱浮躁，一次只做一件事，一次做好一件事。</p>
@@ -810,31 +776,6 @@ D_{n}=\begin{vmatrix}1&1&\cdots&1\\x_{1}&x_{2}&\cdots&x_{n}\\\vdots&\vdots&&\vdo
 ]]></content>
       <tags>
         <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>行列式基础</title>
-    <url>/2020/01/27/%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><p>线性代数的本质就是把复杂的问题简单化，多元的问题线性化，去繁就简，利用我们熟悉的工具尝试解释我们不熟悉的宇宙。</p>
-<p>教材：工程数学线性代数同济第六版</p>
-<p><a href="https://www.zhihu.com/question/36845076/answer/941855650" target="_blank" rel="noopener">额外阅读</a></p>
-<h2 id="行列式基础-P1-3"><a href="#行列式基础-P1-3" class="headerlink" title="行列式基础  P1~3"></a>行列式基础  P1~3</h2><p>行列式是一个值。</p>
-<p>其值等于平行主对角线积之和减去等于平行副对角线积之和（仅限二阶，三阶行列式）。</p>
-<h2 id="全排列和对换-P4-5"><a href="#全排列和对换-P4-5" class="headerlink" title="全排列和对换 P4~5"></a>全排列和对换 P4~5</h2><h3 id="逆序数"><a href="#逆序数" class="headerlink" title="逆序数"></a>逆序数</h3><p>$n$ 个元素排列，有一对元素先后次序与标准次序不同，构成一个逆序（标准次序一般为从小到大）</p>
-<p>逆序总数称为：逆序数。</p>
-<p>逆序数为奇则排列为奇排列。</p>
-<p>逆序数为偶则排列为偶排列。</p>
-<h3 id="对换"><a href="#对换" class="headerlink" title="对换"></a>对换</h3><p>任意两元素对换，奇偶性改变。</p>
-<p>奇排列兑换成标准排列次数为奇数。</p>
-<p>偶排列兑换成标准排列次数为偶数。</p>
-<h2 id="n-阶行列式-P6-7"><a href="#n-阶行列式-P6-7" class="headerlink" title="$n$ 阶行列式 P6~7"></a>$n$ 阶行列式 P6~7</h2><p>$n$ 阶行列式由二阶推导而来，保留了相当独特的性质。</p>
-]]></content>
-      <categories>
-        <category>读书笔记</category>
-        <category>线性代数</category>
-      </categories>
-      <tags>
-        <tag>study</tag>
       </tags>
   </entry>
   <entry>
@@ -989,14 +930,6 @@ D_{n}=\begin{vmatrix}1&1&\cdots&1\\x_{1}&x_{2}&\cdots&x_{n}\\\vdots&\vdots&&\vdo
       </categories>
       <tags>
         <tag>coding</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我爱学习</title>
-    <url>/2020/01/26/%E6%88%91%E7%88%B1%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>study</tag>
       </tags>
   </entry>
   <entry>
