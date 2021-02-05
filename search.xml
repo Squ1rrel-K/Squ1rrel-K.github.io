@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PR技巧</title>
+    <url>/2021/01/17/PR%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<h1 id="PR技巧"><a href="#PR技巧" class="headerlink" title="PR技巧"></a>PR技巧</h1><p>快捷键</p>
+]]></content>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新年第一篇</title>
     <url>/2021/01/12/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87/</url>
     <content><![CDATA[<h1 id="新年第一篇"><a href="#新年第一篇" class="headerlink" title="新年第一篇"></a>新年第一篇</h1><p>本来该去年12月27号考完研写的博客，拖到了现在，脑子很乱，借着键盘梳理一下</p>
@@ -97,7 +106,20 @@
   <entry>
     <title>免费博客制作教程</title>
     <url>/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="免费博客制作教程"><a href="#免费博客制作教程" class="headerlink" title="免费博客制作教程"></a>免费博客制作教程</h1>]]></content>
+    <content><![CDATA[<h1 id="免费博客制作教程"><a href="#免费博客制作教程" class="headerlink" title="免费博客制作教程"></a>免费博客制作教程</h1><p><strong>本篇教程使用 Git + Github Page + hexo</strong>，服务器与框架均免费使用，可搭配域名。</p>
+<h2 id="获取-github-page"><a href="#获取-github-page" class="headerlink" title="获取 github page"></a>获取 github page</h2><p>参考 <a href="https://pages.github.com/" target="_blank" rel="noopener">官方教程</a></p>
+<p>申请仓库，注意仓库命名有硬性要求，一般为 username.github.io</p>
+<p>如 <a href="Squ1rrel-K.github.io">Squ1rrel-K.github.io</a></p>
+<h2 id="Git-下安装-hexo"><a href="#Git-下安装-hexo" class="headerlink" title="Git 下安装 hexo"></a>Git 下安装 hexo</h2><p>参考 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
+<p>新建 username.github.io 文件夹</p>
+<p><code>hexo init</code></p>
+<p><code>npm install</code></p>
+<h2 id="安装主题-theme"><a href="#安装主题-theme" class="headerlink" title="安装主题 theme"></a>安装主题 theme</h2><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题区</a></p>
+<p>找到适合自己的主题，按制作者要求处理即可</p>
+<h2 id="写作与上传"><a href="#写作与上传" class="headerlink" title="写作与上传"></a>写作与上传</h2><p>新建文章 <code>hexo new post newTitle</code></p>
+<p>进入 md 软件写作</p>
+<p>渲染上传 <code>hexo d -g</code></p>
+<h3 id="其它常用命令见官方文档"><a href="#其它常用命令见官方文档" class="headerlink" title="其它常用命令见官方文档"></a>其它常用命令见<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></h3>]]></content>
       <categories>
         <category>toturial</category>
       </categories>

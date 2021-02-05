@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-01-12T15:17:43.840Z</updated>
+  <updated>2021-01-17T05:07:12.635Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PR技巧</title>
+    <link href="http://squ1rrel.com/2021/01/17/PR%E6%8A%80%E5%B7%A7/"/>
+    <id>http://squ1rrel.com/2021/01/17/PR%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-01-17T04:52:58.000Z</published>
+    <updated>2021-01-17T05:07:12.635Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PR技巧&quot;&gt;&lt;a href=&quot;#PR技巧&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
+    
+  </entry>
   
   <entry>
     <title>新年第一篇</title>
@@ -159,8 +184,8 @@
     <title>免费博客制作教程</title>
     <link href="http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
     <id>http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</id>
-    <published>2020-07-28T11:02:03.000Z</published>
-    <updated>2020-07-28T11:22:34.736Z</updated>
+    <published>2020-07-28T03:02:03.000Z</published>
+    <updated>2021-02-05T02:41:21.211Z</updated>
     
     <summary type="html">
     
@@ -168,7 +193,7 @@
       
         
         
-          &lt;h1 id=&quot;免费博客制作教程&quot;&gt;&lt;a href=&quot;#免费博客制作教程&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;免费博客制作教程&quot;&gt;&lt;a href=&quot;#免费博客制作教程&quot; class=&quot;headerlink&quot; title=&quot;免费博客制作教程&quot;&gt;&lt;/a&gt;免费博客制作教程&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本篇教程使用 Git + Github Page +
         
       
     
@@ -541,33 +566,6 @@
         
         
           &lt;h1 id=&quot;逆矩阵&quot;&gt;&lt;a href=&quot;#逆矩阵&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="读书笔记" scheme="http://squ1rrel.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="线性代数" scheme="http://squ1rrel.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>矩阵性质</title>
-    <link href="http://squ1rrel.com/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/"/>
-    <id>http://squ1rrel.com/2020/02/19/%E7%9F%A9%E9%98%B5%E6%80%A7%E8%B4%A8/</id>
-    <published>2020-02-19T08:20:26.000Z</published>
-    <updated>2020-04-20T12:26:36.613Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;矩阵的基本性质&quot;&gt;&lt;a href=&quot;#矩阵的基本性质&quot; class=&quot;headerlink&quot;
         
       
     
