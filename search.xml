@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基础排序算法</title>
+    <url>/2021/02/07/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="基础排序算法"><a href="#基础排序算法" class="headerlink" title="基础排序算法"></a>基础排序算法</h1><h2 id="STL-sort-方法"><a href="#STL-sort-方法" class="headerlink" title="STL - sort 方法"></a>STL - sort 方法</h2><p>源码实现：快排结合插排，堆排</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node a, node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.xxx &lt; b.xxx;</span><br><span class="line">&#125;</span><br><span class="line">sort(a, a + maxn, cmp) <span class="comment">//如果a是2维数组，首地址为a[0]，一定要注意</span></span><br></pre></td></tr></table></figure>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>]]></content>
+      <categories>
+        <category>读书笔记</category>
+        <category>数据结构</category>
+        <category>基础算法</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>肉类与香料</title>
     <url>/2021/02/07/%E8%82%89%E7%B1%BB%E4%B8%8E%E9%A6%99%E6%96%99/</url>
     <content><![CDATA[<h1 id="肉类与香料"><a href="#肉类与香料" class="headerlink" title="肉类与香料"></a>肉类与香料</h1><p>在肉类的处理中，无论是烹炒还是烧菜，香料的合理运用可以去膻增香，事半功倍</p>
@@ -35,7 +50,7 @@
   <entry>
     <title>PR技巧</title>
     <url>/2021/01/17/PR%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h1 id="PR技巧"><a href="#PR技巧" class="headerlink" title="PR技巧"></a>PR技巧</h1><p>快捷键</p>
+    <content><![CDATA[<h1 id="Pr技巧"><a href="#Pr技巧" class="headerlink" title="Pr技巧"></a>Pr技巧</h1><p>快捷键</p>
 ]]></content>
       <tags>
         <tag>video</tag>
@@ -66,7 +81,7 @@
   </entry>
   <entry>
     <title>极限与计算</title>
-    <url>/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/</url>
+    <url>/2020/07/29/%E6%9E%81%E9%99%90%E4%B8%8E%E8%AE%A1%E7%AE%97/</url>
     <content><![CDATA[<h1 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h1><h2 id="核心工具"><a href="#核心工具" class="headerlink" title="核心工具"></a>核心工具</h2><p>定义法</p>
 <p>无穷小比较 -&gt;等价无穷小</p>
 <p>夹逼定理</p>
@@ -97,9 +112,7 @@
 <p>函数数列混合型，不是消项就是每项凑合理因式化简</p>
 ]]></content>
       <categories>
-        <category>考研</category>
         <category>数学</category>
-        <category>随笔</category>
       </categories>
       <tags>
         <tag>study</tag>
@@ -392,7 +405,7 @@
 <p>堆实现</p>
 <p><code>priority_queue &lt;int, vector&lt;typename&gt; less&lt;int&gt; &gt; q</code></p>
 <p><code>priority_queue &lt;int, vector&lt;typename&gt; greater&lt;int&gt; &gt; q</code></p>
-<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><h3 id="访问-5"><a href="#访问-5" class="headerlink" title="访问"></a>访问</h3><p><code>top()</code></p>
+<h3 id="访问-5"><a href="#访问-5" class="headerlink" title="访问"></a>访问</h3><p><code>top()</code></p>
 <h2 id="stack-栈"><a href="#stack-栈" class="headerlink" title="stack 栈"></a>stack 栈</h2><p><code>top()</code> 访问</p>
 <h3 id="常用函数-6"><a href="#常用函数-6" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">push()</span><br><span class="line">top()</span><br><span class="line">pop()</span><br><span class="line">empty()</span><br><span class="line">size()</span><br></pre></td></tr></table></figure>
 <h2 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h2><p><code>#include &lt;utility&gt;</code></p>

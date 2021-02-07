@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-02-07T08:58:44.545Z</updated>
+  <updated>2021-02-07T12:40:48.892Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基础排序算法</title>
+    <link href="http://squ1rrel.com/2021/02/07/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>http://squ1rrel.com/2021/02/07/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</id>
+    <published>2021-02-07T12:31:29.000Z</published>
+    <updated>2021-02-07T12:40:48.892Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;基础排序算法&quot;&gt;&lt;a href=&quot;#基础排序算法&quot; class=&quot;headerlink&quot; title=&quot;基础排序算法&quot;&gt;&lt;/a&gt;基础排序算法&lt;/h1&gt;&lt;h2 id=&quot;STL-sort-方法&quot;&gt;&lt;a href=&quot;#STL-sort-方法&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="基础算法" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>肉类与香料</title>
@@ -72,7 +103,7 @@
     <link href="http://squ1rrel.com/2021/01/17/PR%E6%8A%80%E5%B7%A7/"/>
     <id>http://squ1rrel.com/2021/01/17/PR%E6%8A%80%E5%B7%A7/</id>
     <published>2021-01-17T04:52:58.000Z</published>
-    <updated>2021-02-05T02:57:45.197Z</updated>
+    <updated>2021-02-07T09:06:40.380Z</updated>
     
     <summary type="html">
     
@@ -80,7 +111,7 @@
       
         
         
-          &lt;h1 id=&quot;PR技巧&quot;&gt;&lt;a href=&quot;#PR技巧&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;Pr技巧&quot;&gt;&lt;a href=&quot;#Pr技巧&quot; class=&quot;headerlink&quot;
         
       
     
@@ -150,10 +181,10 @@
   
   <entry>
     <title>极限与计算</title>
-    <link href="http://squ1rrel.com/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/"/>
-    <id>http://squ1rrel.com/2020/07/29/%E5%A4%8D%E4%B9%A0%E9%9A%8F%E7%AC%94-%E6%95%B0%E5%AD%A6/</id>
+    <link href="http://squ1rrel.com/2020/07/29/%E6%9E%81%E9%99%90%E4%B8%8E%E8%AE%A1%E7%AE%97/"/>
+    <id>http://squ1rrel.com/2020/07/29/%E6%9E%81%E9%99%90%E4%B8%8E%E8%AE%A1%E7%AE%97/</id>
     <published>2020-07-28T23:07:36.000Z</published>
-    <updated>2021-02-05T02:55:15.359Z</updated>
+    <updated>2021-02-07T12:37:40.588Z</updated>
     
     <summary type="html">
     
@@ -168,11 +199,7 @@
     </summary>
     
     
-      <category term="考研" scheme="http://squ1rrel.com/categories/%E8%80%83%E7%A0%94/"/>
-    
-      <category term="数学" scheme="http://squ1rrel.com/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="随笔" scheme="http://squ1rrel.com/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/%E9%9A%8F%E7%AC%94/"/>
+      <category term="数学" scheme="http://squ1rrel.com/categories/%E6%95%B0%E5%AD%A6/"/>
     
     
       <category term="study" scheme="http://squ1rrel.com/tags/study/"/>
@@ -350,7 +377,7 @@
     <link href="http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/"/>
     <id>http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/</id>
     <published>2020-07-26T17:49:43.000Z</published>
-    <updated>2020-09-04T15:17:11.616Z</updated>
+    <updated>2021-02-07T12:28:09.735Z</updated>
     
     <summary type="html">
     
@@ -541,35 +568,6 @@
     
     </summary>
     
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1007</title>
-    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1007/"/>
-    <id>http://squ1rrel.com/2020/01/29/PAT-B-1007/</id>
-    <published>2020-01-29T10:56:48.000Z</published>
-    <updated>2020-04-20T12:26:36.610Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1007-素数对猜想&quot;&gt;&lt;a href=&quot;#1007-素数对猜想&quot; class=&quot;headerlink&quot; title=&quot;1007 素数对猜想&quot;&gt;&lt;/a&gt;1007 素数对猜想&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
