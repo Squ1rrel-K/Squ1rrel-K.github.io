@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-02-07T02:36:58.642Z</updated>
+  <updated>2021-02-07T08:58:44.545Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>肉类与香料</title>
+    <link href="http://squ1rrel.com/2021/02/07/%E8%82%89%E7%B1%BB%E4%B8%8E%E9%A6%99%E6%96%99/"/>
+    <id>http://squ1rrel.com/2021/02/07/%E8%82%89%E7%B1%BB%E4%B8%8E%E9%A6%99%E6%96%99/</id>
+    <published>2021-02-07T06:21:45.000Z</published>
+    <updated>2021-02-07T08:58:44.545Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;肉类与香料&quot;&gt;&lt;a href=&quot;#肉类与香料&quot; class=&quot;headerlink&quot; title=&quot;肉类与香料&quot;&gt;&lt;/a&gt;肉类与香料&lt;/h1&gt;&lt;p&gt;在肉类的处理中，无论是烹炒还是烧菜，香料的合理运用可以去膻增香，事半功倍&lt;/p&gt;
+&lt;h1 id=&quot;加料&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ps技巧</title>
     <link href="http://squ1rrel.com/2021/02/07/Ps%E6%8A%80%E5%B7%A7/"/>
     <id>http://squ1rrel.com/2021/02/07/Ps%E6%8A%80%E5%B7%A7/</id>
     <published>2021-02-07T02:02:41.000Z</published>
-    <updated>2021-02-07T02:36:58.642Z</updated>
+    <updated>2021-02-07T08:51:28.555Z</updated>
     
     <summary type="html">
     
@@ -210,7 +236,7 @@
     <link href="http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
     <id>http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</id>
     <published>2020-07-28T03:02:03.000Z</published>
-    <updated>2021-02-05T02:45:54.744Z</updated>
+    <updated>2021-02-07T09:05:32.309Z</updated>
     
     <summary type="html">
     
@@ -225,7 +251,7 @@
     </summary>
     
     
-      <category term="toturial" scheme="http://squ1rrel.com/categories/toturial/"/>
+      <category term="教程" scheme="http://squ1rrel.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
@@ -349,11 +375,11 @@
   </entry>
   
   <entry>
-    <title>数据结构-堆栈，队列c</title>
-    <link href="http://squ1rrel.com/2020/06/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A0%86%E6%A0%88%EF%BC%8C%E9%98%9F%E5%88%97/"/>
-    <id>http://squ1rrel.com/2020/06/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%A0%86%E6%A0%88%EF%BC%8C%E9%98%9F%E5%88%97/</id>
-    <published>2020-06-26T11:22:34.000Z</published>
-    <updated>2020-06-26T11:50:28.000Z</updated>
+    <title>栈</title>
+    <link href="http://squ1rrel.com/2020/06/26/%E6%A0%88/"/>
+    <id>http://squ1rrel.com/2020/06/26/%E6%A0%88/</id>
+    <published>2020-06-26T03:22:34.000Z</published>
+    <updated>2021-02-07T09:04:47.024Z</updated>
     
     <summary type="html">
     
@@ -361,7 +387,7 @@
       
         
         
-          &lt;h1 id=&quot;堆栈-顺序数组实现&quot;&gt;&lt;a href=&quot;#堆栈-顺序数组实现&quot; class=&quot;headerlink&quot; title=&quot;堆栈 - 顺序数组实现&quot;&gt;&lt;/a&gt;堆栈 -
+          &lt;h1 id=&quot;栈&quot;&gt;&lt;a href=&quot;#栈&quot; class=&quot;headerlink&quot; title=&quot;栈&quot;&gt;&lt;/a&gt;栈&lt;/h1&gt;&lt;h1 id=&quot;堆栈-顺序数组实现&quot;&gt;&lt;a href=&quot;#堆栈-顺序数组实现&quot; class=&quot;headerlink&quot; title=&quot;堆栈 -
         
       
     
@@ -372,7 +398,7 @@
     
       <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-      <category term="线性表" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+      <category term="基础类型" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
@@ -535,35 +561,6 @@
         
         
           &lt;h1 id=&quot;1007-素数对猜想&quot;&gt;&lt;a href=&quot;#1007-素数对猜想&quot; class=&quot;headerlink&quot; title=&quot;1007 素数对猜想&quot;&gt;&lt;/a&gt;1007 素数对猜想&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT B" scheme="http://squ1rrel.com/categories/PAT/PAT-B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-B-1006</title>
-    <link href="http://squ1rrel.com/2020/01/29/PAT-B-1006/"/>
-    <id>http://squ1rrel.com/2020/01/29/PAT-B-1006/</id>
-    <published>2020-01-29T10:52:35.000Z</published>
-    <updated>2020-04-20T12:26:36.609Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1006-换个格式输出整数&quot;&gt;&lt;a href=&quot;#1006-换个格式输出整数&quot; class=&quot;headerlink&quot; title=&quot;1006 换个格式输出整数&quot;&gt;&lt;/a&gt;1006 换个格式输出整数&lt;/h1&gt;&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
         
       
     
