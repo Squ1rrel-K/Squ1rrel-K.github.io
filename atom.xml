@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-02-07T12:40:48.892Z</updated>
+  <updated>2021-02-08T11:21:00.630Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又是一个小细节</title>
+    <link href="http://squ1rrel.com/2021/02/08/%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/"/>
+    <id>http://squ1rrel.com/2021/02/08/%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/</id>
+    <published>2021-02-08T11:19:51.000Z</published>
+    <updated>2021-02-08T11:21:00.630Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Clion-ctrl-alt-L-格式化代码无效&quot;&gt;&lt;a href=&quot;#Clion-ctrl-alt-L-格式化代码无效&quot; class=&quot;headerlink&quot; title=&quot;Clion ctrl+alt+L 格式化代码无效&quot;&gt;&lt;/a&gt;Clion
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>基础排序算法</title>
@@ -546,31 +571,6 @@
     
     
       <category term="life" scheme="http://squ1rrel.com/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bootstrap4 读书笔记</title>
-    <link href="http://squ1rrel.com/2020/04/20/Bootstrap4-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://squ1rrel.com/2020/04/20/Bootstrap4-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-04-20T12:34:00.000Z</published>
-    <updated>2020-04-20T12:35:07.817Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Bootstrap4-学习笔记&quot;&gt;&lt;a href=&quot;#Bootstrap4-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 学习笔记&quot;&gt;&lt;/a&gt;Bootstrap4
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
   </entry>
   
