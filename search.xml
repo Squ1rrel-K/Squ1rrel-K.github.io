@@ -42,8 +42,9 @@
   <entry>
     <title>Ps技巧</title>
     <url>/2021/02/07/Ps%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<h1 id="Ps技巧"><a href="#Ps技巧" class="headerlink" title="Ps技巧"></a><strong>Ps技巧</strong></h1><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a><strong>快捷键</strong></h2><p>快速复制图层</p>
-<p><code>Ctrl + J</code></p>
+    <content><![CDATA[<h1 id="Ps技巧"><a href="#Ps技巧" class="headerlink" title="Ps技巧"></a><strong>Ps技巧</strong></h1><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a><strong>快捷键</strong></h2><p><code>V</code> 移动工具</p>
+<p>快速复制图层</p>
+<p><code>Ctrl + J</code> 或者 <code>Alt</code> + 拖动</p>
 <p>调整图层大小</p>
 <p><code>Ctrl + T</code></p>
 <h2 id="智能对象"><a href="#智能对象" class="headerlink" title="智能对象"></a>智能对象</h2><p>说白了就是图层 Class 化</p>
