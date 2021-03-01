@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>剑指offer JZ2</title>
+    <url>/2021/03/01/%E5%89%91%E6%8C%87offer-JZ2/</url>
+    <content><![CDATA[<h1 id="JZ2"><a href="#JZ2" class="headerlink" title="JZ2"></a>JZ2</h1><p><a href="https://www.nowcoder.com/practice/0e26e5551f2b489b9f58bc83aa4b6c68" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</p>
+<h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><p>字符串替换，STL 简单处理</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="stl-string-replace"><a href="#stl-string-replace" class="headerlink" title="stl string.replace()"></a>stl string.replace()</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * @param s string字符串 </span></span><br><span class="line"><span class="comment">     * @return string字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">replaceSpace</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(s[i]==<span class="string">' '</span>) s.replace(i,<span class="number">1</span>,<span class="string">"%20"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>剑指offer</category>
+        <category>b</category>
+        <category>1</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>剑指offer JZ1</title>
     <url>/2021/03/01/%E5%89%91%E6%8C%87offer-JZ1/</url>
     <content><![CDATA[<h1 id="JZ1"><a href="#JZ1" class="headerlink" title="JZ1"></a>JZ1</h1><p><a href="https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e" target="_blank" rel="noopener">原题链接</a></p>
@@ -22,6 +39,8 @@
 ]]></content>
       <categories>
         <category>剑指offer</category>
+        <category>a</category>
+        <category>1</category>
       </categories>
       <tags>
         <tag>coding</tag>
