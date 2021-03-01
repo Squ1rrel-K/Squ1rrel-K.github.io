@@ -9,9 +9,9 @@
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="stl-string-replace"><a href="#stl-string-replace" class="headerlink" title="stl string.replace()"></a>stl string.replace()</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * @param s string字符串 </span></span><br><span class="line"><span class="comment">     * @return string字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">replaceSpace</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(s[i]==<span class="string">' '</span>) s.replace(i,<span class="number">1</span>,<span class="string">"%20"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>剑指offer</category>
-        <category>b</category>
-        <category>1</category>
+        <category>刷题</category>
+        <category>字符串</category>
+        <category>替换</category>
       </categories>
       <tags>
         <tag>coding</tag>
@@ -38,9 +38,9 @@
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">Find</span><span class="params">(<span class="keyword">int</span> target, <span class="built_in">vector</span> &lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">array</span>)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//空数组</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">array</span>.<span class="built_in">size</span>() == <span class="number">0</span> || <span class="built_in">array</span>[<span class="number">0</span>].<span class="built_in">size</span>() == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">0</span>, y = <span class="built_in">array</span>[<span class="number">0</span>].<span class="built_in">size</span>() - <span class="number">1</span>, val;</span><br><span class="line">        <span class="comment">//元素在数组范围内移动</span></span><br><span class="line">        <span class="keyword">while</span> (x &gt;= <span class="number">0</span> &amp;&amp; x &lt; <span class="built_in">array</span>.<span class="built_in">size</span>() &amp;&amp; y &gt;= <span class="number">0</span> &amp;&amp; y &lt; <span class="built_in">array</span>[<span class="number">0</span>].<span class="built_in">size</span>()) &#123;</span><br><span class="line">            val = <span class="built_in">array</span>[x][y];</span><br><span class="line">            <span class="keyword">if</span> (target == val) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            <span class="comment">//大于，下移</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (target &gt; val) x++;</span><br><span class="line">            <span class="comment">//小于，左移</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (target &lt; val) y--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>剑指offer</category>
-        <category>a</category>
-        <category>1</category>
+        <category>刷题</category>
+        <category>数组</category>
+        <category>二分法</category>
       </categories>
       <tags>
         <tag>coding</tag>
