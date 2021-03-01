@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-03-01T12:13:50.885Z</updated>
+  <updated>2021-03-01T14:00:06.135Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -15,6 +15,179 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer JZ模板</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ%E6%A8%A1%E6%9D%BF/</id>
+    <published>2021-03-01T13:55:58.000Z</published>
+    <updated>2021-03-01T14:00:06.135Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ&quot;&gt;&lt;a href=&quot;#JZ&quot; class=&quot;headerlink&quot; title=&quot;JZ&quot;&gt;&lt;/a&gt;JZ&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;原题链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ10</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ10/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ10/</id>
+    <published>2021-03-01T12:35:56.000Z</published>
+    <updated>2021-03-01T14:09:24.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ10&quot;&gt;&lt;a href=&quot;#JZ10&quot; class=&quot;headerlink&quot; title=&quot;JZ10&quot;&gt;&lt;/a&gt;JZ10&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="dp" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/dp/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ9</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ9/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ9/</id>
+    <published>2021-03-01T12:35:53.000Z</published>
+    <updated>2021-03-01T14:07:11.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ9&quot;&gt;&lt;a href=&quot;#JZ9&quot; class=&quot;headerlink&quot; title=&quot;JZ9&quot;&gt;&lt;/a&gt;JZ9&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="dp" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/dp/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ8</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ8/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ8/</id>
+    <published>2021-03-01T12:35:50.000Z</published>
+    <updated>2021-03-01T14:03:43.624Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ8&quot;&gt;&lt;a href=&quot;#JZ8&quot; class=&quot;headerlink&quot; title=&quot;JZ8&quot;&gt;&lt;/a&gt;JZ8&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="dp" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/dp/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ7</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ7/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ7/</id>
+    <published>2021-03-01T12:35:47.000Z</published>
+    <updated>2021-03-01T13:59:54.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ7&quot;&gt;&lt;a href=&quot;#JZ7&quot; class=&quot;headerlink&quot; title=&quot;JZ7&quot;&gt;&lt;/a&gt;JZ7&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="dp" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/dp/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ6</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ6/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ6/</id>
+    <published>2021-03-01T12:24:01.000Z</published>
+    <updated>2021-03-01T13:54:48.247Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ6&quot;&gt;&lt;a href=&quot;#JZ6&quot; class=&quot;headerlink&quot; title=&quot;JZ6&quot;&gt;&lt;/a&gt;JZ6&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="数组" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E6%95%B0%E7%BB%84/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指offer JZ5</title>
@@ -396,178 +569,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1005</title>
-    <link href="http://squ1rrel.com/2020/07/28/PAT-A-1005/"/>
-    <id>http://squ1rrel.com/2020/07/28/PAT-A-1005/</id>
-    <published>2020-07-28T11:24:56.000Z</published>
-    <updated>2020-07-28T11:36:30.267Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1005&quot;&gt;&lt;a href=&quot;#PAT-A-1005&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1005&quot;&gt;&lt;/a&gt;PAT-A-1005&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费博客制作教程</title>
-    <link href="http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"/>
-    <id>http://squ1rrel.com/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</id>
-    <published>2020-07-28T03:02:03.000Z</published>
-    <updated>2021-02-07T09:05:32.309Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;免费博客制作教程&quot;&gt;&lt;a href=&quot;#免费博客制作教程&quot; class=&quot;headerlink&quot; title=&quot;免费博客制作教程&quot;&gt;&lt;/a&gt;免费博客制作教程&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本篇教程使用 Git + Github Page +
-        
-      
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="http://squ1rrel.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1004</title>
-    <link href="http://squ1rrel.com/2020/07/27/PATA1004/"/>
-    <id>http://squ1rrel.com/2020/07/27/PATA1004/</id>
-    <published>2020-07-27T12:32:35.000Z</published>
-    <updated>2020-07-28T11:25:00.779Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1004&quot;&gt;&lt;a href=&quot;#PAT-A-1004&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1004&quot;&gt;&lt;/a&gt;PAT-A-1004&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1003</title>
-    <link href="http://squ1rrel.com/2020/07/27/PATA1003/"/>
-    <id>http://squ1rrel.com/2020/07/27/PATA1003/</id>
-    <published>2020-07-27T08:29:21.000Z</published>
-    <updated>2020-07-28T11:25:09.720Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1003&quot;&gt;&lt;a href=&quot;#PAT-A-1003&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1003&quot;&gt;&lt;/a&gt;PAT-A-1003&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1002</title>
-    <link href="http://squ1rrel.com/2020/07/27/PATA1002/"/>
-    <id>http://squ1rrel.com/2020/07/27/PATA1002/</id>
-    <published>2020-07-27T07:58:18.000Z</published>
-    <updated>2020-07-28T11:25:09.031Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1002&quot;&gt;&lt;a href=&quot;#PAT-A-1002&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1002&quot;&gt;&lt;/a&gt;PAT-A-1002&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>晴神笔记</title>
-    <link href="http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/"/>
-    <id>http://squ1rrel.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-07-26T17:49:43.000Z</published>
-    <updated>2021-02-07T12:28:09.735Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;C-C-算法竞赛常用技巧&quot;&gt;&lt;a href=&quot;#C-C-算法竞赛常用技巧&quot; class=&quot;headerlink&quot; title=&quot;C/C++ 算法竞赛常用技巧&quot;&gt;&lt;/a&gt;C/C++ 算法竞赛常用技巧&lt;/h1&gt;&lt;h2 id=&quot;常用最大值&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
   </entry>
   
