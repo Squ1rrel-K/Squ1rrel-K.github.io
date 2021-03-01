@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://squ1rrel.com/"/>
-  <updated>2021-03-01T08:07:18.819Z</updated>
+  <updated>2021-03-01T11:38:37.062Z</updated>
   <id>http://squ1rrel.com/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>剑指offer JZ4</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ4/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ4/</id>
+    <published>2021-03-01T09:51:37.000Z</published>
+    <updated>2021-03-01T11:38:37.062Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ4&quot;&gt;&lt;a href=&quot;#JZ4&quot; class=&quot;headerlink&quot; title=&quot;JZ4&quot;&gt;&lt;/a&gt;JZ4&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="树" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E6%A0%91/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ3</title>
+    <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ3/"/>
+    <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ3/</id>
+    <published>2021-03-01T08:37:35.000Z</published>
+    <updated>2021-03-01T11:37:29.516Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ3&quot;&gt;&lt;a href=&quot;#JZ3&quot; class=&quot;headerlink&quot; title=&quot;JZ3&quot;&gt;&lt;/a&gt;JZ3&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="链表" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E9%93%BE%E8%A1%A8/"/>
+    
+    
+      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
     <title>剑指offer JZ2</title>
     <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ2/"/>
     <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ2/</id>
     <published>2021-03-01T07:36:32.000Z</published>
-    <updated>2021-03-01T08:07:18.819Z</updated>
+    <updated>2021-03-01T11:36:39.319Z</updated>
     
     <summary type="html">
     
@@ -40,8 +98,6 @@
     
       <category term="字符串" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="替换" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%9B%BF%E6%8D%A2/"/>
-    
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
     
@@ -52,7 +108,7 @@
     <link href="http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ1/"/>
     <id>http://squ1rrel.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ1/</id>
     <published>2021-03-01T05:30:31.000Z</published>
-    <updated>2021-03-01T08:06:55.857Z</updated>
+    <updated>2021-03-01T08:38:05.460Z</updated>
     
     <summary type="html">
     
@@ -70,8 +126,6 @@
       <category term="刷题" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/"/>
     
       <category term="数组" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="二分法" scheme="http://squ1rrel.com/categories/%E5%88%B7%E9%A2%98/%E6%95%B0%E7%BB%84/%E4%BA%8C%E5%88%86%E6%B3%95/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
@@ -513,69 +567,6 @@
       <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="基础类型" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1001</title>
-    <link href="http://squ1rrel.com/2020/06/13/PATA1001/"/>
-    <id>http://squ1rrel.com/2020/06/13/PATA1001/</id>
-    <published>2020-06-13T12:52:38.000Z</published>
-    <updated>2020-07-27T08:06:09.999Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1001&quot;&gt;&lt;a href=&quot;#PAT-A-1001&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1001&quot;&gt;&lt;/a&gt;PAT-A-1001&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://squ1rrel.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://squ1rrel.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据结构-线性表</title>
-    <link href="http://squ1rrel.com/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://squ1rrel.com/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-06-13T00:31:43.000Z</published>
-    <updated>2020-07-27T01:51:32.146Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;线性表&quot;&gt;&lt;a href=&quot;#线性表&quot; class=&quot;headerlink&quot; title=&quot;线性表&quot;&gt;&lt;/a&gt;线性表&lt;/h1&gt;&lt;p&gt;同一类型元素&lt;/p&gt;
-&lt;p&gt;有序&lt;/p&gt;
-&lt;p&gt;线性结构&lt;/p&gt;
-&lt;h1 id=&quot;线性表顺序存储&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数据结构" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="线性表" scheme="http://squ1rrel.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
     
     
       <category term="coding" scheme="http://squ1rrel.com/tags/coding/"/>

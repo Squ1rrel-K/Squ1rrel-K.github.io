@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>剑指offer JZ4</title>
+    <url>/2021/03/01/%E5%89%91%E6%8C%87offer-JZ4/</url>
+    <content><![CDATA[<h1 id="JZ4"><a href="#JZ4" class="headerlink" title="JZ4"></a>JZ4</h1><p><a href="https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。</p>
+<h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><p>中序+其他序造树，分随机存储（数组），顺序存储（链表）两种，找 root 两边 dfs 递归即可，PAT 送分题</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="常规题"><a href="#常规题" class="headerlink" title="常规题"></a>常规题</h3><p>$T:O(n)$</p>
+<p>$S:O(n)$</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode *<span class="title">reConstructBinaryTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vin)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> buildTree(pre, vin, <span class="number">0</span>, pre.<span class="built_in">size</span>() - <span class="number">1</span>, <span class="number">0</span>, vin.<span class="built_in">size</span>() - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">TreeNode *<span class="title">buildTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;pre, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;vin, <span class="keyword">int</span> preL, <span class="keyword">int</span> preR, <span class="keyword">int</span> inL, <span class="keyword">int</span> inR)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//返回</span></span><br><span class="line">        <span class="keyword">if</span> (preL &gt; preR) <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="comment">//新根</span></span><br><span class="line">        TreeNode *root = <span class="keyword">new</span> TreeNode(pre[preL]);</span><br><span class="line">        <span class="comment">//找 vin 中的根</span></span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i = inL; i &lt;= inR; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (pre[preL] == vin[i]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//递归子树</span></span><br><span class="line">        <span class="keyword">int</span> numLeft = i - inL;</span><br><span class="line">        root-&gt;left = buildTree(pre, vin, preL + <span class="number">1</span>, preL + numLeft, inL, i - <span class="number">1</span>);</span><br><span class="line">        root-&gt;right = buildTree(pre, vin, preL + numLeft + <span class="number">1</span>, preR, i + <span class="number">1</span>, inR);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>刷题</category>
+        <category>树</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>剑指offer JZ3</title>
+    <url>/2021/03/01/%E5%89%91%E6%8C%87offer-JZ3/</url>
+    <content><![CDATA[<h1 id="JZ3"><a href="#JZ3" class="headerlink" title="JZ3"></a>JZ3</h1><p><a href="nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035">原题链接</a></p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>输入一个链表，按链表从尾到头的顺序返回一个ArrayList。</p>
+<h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><p>链表翻转，可提出可直接模拟</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="提出法（包括栈模拟，数组翻转，反向迭代器）"><a href="#提出法（包括栈模拟，数组翻转，反向迭代器）" class="headerlink" title="提出法（包括栈模拟，数组翻转，反向迭代器）"></a>提出法（包括栈模拟，数组翻转，反向迭代器）</h3><p>数据提出来扔 vector 里，在输出即可，不是真正的翻转链表，仅数据反向输出</p>
+<p>$T:O(n)$</p>
+<p>$S:O(n)$</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*  struct ListNode &#123;</span></span><br><span class="line"><span class="comment">*        int val;</span></span><br><span class="line"><span class="comment">*        struct ListNode *next;</span></span><br><span class="line"><span class="comment">*        ListNode(int x) :</span></span><br><span class="line"><span class="comment">*              val(x), next(NULL) &#123;</span></span><br><span class="line"><span class="comment">*        &#125;</span></span><br><span class="line"><span class="comment">*  &#125;;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">printListFromTailToHead</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="built_in">list</span>;</span><br><span class="line">        <span class="keyword">while</span> (head != <span class="literal">nullptr</span>) &#123;</span><br><span class="line">            <span class="built_in">list</span>.push_back(head-&gt;val);</span><br><span class="line">            head = head-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(<span class="built_in">list</span>.<span class="built_in">begin</span>(), <span class="built_in">list</span>.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">list</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="模拟法"><a href="#模拟法" class="headerlink" title="模拟法"></a>模拟法</h3><p>真实模拟链的变换，若题目需要输出 list 而非 vector 则此方法为好方法</p>
+]]></content>
+      <categories>
+        <category>刷题</category>
+        <category>链表</category>
+      </categories>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>剑指offer JZ2</title>
     <url>/2021/03/01/%E5%89%91%E6%8C%87offer-JZ2/</url>
     <content><![CDATA[<h1 id="JZ2"><a href="#JZ2" class="headerlink" title="JZ2"></a>JZ2</h1><p><a href="https://www.nowcoder.com/practice/0e26e5551f2b489b9f58bc83aa4b6c68" target="_blank" rel="noopener">原题链接</a></p>
 <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</p>
 <h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><p>字符串替换，STL 简单处理</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="stl-string-replace"><a href="#stl-string-replace" class="headerlink" title="stl string.replace()"></a>stl string.replace()</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * @param s string字符串 </span></span><br><span class="line"><span class="comment">     * @return string字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">replaceSpace</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(s[i]==<span class="string">' '</span>) s.replace(i,<span class="number">1</span>,<span class="string">"%20"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="stl-string-replace"><a href="#stl-string-replace" class="headerlink" title="stl string.replace()"></a>stl string.replace()</h3><p>$T:O(n)$</p>
+<p>$S:O(1)$</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * @param s string字符串 </span></span><br><span class="line"><span class="comment">     * @return string字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="built_in">string</span> <span class="title">replaceSpace</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;s.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">           <span class="keyword">if</span>(s[i]==<span class="string">' '</span>) s.replace(i,<span class="number">1</span>,<span class="string">"%20"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>刷题</category>
         <category>字符串</category>
-        <category>替换</category>
       </categories>
       <tags>
         <tag>coding</tag>
@@ -40,7 +79,6 @@
       <categories>
         <category>刷题</category>
         <category>数组</category>
-        <category>二分法</category>
       </categories>
       <tags>
         <tag>coding</tag>
