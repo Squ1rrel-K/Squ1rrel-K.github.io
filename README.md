@@ -1,0 +1,1 @@
+This is Squ1rrel's blog based on [Github page](https://pages.github.com/), powered by [hexo](https://hexo.io), theme [Ayer](https://github.com/Shen-Yu/hexo-theme-ayer) 
