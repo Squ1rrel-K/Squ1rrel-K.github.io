@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>晴神笔记 |  且听风吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="且听风吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-晴神笔记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  晴神笔记
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-07-26T17:49:43.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">13 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="C-C-算法竞赛常用技巧"><a href="#C-C-算法竞赛常用技巧" class="headerlink" title="C/C++ 算法竞赛常用技巧"></a>C/C++ 算法竞赛常用技巧</h1><h2 id="常用最大值"><a href="#常用最大值" class="headerlink" title="常用最大值"></a>常用最大值</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span></span><br></pre></td></tr></table></figure>
+<p>INF + INF 还在 int 范围里</p>
+<h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p><strong>贪心</strong>应大胆尝试，无需证明</p>
+<p>答案确定的问题可以直接<strong>打表</strong>，再输出，就 $O(1)$ 了</p>
+<p>使用<strong>递推</strong>降低难度</p>
+<h1 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h1><h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>范围</th>
+<th>大致范围</th>
+<th>scanf()</th>
+<th>printf()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>int</strong></td>
+<td>$2^{31} - 1$</td>
+<td>$10^{9}$ ~ $10^{10}$</td>
+<td>%d</td>
+<td>%d</td>
+</tr>
+<tr>
+<td><strong>long long</strong></td>
+<td>$2^{63} - 1$</td>
+<td>$10^{18}$ ~ $10^{19}$</td>
+<td>%lld</td>
+<td>%lld</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h2><p>浮点一般用 <strong>double</strong></p>
+<p>精度 15 ~ 16位</p>
+<p>输入: <code>scanf(&quot;%lf&quot;)</code></p>
+<p>输出: <code>printf(&quot;%f&quot;)</code></p>
+<p><code>printf(&quot;%.2f&quot;)</code></p>
+<p><code>printf(&quot;%02d&quot;)</code></p>
+<h3 id="浮点比较精度损失"><a href="#浮点比较精度损失" class="headerlink" title="浮点比较精度损失"></a>浮点比较精度损失</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> eps = <span class="number">1e-8</span></span><br><span class="line">fab(a-b)&lt;eps <span class="comment">//满足条件</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h2><p>-128 ~ 127</p>
+<p>小写字母比大写字母 <strong>ASCII</strong> 大 <strong>32</strong></p>
+<p>输入: <code>scanf(&quot;%c&quot;)</code></p>
+<p>输出: <code>printf(&quot;%c&quot;)</code></p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><p>简单可以用 <code>char[n]</code></p>
+<p>输入: <code>scanf(&quot;%s&quot;,n)</code> <strong>无 &amp; 符号</strong></p>
+<p>C <code>char str[]</code> 末尾需要 ‘\0’ 结束符，<code>scanf(&quot;%s&quot;)</code>, <code>gets()</code> 都自带</p>
+<h4 id="string-h-只能接收字符数组"><a href="#string-h-只能接收字符数组" class="headerlink" title="string.h 只能接收字符数组"></a>string.h 只能接收字符数组</h4><p><code>strlen()</code>  长度</p>
+<p><code>strcmp</code> 字典序，<strong>常用</strong></p>
+<p><code>strcpy()</code> 复制</p>
+<p><code>strcat()</code> 串接</p>
+<h4 id="sscanf-sprintf"><a href="#sscanf-sprintf" class="headerlink" title="sscanf, sprintf"></a>sscanf, sprintf</h4><p><code>sscanf(str, &quot;%d&quot;, &amp;n)</code></p>
+<p><code>sprintf(str,&quot;%d&quot;, n)</code></p>
+<h3 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h3><p>复杂直接用 C++ 的 string</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>$10^6$ 级别以上需要定义在 <code>main()</code> 之外</p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//全赋值 o(n)</span></span><br><span class="line"><span class="keyword">int</span> arr[n] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">bool</span> arr[n] = &#123;<span class="literal">false</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//memset 函数赋值 o(n)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> arr[n];</span><br><span class="line"><span class="built_in">memset</span>(arr, <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>))</span><br><span class="line"><span class="built_in">memset</span>(arr, <span class="number">-1</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>))</span><br><span class="line">    </span><br><span class="line"><span class="comment">//fill 函数赋值 o(n^2)</span></span><br></pre></td></tr></table></figure>
+<h2 id="控制台输入，输出"><a href="#控制台输入，输出" class="headerlink" title="控制台输入，输出"></a>控制台输入，输出</h2><h2 id="C-2"><a href="#C-2" class="headerlink" title="C"></a>C</h2><h3 id="scanf"><a href="#scanf" class="headerlink" title="scanf()"></a>scanf()</h3><p><code>scanf(&quot;%c&quot;)</code> 会读<code>&quot; &quot;</code> 和 <code>&quot;\n&quot;</code></p>
+<h3 id="printf-格式化"><a href="#printf-格式化" class="headerlink" title="printf () 格式化"></a>printf () 格式化</h3><p><strong>%md</strong> 右对齐，空格补</p>
+<p>%0md 右对齐，0 补</p>
+<h3 id="getchar-putchar"><a href="#getchar-putchar" class="headerlink" title="getchar(), putchar()"></a>getchar(), putchar()</h3><p>获取（输出）单个字符，可获得<strong>空格</strong>，<strong>换行</strong></p>
+<h3 id="gets-puts"><a href="#gets-puts" class="headerlink" title="gets(), puts()"></a>gets(), puts()</h3><p>读一行，以 “\n” 结尾</p>
+<h1 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h1><h2 id="C-3"><a href="#C-3" class="headerlink" title="C"></a>C</h2><h3 id="math-h"><a href="#math-h" class="headerlink" title="math.h"></a>math.h</h3><p><code>fabs(double x)</code> 绝对值</p>
+<p><code>floor(double x)</code> 向<strong>下</strong>取整</p>
+<p><code>ceil(double x)</code> 向<strong>上</strong>取整</p>
+<p><code>pow(double x, double y)</code> $x^y$</p>
+<p><code>round(double x)</code> 四舍五入，输入也是 double 型，<strong>题目中说 round up to xxx 指的就是四舍五入</strong></p>
+<h2 id="C-4"><a href="#C-4" class="headerlink" title="C++"></a>C++</h2><h3 id="algorithm"><a href="#algorithm" class="headerlink" title="algorithm"></a>algorithm</h3><p><code>max()</code> <code>min()</code> 浮点，整型均可以</p>
+<p><code>abs(int x)</code>  绝对值</p>
+<p><code>swap()</code> 交换</p>
+<p><code>reverse(it, it2)</code>  范围元素反转</p>
+<p><code>fill(arr, arr + n, x)</code>  范围赋值，注意时间复杂度 $O(n^2)$</p>
+<h4 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//简单cmp</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &lt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//结构体排序，可多级排序</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(Node a, Node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.id!=b.id) <span class="keyword">return</span> a.id &lt; b.id;<span class="comment">//一级排序</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.name &lt; b.name;<span class="comment">//二级排序</span></span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sort(<span class="built_in">begin</span>(), <span class="built_in">end</span>(),cmp)</span><br></pre></td></tr></table></figure>
+<p><code>lower_bound(first, last, val)</code> 找第一个严格 &gt;= $val$，返回 it；</p>
+<p><code>upper_bound(first, last, val)</code> 找第一个严格 &gt; $val$，返回 it；</p>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><h2 id="STL-sort函数使用"><a href="#STL-sort函数使用" class="headerlink" title="STL-sort函数使用"></a>STL-sort函数使用</h2><p>利用此函数可进行多级排序</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node a, node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.xxx &lt; b.xxx;</span><br><span class="line">&#125;</span><br><span class="line">sort(a, a + maxn, cmp)</span><br></pre></td></tr></table></figure>
+<h2 id="冒泡排序-bubble-sort"><a href="#冒泡排序-bubble-sort" class="headerlink" title="冒泡排序 bubble sort"></a>冒泡排序 bubble sort</h2><p>比较 $n-1$ 次，两两交换，把最大（小）值像泡泡一下送上去</p>
+<h2 id="选择排序-Selection-Sort"><a href="#选择排序-Selection-Sort" class="headerlink" title="选择排序 Selection Sort"></a>选择排序 Selection Sort</h2><p>做 $n-1$ 次，每次从头到尾找最大数，给新序列的第一位，以此填补新序列</p>
+<h2 id="插入排序-insert-sort"><a href="#插入排序-insert-sort" class="headerlink" title="插入排序 insert sort"></a>插入排序 insert sort</h2><p><code>a[0]</code> 有序，a[1] 插入，进而 a[2] 插入前序列，以此类推</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insertSort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i - <span class="number">1</span>; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &gt; a[j - <span class="number">1</span>]) <span class="built_in">std</span>::swap(a[j], a[j<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="归并排序-merge-sort"><a href="#归并排序-merge-sort" class="headerlink" title="归并排序 merge sort"></a>归并排序 merge sort</h2><h2 id="快速排序-Quicksort"><a href="#快速排序-Quicksort" class="headerlink" title="快速排序  Quicksort"></a>快速排序  Quicksort</h2><p>p139</p>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>p335</p>
+<h1 id="进制处理"><a href="#进制处理" class="headerlink" title="进制处理"></a>进制处理</h1><p>p93</p>
+<h1 id="散列"><a href="#散列" class="headerlink" title="散列"></a>散列</h1><p>散列<strong>核心思想</strong>是将一定有序的序列降维化</p>
+<p>对应高等数学中的1对1映射</p>
+<p>使一个整数可以尽可能唯一替代一个元素</p>
+<h2 id="整数散列-时间复杂度降维"><a href="#整数散列-时间复杂度降维" class="headerlink" title="整数散列-时间复杂度降维"></a>整数散列-时间复杂度降维</h2><p>输入的数下标作为手段</p>
+<p>统计该数性质</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> hashtable[maxn]</span><br><span class="line"><span class="comment">//此时hashtable[i] 可对应原某有序整数元素</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符串散列-逻辑有序"><a href="#字符串散列-逻辑有序" class="headerlink" title="字符串散列-逻辑有序"></a>字符串散列-逻辑有序</h2><p>p109</p>
+<h2 id="常用算法思想"><a href="#常用算法思想" class="headerlink" title="常用算法思想"></a>常用算法思想</h2><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>递归核心：递归式，边界条件</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="keyword">int</span> value)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(边界条件)&#123;</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    下一层迭代</span><br><span class="line">    e.g: generate(<span class="keyword">int</span> value+<span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>贪心核心：求局部最优，进而多次迭代获得全局最优</p>
+<p>多需要数学证明</p>
+<p><strong>贪心是思想不是具体算法</strong></p>
+<h3 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h3><p>多使用有序序列</p>
+<p>每次放弃一半的数据</p>
+<p>将 $O(n)$ 降到 $O(log n)$</p>
+<h3 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h3><p>核心：多个枚举之间<strong>互相牵制</strong></p>
+<p>前指针向下遍历的时候，每走一步都会影响后面元素的选择或范围</p>
+<p>如: 规定 $a+b=X$， 指针等于 $a$ 开始遍历，后指针就等于 $X-a$</p>
+<h1 id="数学问题"><a href="#数学问题" class="headerlink" title="数学问题"></a>数学问题</h1><h2 id="最大公约数"><a href="#最大公约数" class="headerlink" title="最大公约数"></a>最大公约数</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> gcd(b, a % b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a>最小公倍数</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> d = gcd(<span class="keyword">int</span> a, <span class="keyword">int</span> b);</span><br><span class="line"><span class="keyword">int</span> c = a / d * b;</span><br></pre></td></tr></table></figure>
+<h2 id="分数处理"><a href="#分数处理" class="headerlink" title="分数处理"></a>分数处理</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Fraction</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> up;<span class="comment">//分子</span></span><br><span class="line">    <span class="keyword">int</span> down;<span class="comment">//分母</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h3><p>加减法<strong>通分</strong></p>
+<p>乘除法正常</p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li><p>输入为 0，直接判断输出</p>
+</li>
+<li><p>输入先化简</p>
+</li>
+<li><p>分母 down 为 1 时，直接输出整数</p>
+</li>
+<li><p>分子<strong>绝对值</strong>大于分母，为<strong>假分数</strong>，输出<strong>带分数</strong>，</p>
+<p>整数: <code>up / down</code></p>
+<p>分子: <code>abs(up) % down</code></p>
+<p>分母: down</p>
+</li>
+</ul>
+<h2 id="素数"><a href="#素数" class="headerlink" title="素数"></a>素数</h2><p>p160</p>
+<h2 id="质因子分解"><a href="#质因子分解" class="headerlink" title="质因子分解"></a>质因子分解</h2><p>p161</p>
+<h2 id="大整数处理-小学数学模拟"><a href="#大整数处理-小学数学模拟" class="headerlink" title="大整数处理-小学数学模拟"></a>大整数处理-小学数学模拟</h2><p>p170</p>
+<h2 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h2><p>p181</p>
+<h1 id="C-STL"><a href="#C-STL" class="headerlink" title="C++ STL"></a>C++ STL</h1><p><code>begin()</code> 是首地址</p>
+<p><code>end()</code> 是尾地址下一位</p>
+<p>即<code>[b, e)</code></p>
+<p>只有 vector 和 string 支持 <code>it+n</code> 的写法</p>
+<p>循环遍历结束条件是 <code>it!=v.end()</code></p>
+<h2 id="vector-可变数组"><a href="#vector-可变数组" class="headerlink" title="vector 可变数组"></a>vector 可变数组</h2><h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><ol>
+<li>下标 <code>v[i] == *(v.begin()+i)</code></li>
+<li>迭代器</li>
+</ol>
+<h3 id="常用函数-1"><a href="#常用函数-1" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">v.push_back(x)</span><br><span class="line">v.pop_back(x)<span class="comment">//删除尾元素</span></span><br><span class="line">v.<span class="built_in">size</span>()</span><br><span class="line">v.<span class="built_in">clear</span>()</span><br><span class="line">v.insert(it, x)<span class="comment">//注意首元素是迭代器</span></span><br><span class="line">v.erase(it)</span><br><span class="line">v.erase(it, last)<span class="comment">//左闭右开</span></span><br></pre></td></tr></table></figure>
+<h2 id="set-集合"><a href="#set-集合" class="headerlink" title="set 集合"></a>set 集合</h2><p>自动有序（递增），无重复元素</p>
+<p>红黑树实现</p>
+<h3 id="访问-1"><a href="#访问-1" class="headerlink" title="访问"></a>访问</h3><p>只能迭代器访问</p>
+<h3 id="常用函数-2"><a href="#常用函数-2" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st.insert(x)<span class="comment">//自动处理，不需要迭代器给位置</span></span><br><span class="line">st.<span class="built_in">find</span>(x)<span class="comment">//返回的是迭代器（指针）</span></span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">typename</span>&gt;::iterator it = st.<span class="built_in">find</span>(x)</span><br><span class="line">st.erase(x)</span><br><span class="line">st.erase(it, last)<span class="comment">//可实现删除 *it 及其后所以元素</span></span><br><span class="line">st.<span class="built_in">size</span>()</span><br><span class="line">st.<span class="built_in">clear</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="unorder-set-无序集合"><a href="#unorder-set-无序集合" class="headerlink" title="unorder_set 无序集合"></a>unorder_set 无序集合</h2><p>无序，无重复元素</p>
+<p>散列实现</p>
+<p>常用函数基本同上</p>
+<h2 id="string-字符串"><a href="#string-字符串" class="headerlink" title="string 字符串"></a>string 字符串</h2><p><code>#include &lt;string&gt;</code></p>
+<p>输入输出只能用 cin，cout</p>
+<p><code>printf()</code> 输出或用 <code>str.c_str()</code></p>
+<h3 id="访问-2"><a href="#访问-2" class="headerlink" title="访问"></a>访问</h3><p><code>str[i] == *(str.begin()+i)</code></p>
+<h3 id="常用函数-3"><a href="#常用函数-3" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str += str1<span class="comment">//拼接</span></span><br><span class="line"><span class="keyword">int</span> b = str1 == str2 <span class="comment">//字典序比较大小    </span></span><br><span class="line">length() == <span class="built_in">size</span>()</span><br><span class="line">insert(pos, x)</span><br><span class="line">insert(it, it2, it3)<span class="comment">//串[it2, it3)插在it位置上</span></span><br><span class="line">erase(first, last)</span><br><span class="line">erase(pos, length)<span class="comment">//不包括pos</span></span><br><span class="line"><span class="built_in">clear</span>()</span><br><span class="line">substr(pos, len)</span><br><span class="line"><span class="built_in">find</span>(str2)</span><br><span class="line">replace(pos, len ,str2)</span><br></pre></td></tr></table></figure>
+<h2 id="map-映射"><a href="#map-映射" class="headerlink" title="map 映射"></a>map 映射</h2><p>按键递增排序</p>
+<p>红黑树实现</p>
+<p><code>char []</code> 是数组，不能做键值</p>
+<p><code>map&lt;typename, typename&gt; mp</code></p>
+<h3 id="访问-3"><a href="#访问-3" class="headerlink" title="访问"></a>访问</h3><ol>
+<li><p>下标（键唯一）</p>
+</li>
+<li><p>迭代器</p>
+<p>it-&gt;first 键</p>
+<p>it-&gt;second 值</p>
+</li>
+</ol>
+<h3 id="常用函数-4"><a href="#常用函数-4" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">find</span>()</span><br><span class="line">earse()</span><br><span class="line"><span class="built_in">size</span>()</span><br><span class="line"><span class="built_in">clear</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="unordered-map-无序映射"><a href="#unordered-map-无序映射" class="headerlink" title="unordered_map 无序映射"></a>unordered_map 无序映射</h2><p>无序</p>
+<p>散列实现</p>
+<p>常用函数基本同上</p>
+<h2 id="queue-队列"><a href="#queue-队列" class="headerlink" title="queue 队列"></a>queue 队列</h2><h3 id="访问-4"><a href="#访问-4" class="headerlink" title="访问"></a>访问</h3><p><code>front()</code> <code>back()</code></p>
+<h3 id="常用函数-5"><a href="#常用函数-5" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">push()</span><br><span class="line">pop()</span><br><span class="line">empty()</span><br><span class="line"><span class="built_in">size</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="priority-queue-优先队列"><a href="#priority-queue-优先队列" class="headerlink" title="priority_queue 优先队列"></a>priority_queue 优先队列</h2><p>自动有序</p>
+<p>堆实现</p>
+<p><code>priority_queue &lt;int, vector&lt;typename&gt; less&lt;int&gt; &gt; q</code></p>
+<p><code>priority_queue &lt;int, vector&lt;typename&gt; greater&lt;int&gt; &gt; q</code></p>
+<h3 id="访问-5"><a href="#访问-5" class="headerlink" title="访问"></a>访问</h3><p><code>top()</code></p>
+<h2 id="stack-栈"><a href="#stack-栈" class="headerlink" title="stack 栈"></a>stack 栈</h2><p><code>top()</code> 访问</p>
+<h3 id="常用函数-6"><a href="#常用函数-6" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">push()</span><br><span class="line">top()</span><br><span class="line">pop()</span><br><span class="line">empty()</span><br><span class="line">size()</span><br></pre></td></tr></table></figure>
+<h2 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h2><p><code>#include &lt;utility&gt;</code></p>
+<p>二元结构体</p>
+<h3 id="定义可直接初始化"><a href="#定义可直接初始化" class="headerlink" title="定义可直接初始化"></a>定义可直接初始化</h3><p><code>pair &lt;int, int&gt; p(1,1)</code></p>
+<h3 id="访问-6"><a href="#访问-6" class="headerlink" title="访问"></a>访问</h3><p><code>p.first</code></p>
+<p><code>p.second</code></p>
+<h3 id="可直接比较"><a href="#可直接比较" class="headerlink" title="可直接比较"></a>可直接比较</h3><p>先比 first</p>
+<p>再比 second</p>
+<h1 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h1><p>多使用<strong>递归</strong>处理</p>
+<p>核心：面对多种选择永远头铁一个分类的选择，如：岔路口永远左拐</p>
+<h1 id="BFS"><a href="#BFS" class="headerlink" title="BFS"></a>BFS</h1><p>多使用<strong>队列</strong>处理</p>
+<p>核心：追求广度，面面俱到</p>
+<p>小技巧：队列多处理数组<strong>下标而非元素</strong></p>
+<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><p>链表表示</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Tree</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    Tree* lc;</span><br><span class="line">    Tree* rc;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>数组表示</p>
+<p>数组下标可以提供表示，完全不需要 <code>int id</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Tree</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="keyword">int</span> lc;</span><br><span class="line">    <span class="keyword">int</span> rc;</span><br><span class="line">&#125;tree[maxn];</span><br></pre></td></tr></table></figure>
+<h2 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h2><p><strong>具有唯一性</strong></p>
+<p>除了最深一层叶子，其他层全部挂满节点</p>
+<h3 id="二叉树-4种遍历"><a href="#二叉树-4种遍历" class="headerlink" title="二叉树 4种遍历"></a>二叉树 4种遍历</h3><p>这里的X序遍历，指的是根节点 root 的先后顺序，而且只有 root 能获取内容</p>
+<p>中序 + 先序或后序或层序  可唯一确定一棵二叉树</p>
+<h3 id="先序遍历-DFS思想"><a href="#先序遍历-DFS思想" class="headerlink" title="先序遍历 - DFS思想"></a>先序遍历 - DFS思想</h3><p>第一个一定是根</p>
+<p>递归实现</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">preOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">    preOrder(root-&gt;lc);</span><br><span class="line">    preOrder(root-&gt;rc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="中序遍历-分左右"><a href="#中序遍历-分左右" class="headerlink" title="中序遍历 - 分左右"></a>中序遍历 - 分左右</h3><p>递归实现</p>
+<p>满足二叉树分左右的性质，比较重要</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    inOrder(root-&gt;lc);</span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">    inOrder(root-&gt;rc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="后序遍历-最后一个一定是根"><a href="#后序遍历-最后一个一定是根" class="headerlink" title="后序遍历 - 最后一个一定是根"></a>后序遍历 - 最后一个一定是根</h3><p>递归实现</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">postOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    postOrder(root-&gt;lc);</span><br><span class="line">    postOrder(root-&gt;rc);</span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="层序遍历-BFS思想"><a href="#层序遍历-BFS思想" class="headerlink" title="层序遍历 - BFS思想"></a>层序遍历 - BFS思想</h3><p>队列实现，可以在 <code>struct</code> 中加 <strong>深度depth</strong> 或者 <strong>层数layer</strong> 以应对深度判断</p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>初始化</p>
+<p>入队</p>
+<p>读</p>
+<p>弹</p>
+<p>子树入队</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">layerOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="built_in">queue</span>&lt;Tree*&gt; q;</span><br><span class="line">    root-&gt;layer = <span class="number">1</span>;</span><br><span class="line">    q.push(root);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        Tree* top = q.front();<span class="comment">//获取结点</span></span><br><span class="line">        q.pop();</span><br><span class="line">        <span class="keyword">do</span> sth. with top;</span><br><span class="line">        <span class="comment">//左子树不空</span></span><br><span class="line">        <span class="keyword">if</span>(top-&gt;lc!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">            top-&gt;lc-&gt;layer =  top-&gt;layer + <span class="number">1</span>;</span><br><span class="line">            q.push(top-&gt;lc);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//右子树不空</span></span><br><span class="line">        <span class="keyword">if</span>(top-&gt;rc!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">            top-&gt;rc-&gt;layer = top-&gt;layer + <span class="number">1</span>;</span><br><span class="line">            q.push(top-&gt;rc);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="确定二叉树"><a href="#确定二叉树" class="headerlink" title="确定二叉树"></a>确定二叉树</h3><p>中序提供左右</p>
+<p>先，后，层提供根结点</p>
+<p>基本步骤</p>
+<ul>
+<li>画图，标号下标[1, n]</li>
+<li><code>Tree* create(int l, int r, int l, int y)</code> </li>
+<li>如果先，中，层长度&lt;=0，直接返回</li>
+<li>新建结点 root</li>
+<li>在中序中找根结点 root</li>
+<li>递归给 root 左右子结点</li>
+<li>返回 root</li>
+</ul>
+<h2 id="二叉查找树-BST"><a href="#二叉查找树-BST" class="headerlink" title="二叉查找树 BST"></a>二叉查找树 BST</h2><p>中序遍历，一定有序</p>
+<p>查找 $O(log n)$</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>p313</p>
+<h2 id="平衡二叉树-AVL"><a href="#平衡二叉树-AVL" class="headerlink" title="平衡二叉树 - AVL"></a>平衡二叉树 - AVL</h2><p><code>struct</code> 多了一个 <code>height</code></p>
+<p>当 <strong>root-&gt;left-&gt;height</strong> 与 <strong>root-&gt;left-&gt;height</strong> 差 2 时，做平衡</p>
+<h3 id="4种变化"><a href="#4种变化" class="headerlink" title="4种变化"></a>4种变化</h3><p>方法论：</p>
+<ol>
+<li>判断哪一种旋转</li>
+</ol>
+<h1 id="并查集-特化树"><a href="#并查集-特化树" class="headerlink" title="并查集 - 特化树"></a>并查集 - 特化树</h1><p>如果说树是找儿子的过程</p>
+<p>并查集更关心找爹</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> f[n]</span><br><span class="line">f[<span class="number">1</span>]=<span class="number">1</span> <span class="comment">//1的爹是1，1就是根结点</span></span><br><span class="line">f[<span class="number">2</span>]=<span class="number">1</span> <span class="comment">//2的爹是1</span></span><br></pre></td></tr></table></figure>
+<h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><ul>
+<li>判断不在一个集合</li>
+<li>让 b 的根结点指向 a</li>
+</ul>
+<h2 id="路径压缩"><a href="#路径压缩" class="headerlink" title="路径压缩"></a>路径压缩</h2><p>只关心大家的爹</p>
+<p>那就每人都指向根结点</p>
+<p>查询缩到 $O(1)$</p>
+<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p>比树来说，图更加自由</p>
+<p>导致有环的风险，必须加 <code>vis[maxn]</code> 限制仅访问一次</p>
+<p>每个结点不能保证一定被别人访问，需要 <code>Trave()</code> 保证每个结点一定能被看到一次</p>
+<h2 id="DFS遍历-递归实现"><a href="#DFS遍历-递归实现" class="headerlink" title="DFS遍历 - 递归实现"></a>DFS遍历 - 递归实现</h2><h3 id="邻接矩阵版"><a href="#邻接矩阵版" class="headerlink" title="邻接矩阵版"></a>邻接矩阵版</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxv = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];</span><br><span class="line"><span class="keyword">bool</span> vis[maxn] = &#123;<span class="literal">false</span>&#125;</span><br><span class="line"><span class="keyword">int</span> depth[maxn];</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里 depth 没屌用，实际问题可以用 &amp;depth 获取深度，或者直接给 depth[maxn] 送过去</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> depth)</span></span>&#123;</span><br><span class="line">    <span class="comment">//访问该节点</span></span><br><span class="line">    vis[u]= ture;</span><br><span class="line">    </span><br><span class="line">    尝试访问其他人</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">        <span class="comment">//未访问且能访问</span></span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span> &amp;&amp; G[u][v] != INF)&#123;</span><br><span class="line">            DFS(v, depth+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFSTrave</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span>) DFS(v, <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="BFS遍历-队列实现"><a href="#BFS遍历-队列实现" class="headerlink" title="BFS遍历 - 队列实现"></a>BFS遍历 - 队列实现</h2><p>邻接矩阵版</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];</span><br><span class="line"><span class="keyword">bool</span> vis[maxn] = &#123;<span class="literal">false</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> BFS(<span class="keyword">int</span> u)&#123;</span><br><span class="line">    <span class="comment">//初始化</span></span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//入</span></span><br><span class="line">    q.push(u);</span><br><span class="line">    vis[u] = <span class="literal">true</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        <span class="comment">//弹</span></span><br><span class="line">        <span class="keyword">int</span> u = q.front();</span><br><span class="line">        q.pop();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//找</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(vis[v] == <span class="literal">false</span> &amp;&amp; G[u][v] != INF)&#123;</span><br><span class="line">                q.push[v];</span><br><span class="line">                vis[v] = <span class="literal">true</span>;</span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFSTrave</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v =<span class="number">0</span>; v &lt; n;v++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span>) BFS(v);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最短路径"><a href="#最短路径" class="headerlink" title="最短路径"></a>最短路径</h2><h3 id="Dijkstra算法-无负权边-（DFS遍历）"><a href="#Dijkstra算法-无负权边-（DFS遍历）" class="headerlink" title="Dijkstra算法  - 无负权边 （DFS遍历）"></a>Dijkstra算法  - 无负权边 （DFS遍历）</h3><p>找 a 到 b 的最短路径</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];<span class="comment">//可处理边权</span></span><br><span class="line"><span class="keyword">int</span> weight[maxn];<span class="comment">//处理点权</span></span><br><span class="line"><span class="keyword">int</span> d[maxn];</span><br><span class="line"><span class="keyword">int</span> vis[maxn];<span class="comment">//检测是否访问，防止环导致死循环</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre[maxn];<span class="comment">//最短路径递归树</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; best, tmp;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//边界条件</span></span><br><span class="line">    <span class="keyword">if</span> (v == st) &#123;</span><br><span class="line">        tmp.push_back(v);</span><br><span class="line">        best = v;</span><br><span class="line">        tmp.pop_back();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//递归遍历</span></span><br><span class="line">    tmp.push_back(v);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pre[v].<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        DFS(pre[v][i]);</span><br><span class="line">    &#125;</span><br><span class="line">    tmp.pop_back();</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dij</span><span class="params">(<span class="keyword">int</span> st)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">fill</span>(d, d + maxn, INF);</span><br><span class="line">    d[st] = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//找N次，保证结点都能尝试判断到</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> u = <span class="number">-1</span>, MIN = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vis[j] == <span class="literal">false</span> &amp;&amp; d[j] &lt; MIN) &#123;</span><br><span class="line">                u = j;</span><br><span class="line">                MIN = d[j];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (u == <span class="number">-1</span>) <span class="keyword">return</span>;</span><br><span class="line">            vis[u] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (vis[v] == <span class="literal">false</span> &amp;&amp; G[u][v] != INF) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (d[u] + G[u][v] &lt; d[v]) &#123;</span><br><span class="line">                        d[v] = d[u] + G[u][v];</span><br><span class="line">                        pre[v].<span class="built_in">clear</span>();</span><br><span class="line">                        pre[v].push_back(u);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (d[u] + G[u][v] == d[v]) &#123;</span><br><span class="line">                        pre[v].push_back(u);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2020/07/27/PATA1003/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            PAT-A-1003
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/06/26/%E6%A0%88/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">栈</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2022
+        <i class="ri-heart-fill heart_icon"></i> Jack Kong
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="且听风吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
