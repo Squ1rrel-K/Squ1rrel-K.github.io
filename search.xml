@@ -82,11 +82,15 @@
   <entry>
     <title>健身笔记</title>
     <url>/2021/07/25/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="分化训练"><a href="#分化训练" class="headerlink" title="分化训练"></a>分化训练</h1><h1 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h1><p>同一区域48小时再度刺激原则(现在可能是72h)</p>
-<p>不在一种分化上死磕</p>
-<p>遇到明显瓶颈选择变化</p>
-<h1 id="胸"><a href="#胸" class="headerlink" title="胸"></a>胸</h1><h3 id="哑铃杠铃卧推"><a href="#哑铃杠铃卧推" class="headerlink" title="哑铃杠铃卧推"></a>哑铃杠铃卧推</h3><h3 id="上斜杠铃哑铃卧推"><a href="#上斜杠铃哑铃卧推" class="headerlink" title="上斜杠铃哑铃卧推"></a>上斜杠铃哑铃卧推</h3><p>上斜注意椅子角度不应超过45度，30度到45度是合适区间，自行体会</p>
-<h3 id="单侧大重量绳索架胸"><a href="#单侧大重量绳索架胸" class="headerlink" title="单侧大重量绳索架胸"></a>单侧大重量绳索架胸</h3><h3 id="俯卧撑"><a href="#俯卧撑" class="headerlink" title="俯卧撑"></a>俯卧撑</h3><h3 id="臂屈伸"><a href="#臂屈伸" class="headerlink" title="臂屈伸"></a>臂屈伸</h3>]]></content>
+    <content><![CDATA[<h1 id="分化训练"><a href="#分化训练" class="headerlink" title="分化训练"></a>分化训练</h1><h1 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h1><h1 id="最高原则"><a href="#最高原则" class="headerlink" title="最高原则"></a>最高原则</h1><p>健身先健脑</p>
+<p>科学健身</p>
+<p>避免受伤</p>
+<h1 id="分化训练-3-分化"><a href="#分化训练-3-分化" class="headerlink" title="分化训练 - 3 分化"></a>分化训练 - 3 分化</h1><p>胸 + 三头</p>
+<p>背 + 二头</p>
+<p>肩膀</p>
+<p>平常多踢球，增强臀部，腿部力量</p>
+<h1 id="胸"><a href="#胸" class="headerlink" title="胸"></a>胸</h1><h2 id="哑铃杠铃卧推"><a href="#哑铃杠铃卧推" class="headerlink" title="哑铃杠铃卧推"></a>哑铃杠铃卧推</h2><p>10 kg，12个一组，4组</p>
+<h2 id="上斜杠铃哑铃卧推"><a href="#上斜杠铃哑铃卧推" class="headerlink" title="上斜杠铃哑铃卧推"></a>上斜杠铃哑铃卧推</h2><h2 id="单侧大重量绳索架胸"><a href="#单侧大重量绳索架胸" class="headerlink" title="单侧大重量绳索架胸"></a>单侧大重量绳索架胸</h2><h2 id="俯卧撑"><a href="#俯卧撑" class="headerlink" title="俯卧撑"></a>俯卧撑</h2><h2 id="臂屈伸"><a href="#臂屈伸" class="headerlink" title="臂屈伸"></a>臂屈伸</h2>]]></content>
       <tags>
         <tag>life</tag>
       </tags>
@@ -94,7 +98,9 @@
   <entry>
     <title>Linux 常用命令</title>
     <url>/2021/03/04/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="Linux-常用命令"><a href="#Linux-常用命令" class="headerlink" title="Linux 常用命令"></a>Linux 常用命令</h1>]]></content>
+    <content><![CDATA[<h1 id="Linux-常用命令"><a href="#Linux-常用命令" class="headerlink" title="Linux 常用命令"></a>Linux 常用命令</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls</span><br></pre></td></tr></table></figure>
+]]></content>
       <tags>
         <tag>coding</tag>
       </tags>
