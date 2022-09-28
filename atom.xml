@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-09-28T02:00:25.398Z</updated>
+  <updated>2022-09-28T13:24:51.657Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>研一第5周工作计划</title>
+    <link href="http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC5%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <id>http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC5%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
+    <published>2022-09-28T02:06:13.000Z</published>
+    <updated>2022-09-28T13:24:51.657Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;研一第-5-周工作计划&quot;&gt;&lt;a href=&quot;#研一第-5-周工作计划&quot; class=&quot;headerlink&quot; title=&quot;研一第 5 周工作计划&quot;&gt;&lt;/a&gt;研一第 5 周工作计划&lt;/h1&gt;&lt;p&gt;✔ 每周博客&lt;/p&gt;
+&lt;p&gt;每周
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>研究生生活工作时间表</title>
@@ -533,31 +559,6 @@
       <category term="刷题" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/"/>
     
       <category term="数组" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/%E6%95%B0%E7%BB%84/"/>
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>又是一个小细节</title>
-    <link href="http://yoursite.com/2021/02/08/%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/"/>
-    <id>http://yoursite.com/2021/02/08/%E5%8F%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/</id>
-    <published>2021-02-08T11:19:51.000Z</published>
-    <updated>2022-09-20T10:11:53.212Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Clion-ctrl-alt-L-格式化代码无效&quot;&gt;&lt;a href=&quot;#Clion-ctrl-alt-L-格式化代码无效&quot; class=&quot;headerlink&quot; title=&quot;Clion ctrl+alt+L 格式化代码无效&quot;&gt;&lt;/a&gt;Clion
-        
-      
-    
-    </summary>
-    
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
