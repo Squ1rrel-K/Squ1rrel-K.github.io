@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>研一第一学期工作计划</title>
+    <url>/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<h1 id="研一第一学期工作计划"><a href="#研一第一学期工作计划" class="headerlink" title="研一第一学期工作计划"></a>研一第一学期工作计划</h1><p>打基础为主，重心放在项目跟基础知识构架</p>
+<h2 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h2><p>重概念，轻计算，掌握主要框架知识为主要矛盾</p>
+<p>408 为纲，计组，OS，DS，计网</p>
+<p>计组：王道</p>
+<p>OS：王道</p>
+<p>DS：已熟练</p>
+<p>计网：王道</p>
+<h2 id="网络基础"><a href="#网络基础" class="headerlink" title="网络基础"></a>网络基础</h2><p>《网络科学导论》熟读，非精读，了解基本研究方向，更具体的工作方向等待刘院指导</p>
+<h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2><p>算法：熟练 PAT 甲级，完善解法分析代码库</p>
+<p>网站开发：复习 Laravel L01，Laravel L02</p>
+<h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h2><p>前两个月做技术储备，后面先进行多智能体官网的开发，具体细节在技术储备结束后找胡老师</p>
+<h2 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h2><p>《算法分析》：顺道复习 DS，跟进课程进度，但是看网课</p>
+<h2 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h2><p>每周至少一次 vrchat 练习口语，争取 11 月 20 日的考试拿到免修的 C+ 等级</p>
+<h2 id="练字"><a href="#练字" class="headerlink" title="练字"></a>练字</h2><p>钢笔，中文，英文</p>
+<p>方法论还要去知乎查询</p>
+<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><p>头眼每周一期</p>
+<p>每日花 1 h，做 20 min 的集锦，不做精剪</p>
+<p>998 合作视频每周一期</p>
+<p>每日 8 点半左右开小会</p>
+<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><p>每周至少 2 篇有质量的内容</p>
+]]></content>
+      <tags>
+        <tag>plan</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>EditorConfig 使用说明</title>
     <url>/2022/09/20/EditorConfig-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
     <content><![CDATA[<h1 id="EditorConfig-使用说明"><a href="#EditorConfig-使用说明" class="headerlink" title="EditorConfig 使用说明"></a>EditorConfig 使用说明</h1><p>.EditorConfig 文件是为了保证跨 IDE 的代码一致性，以避免不同缩进方式带来的潜在安全问题</p>
@@ -1022,7 +1050,7 @@
 <p>洗去浮华，从头开始；惜时如命，夯实基础。</p>
 ]]></content>
       <tags>
-        <tag>life</tag>
+        <tag>plan</tag>
       </tags>
   </entry>
   <entry>

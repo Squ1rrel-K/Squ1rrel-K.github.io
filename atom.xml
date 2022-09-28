@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-09-20T10:11:53.202Z</updated>
+  <updated>2022-09-28T01:35:09.091Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>研一第一学期工作计划</title>
+    <link href="http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <id>http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
+    <published>2022-09-28T01:02:34.000Z</published>
+    <updated>2022-09-28T01:35:09.091Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;研一第一学期工作计划&quot;&gt;&lt;a href=&quot;#研一第一学期工作计划&quot; class=&quot;headerlink&quot; title=&quot;研一第一学期工作计划&quot;&gt;&lt;/a&gt;研一第一学期工作计划&lt;/h1&gt;&lt;p&gt;打基础为主，重心放在项目跟基础知识构架&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>EditorConfig 使用说明</title>
@@ -541,32 +567,6 @@
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>肉类与香料</title>
-    <link href="http://yoursite.com/2021/02/07/%E8%82%89%E7%B1%BB%E4%B8%8E%E9%A6%99%E6%96%99/"/>
-    <id>http://yoursite.com/2021/02/07/%E8%82%89%E7%B1%BB%E4%B8%8E%E9%A6%99%E6%96%99/</id>
-    <published>2021-02-07T06:21:45.000Z</published>
-    <updated>2022-09-20T10:11:53.215Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;肉类与香料&quot;&gt;&lt;a href=&quot;#肉类与香料&quot; class=&quot;headerlink&quot; title=&quot;肉类与香料&quot;&gt;&lt;/a&gt;肉类与香料&lt;/h1&gt;&lt;p&gt;在肉类的处理中，无论是烹炒还是烧菜，香料的合理运用可以去膻增香，事半功倍&lt;/p&gt;
-&lt;h1 id=&quot;加料&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="life" scheme="http://yoursite.com/tags/life/"/>
     
   </entry>
   
