@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-09-28T13:24:51.657Z</updated>
+  <updated>2022-09-29T00:54:21.410Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT-A-1002</title>
+    <link href="http://yoursite.com/2022/09/29/PAT-A-1002/"/>
+    <id>http://yoursite.com/2022/09/29/PAT-A-1002/</id>
+    <published>2022-09-29T00:52:13.000Z</published>
+    <updated>2022-09-29T00:54:21.410Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="PAT" scheme="http://yoursite.com/categories/PAT/"/>
+    
+      <category term="PAT A" scheme="http://yoursite.com/categories/PAT/PAT-A/"/>
+    
+    
+      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>研一第5周工作计划</title>
@@ -530,35 +551,6 @@
       <category term="刷题" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/"/>
     
       <category term="字符串" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指offer JZ1</title>
-    <link href="http://yoursite.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ1/"/>
-    <id>http://yoursite.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ1/</id>
-    <published>2021-03-01T05:30:31.000Z</published>
-    <updated>2022-09-20T10:11:53.209Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;JZ1&quot;&gt;&lt;a href=&quot;#JZ1&quot; class=&quot;headerlink&quot; title=&quot;JZ1&quot;&gt;&lt;/a&gt;JZ1&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="刷题" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/%E6%95%B0%E7%BB%84/"/>
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
