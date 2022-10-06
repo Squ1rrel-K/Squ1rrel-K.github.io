@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>M 矩阵</title>
+    <url>/2022/10/06/M-%E7%9F%A9%E9%98%B5/</url>
+    <content><![CDATA[<h1 id="M-矩阵"><a href="#M-矩阵" class="headerlink" title="M 矩阵"></a>M 矩阵</h1><p><a href="https://wenku.baidu.com/view/dbe1224f2e3f5727a5e962df.html" target="_blank" rel="noopener">M-矩阵的应用简介</a></p>
+<p>在计算数学，生物学，物理学与数理经济学等领域中，有许多问题可归结为具有特殊构造的矩阵问题</p>
+<p>在这一类矩阵中，具有非正的非对角元素的实方阵扮演着重要的角色</p>
+<p>M - 矩阵的术语在1937年首先有 Ostrowski 提出：</p>
+<p>判定一个矩阵是否为 M 矩阵在网络计算中，可以判定一个离散动力系统是否稳定</p>
+<p>在数值计算中，可以判定一个迭代系统是否收敛</p>
+<p>因此研究 M 矩阵的判定方法成为矩阵理论研究中极为活跃的一领域</p>
+<p>多年以来国内外许多数学工作者都在研究M矩阵的判定方法，已有的研究成果大多是对M矩阵的整体进行讨论。</p>
+]]></content>
+      <tags>
+        <tag>scientific research</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>从《三体》到线性代数，矩阵，基，行列式的本质</title>
     <url>/2022/10/05/%E4%BB%8E%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E5%88%B0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%EF%BC%8C%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9F%BA%EF%BC%8C%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</url>
     <content><![CDATA[<h1 id="线性代数，矩阵，行列式的本质"><a href="#线性代数，矩阵，行列式的本质" class="headerlink" title="线性代数，矩阵，行列式的本质"></a>线性代数，矩阵，行列式的本质</h1><h1 id="从《三体》到线性代数，矩阵，基，行列式的本质"><a href="#从《三体》到线性代数，矩阵，基，行列式的本质" class="headerlink" title="从《三体》到线性代数，矩阵，基，行列式的本质"></a>从《三体》到线性代数，矩阵，基，行列式的本质</h1><p><a href="https://www.matongxue.com/madocs/247/" target="_blank" rel="noopener">行列式的本质是什么？</a></p>
