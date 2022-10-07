@@ -17,6 +17,8 @@
    7 & 8 & 9
 \end{matrix}</script><p>\begin{matrix}</p>
 <p>\end{matrix}</p>
+<h1 id="侧标"><a href="#侧标" class="headerlink" title="侧标"></a>侧标</h1><script type="math/tex; mode=display">
+\begin{matrix}1 & 2 & 3 \\   4 & 5 & 6 \\   7 & 8 & 9 \end{matrix}\tag{1}</script><p>\tag{1}</p>
 ]]></content>
       <tags>
         <tag>scientific research</tag>
