@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-07T11:28:35.977Z</updated>
+  <updated>2022-10-12T11:50:56.240Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近期工作计划</title>
+    <link href="http://yoursite.com/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <id>http://yoursite.com/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
+    <published>2022-10-12T11:45:20.000Z</published>
+    <updated>2022-10-12T11:50:56.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;课程&quot;&gt;&lt;a href=&quot;#课程&quot; class=&quot;headerlink&quot; title=&quot;课程&quot;&gt;&lt;/a&gt;课程&lt;/h1&gt;&lt;p&gt;统计学 - 找论文&lt;/p&gt;
+&lt;p&gt;复杂网络 - 下周演讲&lt;/p&gt;
+&lt;p&gt;算法分析 - 准备考试&lt;/p&gt;
+&lt;h1 id=&quot;项目&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>常用 Markdown 数学公式</title>
@@ -73,7 +101,7 @@
     <link href="http://yoursite.com/2022/10/06/M-%E7%9F%A9%E9%98%B5/"/>
     <id>http://yoursite.com/2022/10/06/M-%E7%9F%A9%E9%98%B5/</id>
     <published>2022-10-06T01:34:06.000Z</published>
-    <updated>2022-10-06T02:49:46.948Z</updated>
+    <updated>2022-10-12T11:44:23.670Z</updated>
     
     <summary type="html">
     
@@ -123,7 +151,7 @@
     <link href="http://yoursite.com/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/"/>
     <id>http://yoursite.com/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/</id>
     <published>2022-10-05T08:05:16.000Z</published>
-    <updated>2022-10-07T12:15:46.804Z</updated>
+    <updated>2022-10-08T12:56:48.654Z</updated>
     
     <summary type="html">
     
@@ -148,7 +176,7 @@
     <link href="http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2022-10-05T08:02:10.000Z</published>
-    <updated>2022-10-06T02:52:29.412Z</updated>
+    <updated>2022-10-12T11:45:28.333Z</updated>
     
     <summary type="html">
     
@@ -156,7 +184,7 @@
       
         
         
-          &lt;h1 id=&quot;邻接矩阵为什么要求拉普拉斯矩阵？&quot;&gt;&lt;a href=&quot;#邻接矩阵为什么要求拉普拉斯矩阵？&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;邻接矩阵为什么要求拉普拉斯矩阵？&quot;&gt;&lt;a href=&quot;#邻接矩阵为什么要求拉普拉斯矩阵？&quot; class=&quot;headerlink&quot; title=&quot;邻接矩阵为什么要求拉普拉斯矩阵？&quot;&gt;&lt;/a&gt;邻接矩阵为什么要求拉普拉斯矩阵？&lt;/h1&gt;&lt;h1
         
       
     
@@ -164,34 +192,7 @@
     
     
     
-      <category term="scientific researchl" scheme="http://yoursite.com/tags/scientific-researchl/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>研一第 6 周工作计划</title>
-    <link href="http://yoursite.com/2022/10/05/%E7%A0%94%E4%B8%80%E7%AC%AC6%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
-    <id>http://yoursite.com/2022/10/05/%E7%A0%94%E4%B8%80%E7%AC%AC6%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
-    <published>2022-10-05T00:40:48.000Z</published>
-    <updated>2022-10-06T02:52:48.612Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;《网络科学导论》前两章&lt;/p&gt;
-&lt;p&gt;《算法分析》跟上进度&lt;/p&gt;
-&lt;p&gt;Laravel 完成 L01
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
     
   </entry>
   
@@ -200,7 +201,7 @@
     <link href="http://yoursite.com/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/"/>
     <id>http://yoursite.com/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/</id>
     <published>2022-10-05T00:39:17.000Z</published>
-    <updated>2022-10-06T02:52:38.133Z</updated>
+    <updated>2022-10-10T01:09:15.895Z</updated>
     
     <summary type="html">
     
@@ -251,42 +252,11 @@
   </entry>
   
   <entry>
-    <title>研一第5周工作计划</title>
-    <link href="http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC5%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
-    <id>http://yoursite.com/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC5%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
-    <published>2022-09-28T02:06:13.000Z</published>
-    <updated>2022-10-06T02:52:47.968Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;✔ 每周博客&lt;/p&gt;
-&lt;p&gt;✔ 每日一题 PAT&lt;/p&gt;
-&lt;p&gt;✔ 头眼调整结构&lt;/p&gt;
-&lt;p&gt;✔ 998 消费&lt;/p&gt;
-&lt;p&gt;《网络科学导论》前两章&lt;/p&gt;
-&lt;p&gt;《算法分析》跟上进度&lt;/p&gt;
-&lt;p&gt;Laravel 完成 L01
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
     <title>研究生生活工作时间表</title>
     <link href="http://yoursite.com/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/"/>
     <id>http://yoursite.com/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/</id>
     <published>2022-09-28T01:48:45.000Z</published>
-    <updated>2022-09-28T02:00:25.398Z</updated>
+    <updated>2022-10-12T11:44:00.971Z</updated>
     
     <summary type="html">
     
@@ -528,6 +498,35 @@
         
         
           &lt;h1 id=&quot;JZ10&quot;&gt;&lt;a href=&quot;#JZ10&quot; class=&quot;headerlink&quot; title=&quot;JZ10&quot;&gt;&lt;/a&gt;JZ10&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="刷题" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/"/>
+    
+      <category term="dp" scheme="http://yoursite.com/categories/%E5%88%B7%E9%A2%98/dp/"/>
+    
+    
+      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer JZ9</title>
+    <link href="http://yoursite.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ9/"/>
+    <id>http://yoursite.com/2021/03/01/%E5%89%91%E6%8C%87offer-JZ9/</id>
+    <published>2021-03-01T12:35:53.000Z</published>
+    <updated>2022-09-20T10:11:53.211Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JZ9&quot;&gt;&lt;a href=&quot;#JZ9&quot; class=&quot;headerlink&quot; title=&quot;JZ9&quot;&gt;&lt;/a&gt;JZ9&lt;/h1&gt;&lt;p&gt;&lt;a
         
       
     

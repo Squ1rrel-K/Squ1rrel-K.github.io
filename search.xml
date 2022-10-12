@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>近期工作计划</title>
+    <url>/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<h1 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h1><p>统计学 - 找论文</p>
+<p>复杂网络 - 下周演讲</p>
+<p>算法分析 - 准备考试</p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>完成业务逻辑梳理</p>
+<p>完成前后端接口的开发研究</p>
+<p>完成 R 基础知识学习</p>
+<h1 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h1><p>复杂网络导论</p>
+<p>本周论文 - 看完 Abstract，等待组会学习</p>
+<h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><p>3 分化</p>
+<p>能在宿舍做的孤立动作不去健身房，注意关节热身</p>
+<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>头眼暂缓</p>
+<p>狗 8 保持跟进</p>
+<h1 id=""><a href="#" class="headerlink" title=" "></a> </h1>]]></content>
+      <tags>
+        <tag>plan</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用 Markdown 数学公式</title>
     <url>/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
     <content><![CDATA[<h1 id="上标-X-2"><a href="#上标-X-2" class="headerlink" title="上标 $X^2$"></a>上标 $X^2$</h1><p>X^2</p>
@@ -47,7 +67,7 @@
 <p>判定一个矩阵是否为 M 矩阵在网络计算中，可以判定一个离散动力系统是否稳定</p>
 <p>在数值计算中，可以判定一个迭代系统是否收敛</p>
 <p>因此研究 M 矩阵的判定方法成为矩阵理论研究中极为活跃的一领域</p>
-<p>多年以来国内外许多数学工作者都在研究M矩阵的判定方法，已有的研究成果大多是对M矩阵的整体进行讨论。</p>
+<p>多年以来国内外许多数学工作者都在研究 M 矩阵的判定方法，已有的研究成果大多是对 M 矩阵的整体进行讨论。</p>
 ]]></content>
       <tags>
         <tag>scientific research</tag>
@@ -96,7 +116,8 @@
 <h5 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h5><p>L0 范数，向量非 0 元素个数，即稀疏度</p>
 <p>L1 范数，曼哈顿距离：一个向量中所有元素的绝对值之和</p>
 <p>L2 范数，欧几里得范数：是一个向量中所有元素取平方和，然后再开平方（向量的模）</p>
-<h1 id="正定矩阵"><a href="#正定矩阵" class="headerlink" title="正定矩阵"></a>正定矩阵</h1><h1 id="对角占优矩阵"><a href="#对角占优矩阵" class="headerlink" title="对角占优矩阵"></a>对角占优矩阵</h1><h5 id="对角线元素比其他之和要大"><a href="#对角线元素比其他之和要大" class="headerlink" title="对角线元素比其他之和要大"></a>对角线元素比其他之和要大</h5><p>设 $A$ 是 $n$ 阶矩阵，若 $A$ 满足</p>
+<h1 id="奇异矩阵"><a href="#奇异矩阵" class="headerlink" title="奇异矩阵"></a>奇异矩阵</h1><p>行列式为 $0$，没有可逆矩阵好兄弟，可谓之奇异</p>
+<h1 id="正定矩阵"><a href="#正定矩阵" class="headerlink" title="正定矩阵"></a>正定矩阵</h1><h5 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h5><h5 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h5><h1 id="对角占优矩阵"><a href="#对角占优矩阵" class="headerlink" title="对角占优矩阵"></a>对角占优矩阵</h1><h5 id="对角线元素比其他之和要大"><a href="#对角线元素比其他之和要大" class="headerlink" title="对角线元素比其他之和要大"></a>对角线元素比其他之和要大</h5><p>设 $A$ 是 $n$ 阶矩阵，若 $A$ 满足</p>
 <script type="math/tex; mode=display">
 |a_{ii}|\geq \sum_{j=1,j\neq i}^{n}|a_{ij}|, i=1,2 \cdots n,</script><p>至少一个严格不等式成立，$A$ 为弱对角占优；</p>
 <p>每个严格不等式都成立，$A$ 为严格对角占优</p>
@@ -106,7 +127,17 @@
 <h1 id="M-矩阵"><a href="#M-矩阵" class="headerlink" title="M-矩阵"></a>M-矩阵</h1><p>方阵，非对角元非正，存在正定对角阵 $P$ ，使得 $PB+B^TP$ 为非负定阵，为 M-矩阵</p>
 <p>若有 $0$ 特征值，为奇异 M-矩阵</p>
 <p>拉布拉斯矩阵显然为奇异 M-矩阵</p>
-<h1 id="置换矩阵"><a href="#置换矩阵" class="headerlink" title="置换矩阵"></a>置换矩阵</h1><h1 id="可约矩阵"><a href="#可约矩阵" class="headerlink" title="可约矩阵"></a>可约矩阵</h1><h1 id="线性矩阵不等式-LMI-一个求大矩阵正定的方法"><a href="#线性矩阵不等式-LMI-一个求大矩阵正定的方法" class="headerlink" title="线性矩阵不等式 (LMI) - 一个求大矩阵正定的方法"></a>线性矩阵不等式 (LMI) - 一个求大矩阵正定的方法</h1><h5 id="可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定"><a href="#可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定" class="headerlink" title="可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定"></a>可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定</h5><p>给定<strong>对称</strong>矩阵 $Q(x)$ 和 $R(x)$，和矩阵 $S(x)$， 有：</p>
+<h1 id="置换矩阵"><a href="#置换矩阵" class="headerlink" title="置换矩阵"></a>置换矩阵</h1><p>如：</p>
+<script type="math/tex; mode=display">
+\begin{matrix}
+1&0&0\\
+0&0&1\\
+0&1&0
+\end{matrix}</script><p>根据左行右列定理，左乘做行变换，右乘做列变换，此矩阵将目标矩阵的 2，3 列交换</p>
+<p>置换矩阵 $P$ 是方阵， $P$ 的每一行和每一列都有且仅有一个 1，其余均为 0</p>
+<p>置换矩阵也可以看作单位矩阵 $I$ 的行重排列</p>
+<p>$P^{-1} = P^{T}$</p>
+<h1 id="可约矩阵"><a href="#可约矩阵" class="headerlink" title="可约矩阵"></a>可约矩阵</h1><h5 id="可约矩阵主要用来描述此矩阵-A-代表的有向图-S-A-是否具有强连通性"><a href="#可约矩阵主要用来描述此矩阵-A-代表的有向图-S-A-是否具有强连通性" class="headerlink" title="可约矩阵主要用来描述此矩阵 $A$ 代表的有向图 $S(A)$ 是否具有强连通性"></a>可约矩阵主要用来描述此矩阵 $A$ 代表的有向图 $S(A)$ 是否具有强连通性</h5><h1 id="线性矩阵不等式-LMI-一个求大矩阵正定的方法"><a href="#线性矩阵不等式-LMI-一个求大矩阵正定的方法" class="headerlink" title="线性矩阵不等式 (LMI) - 一个求大矩阵正定的方法"></a>线性矩阵不等式 (LMI) - 一个求大矩阵正定的方法</h1><h5 id="可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定"><a href="#可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定" class="headerlink" title="可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定"></a>可以通过对大矩阵巧妙分块，使得把求其正定的问题，转化为求小矩阵正定</h5><p>给定<strong>对称</strong>矩阵 $Q(x)$ 和 $R(x)$，和矩阵 $S(x)$， 有：</p>
 <script type="math/tex; mode=display">
 {\left[ \begin{matrix}
 Q(x) & S(x)\\
@@ -123,29 +154,17 @@ S^T(x) & R(x)
   <entry>
     <title>一些科研的问题</title>
     <url>/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="邻接矩阵为什么要求拉普拉斯矩阵？"><a href="#邻接矩阵为什么要求拉普拉斯矩阵？" class="headerlink" title="邻接矩阵为什么要求拉普拉斯矩阵？"></a>邻接矩阵为什么要求拉普拉斯矩阵？</h1>]]></content>
+    <content><![CDATA[<h1 id="邻接矩阵为什么要求拉普拉斯矩阵？"><a href="#邻接矩阵为什么要求拉普拉斯矩阵？" class="headerlink" title="邻接矩阵为什么要求拉普拉斯矩阵？"></a>邻接矩阵为什么要求拉普拉斯矩阵？</h1><h1 id="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"><a href="#拉布拉斯矩阵放弃了节点的内耦合，如何弥补？" class="headerlink" title="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"></a>拉布拉斯矩阵放弃了节点的内耦合，如何弥补？</h1>]]></content>
       <tags>
-        <tag>scientific researchl</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>研一第 6 周工作计划</title>
-    <url>/2022/10/05/%E7%A0%94%E4%B8%80%E7%AC%AC6%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<p>《网络科学导论》前两章</p>
-<p>《算法分析》跟上进度</p>
-<p>Laravel 完成 L01 </p>
-<p>毕业生登记表</p>
-<p>团员登记表</p>
-]]></content>
-      <tags>
-        <tag>plan</tag>
+        <tag>scientific research</tag>
       </tags>
   </entry>
   <entry>
     <title>技术短板与补充</title>
     <url>/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/</url>
     <content><![CDATA[<h1 id="前端工作流："><a href="#前端工作流：" class="headerlink" title="前端工作流："></a>前端工作流：</h1><p>Sass</p>
-<h1 id="版本控制："><a href="#版本控制：" class="headerlink" title="版本控制："></a>版本控制：</h1><p>深入了解 Git 原理及工作流</p>
+<h1 id="版本控制："><a href="#版本控制：" class="headerlink" title="版本控制："></a>版本控制：</h1><p>深入了解 Github 工作流及常用功能</p>
+<p>深入了解 Git 原理及工作流</p>
 ]]></content>
       <tags>
         <tag>coding</tag>
@@ -174,44 +193,17 @@ S^T(x) & R(x)
       </tags>
   </entry>
   <entry>
-    <title>研一第5周工作计划</title>
-    <url>/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC5%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<p>✔ 每周博客</p>
-<p>✔ 每日一题 PAT</p>
-<p>✔ 头眼调整结构</p>
-<p>✔ 998 消费</p>
-<p>《网络科学导论》前两章</p>
-<p>《算法分析》跟上进度</p>
-<p>Laravel 完成 L01 </p>
-<p>毕业生登记表</p>
-<p>团员登记表</p>
-]]></content>
-      <tags>
-        <tag>plan</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>研究生生活工作时间表</title>
     <url>/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/</url>
     <content><![CDATA[<h1 id="研究生生活工作时间表"><a href="#研究生生活工作时间表" class="headerlink" title="研究生生活工作时间表"></a>研究生生活工作时间表</h1><h2 id="休息日"><a href="#休息日" class="headerlink" title="休息日"></a>休息日</h2><p>07:30 起床</p>
-<p>08:30 工作</p>
-<p>11:30 休息</p>
+<p>08:00 工作</p>
+<p>11:00 休息</p>
 <p>14:00 工作</p>
 <p>17:00 休息 </p>
 <p>18:00 工作</p>
 <p>20:30 打卡</p>
 <p>自由时间</p>
 <p>23:30 睡觉</p>
-<h2 id="健身日-暂定三分化"><a href="#健身日-暂定三分化" class="headerlink" title="健身日 - 暂定三分化"></a>健身日 - 暂定三分化</h2><p>07:30 起床</p>
-<p>08:30 工作</p>
-<p>11:30 休息</p>
-<p>14:00 工作</p>
-<p>17:00 休息 </p>
-<p>18:30 健身</p>
-<p>20:30 打卡</p>
-<p>自由时间</p>
-<p>23:30 睡觉</p>
-<h2 id="周日"><a href="#周日" class="headerlink" title="周日"></a>周日</h2><p>自由安排</p>
 ]]></content>
       <tags>
         <tag>plan</tag>
