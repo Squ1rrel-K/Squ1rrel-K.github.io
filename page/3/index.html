@@ -155,6 +155,179 @@
     
     
     <article
+  id="post-技术短板与补充"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/"
+    >技术短板与补充</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/" class="article-date">
+  <time datetime="2022-10-05T00:39:17.000Z" itemprop="datePublished">2022-10-05</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前端工作流："><a href="#前端工作流：" class="headerlink" title="前端工作流："></a>前端工作流：</h1><p>Sass</p>
+<h1 id="版本控制："><a href="#版本控制：" class="headerlink" title="版本控制："></a>版本控制：</h1><p>深入了解 Github 工作流及常用功能</p>
+<p>深入了解 Git 原理及工作流</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-PAT-A-1002"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/09/29/PAT-A-1002/"
+    >PAT-A-1002</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/09/29/PAT-A-1002/" class="article-date">
+  <time datetime="2022-09-29T00:52:13.000Z" itemprop="datePublished">2022-09-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1002"><a href="#PAT-A-1002" class="headerlink" title="PAT-A-1002"></a>PAT-A-1002</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-CPP" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇："><a href="#生僻词汇：" class="headerlink" title="生僻词汇："></a>生僻词汇：</h2><p>exponents  指数</p>
+<p>coefficient 系数</p>
+<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>两个多项式相加，系数不为整数</p>
+<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>在线处理</p>
+<p>利用空间换解题复杂度</p>
+<p><code>printf()</code> 的格式问题，<code>%.1f</code> 是输出一位小数，类推</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>$N$ 最多 为 1000，设置一个长度大于 1000 的数组，即可用角标代替指数，在线处理</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxN = <span class="number">1005</span>;</span><br><span class="line"><span class="keyword">double</span> arr[maxN] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> k, n, cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">double</span> an;</span><br><span class="line"><span class="keyword">int</span> t = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//循环2次，输入2个多项式</span></span><br><span class="line">    <span class="keyword">while</span> (t--) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//在线处理</span></span><br><span class="line">        <span class="keyword">while</span> (k--) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%lf"</span>, &amp;n, &amp;an);</span><br><span class="line">            arr[n] += an;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//非零项数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; maxN; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) cnt++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, cnt);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = maxN - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">" %d %.1f"</span>, i, arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-研究生生活工作时间表"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/"
+    >研究生生活工作时间表</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/" class="article-date">
+  <time datetime="2022-09-28T01:48:45.000Z" itemprop="datePublished">2022-09-28</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="研究生生活工作时间表"><a href="#研究生生活工作时间表" class="headerlink" title="研究生生活工作时间表"></a>研究生生活工作时间表</h1><h2 id="休息日"><a href="#休息日" class="headerlink" title="休息日"></a>休息日</h2><p>07:30 起床</p>
+<p>08:00 工作</p>
+<p>11:00 休息</p>
+<p>14:00 工作</p>
+<p>17:00 休息 </p>
+<p>18:00 工作</p>
+<p>20:30 打卡</p>
+<p>自由时间</p>
+<p>23:30 睡觉</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plan/" rel="tag">plan</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-研一第一学期工作计划"
   class="article article-type-post"
   itemscope
@@ -284,213 +457,13 @@
 </article>
 
     
-    <article
-  id="post-Ubuntu-饥荒服务器搭建教程"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/09/16/Ubuntu-%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"
-    >Ubuntu 饥荒服务器搭建教程</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/09/16/Ubuntu-%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="article-date">
-  <time datetime="2022-09-16T02:02:21.000Z" itemprop="datePublished">2022-09-16</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="Ubuntu-饥荒服务器搭建教程"><a href="#Ubuntu-饥荒服务器搭建教程" class="headerlink" title="Ubuntu 饥荒服务器搭建教程"></a>Ubuntu 饥荒服务器搭建教程</h1><p>服务器： ubuntu-18.04-amd64-20220507111916</p>
-<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386</span><br></pre></td></tr></table></figure>
-<h2 id="安装-steamCMD"><a href="#安装-steamCMD" class="headerlink" title="安装 steamCMD"></a>安装 steamCMD</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/steamcmd/</span><br><span class="line">cd ~/steamcmd/</span><br><span class="line">wget "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz"</span><br><span class="line">tar -xvzf steamcmd_linux.tar.gz</span><br></pre></td></tr></table></figure>
-<h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p><a href="https://forums.kleientertainment.com/forums/topic/64441-dedicated-server-quick-setup-guide-linux" target="_blank" rel="noopener">依照官网教程注册 Klei 账号，注册服务器</a></p>
-<p>下载 MyDediServer/ 文件夹</p>
-<p>MyDediServer/ 放入 ~/.klei/DoNotStarveTogether/ 路径</p>
-<h2 id="设置入口脚本"><a href="#设置入口脚本" class="headerlink" title="设置入口脚本"></a>设置入口脚本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/run_dedicated_servers.sh</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">steamcmd_dir="$HOME/steamcmd"</span><br><span class="line">install_dir="$HOME/dontstarvetogether_dedicated_server"</span><br><span class="line">cluster_name="MyDediServer"</span><br><span class="line">dontstarve_dir="$HOME/.klei/DoNotStarveTogether"</span><br><span class="line"></span><br><span class="line">function fail()</span><br><span class="line">&#123;</span><br><span class="line">	echo Error: "$@" &gt;&amp;2</span><br><span class="line">	exit 1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function check_for_file()</span><br><span class="line">&#123;</span><br><span class="line">	if [ ! -e "$1" ]; then</span><br><span class="line">		fail "Missing file: $1"</span><br><span class="line">	fi</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">cd "$steamcmd_dir" || fail "Missing $steamcmd_dir directory!"</span><br><span class="line"></span><br><span class="line">check_for_file "steamcmd.sh"</span><br><span class="line">check_for_file "$dontstarve_dir/$cluster_name/cluster.ini"</span><br><span class="line">check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"</span><br><span class="line">check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"</span><br><span class="line">check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"</span><br><span class="line"></span><br><span class="line">./steamcmd.sh +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit</span><br><span class="line"></span><br><span class="line">check_for_file "$install_dir/bin64"</span><br><span class="line"></span><br><span class="line">cd "$install_dir/bin64" || fail</span><br><span class="line"></span><br><span class="line">run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)</span><br><span class="line">run_shared+=(-console)</span><br><span class="line">run_shared+=(-cluster "$cluster_name")</span><br><span class="line">run_shared+=(-monitor_parent_process $$)</span><br><span class="line"></span><br><span class="line">"$&#123;run_shared[@]&#125;" -shard Caves  | sed 's/^/Caves:  /' &amp;</span><br><span class="line">"$&#123;run_shared[@]&#125;" -shard Master | sed 's/^/Master: /'</span><br></pre></td></tr></table></figure>
-<h3 id="脚本权限"><a href="#脚本权限" class="headerlink" title="脚本权限"></a>脚本权限</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u+x ~/run_dedicated_servers.sh</span><br></pre></td></tr></table></figure>
-<h2 id="运行入口脚本"><a href="#运行入口脚本" class="headerlink" title="运行入口脚本"></a>运行入口脚本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">~/run_dedicated_servers.sh</span><br></pre></td></tr></table></figure>
-<h2 id="可能的问题"><a href="#可能的问题" class="headerlink" title="可能的问题"></a>可能的问题</h2><h3 id="库缺失"><a href="#库缺失" class="headerlink" title="库缺失"></a>库缺失</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./dontstarve_dedicated_server_nullrenderer: error while loading shared libraries: libcurl-gnutls.so.4: cannot open shared object file: No such file or directory</span><br></pre></td></tr></table></figure>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install libcurl4-gnutls-dev</span><br><span class="line">dpkg --add-architecture i386</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-基于Ubuntu的Laravel服务器和R环境部署"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"
-    >基于 Ubuntu 的 Laravel 服务器部署</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" class="article-date">
-  <time datetime="2022-07-26T11:07:10.000Z" itemprop="datePublished">2022-07-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/">服务器部署</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><p>服务器：百度云，2核/4GB内存/80GB磁盘/6Mbps带宽/Ubuntu ( ubuntu-20.04-amd64-20220507112023 ) </p>
-<p>Laravel：^7.0.1</p>
-<h2 id="操作系统选择"><a href="#操作系统选择" class="headerlink" title="操作系统选择"></a>操作系统选择</h2><p>Debian，Centos 在 R 语言的部署上各有问题，选择 Ubuntu ( ubuntu-20.04-amd64-20220507112023 ) </p>
-<h2 id="一-R-语言安装"><a href="#一-R-语言安装" class="headerlink" title="一. R 语言安装"></a>一. R 语言安装</h2><p><a href="https://cran.r-project.org/bin/linux/ubuntu/" target="_blank" rel="noopener">官方文档</a></p>
-<h3 id="1-获取最新版本的-R-语言"><a href="#1-获取最新版本的-R-语言" class="headerlink" title="1. 获取最新版本的 R 语言"></a>1. 获取最新版本的 R 语言</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 检查更新</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update -qq</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装 dirmngr - 软件证书的管理工具</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install --no-install-recommends software-properties-common dirmngr</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> add the signing key (by Michael Rutter) <span class="keyword">for</span> these repos</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> add the R 4.0 repo from CRAN -- adjust <span class="string">'focal'</span> to <span class="string">'groovy'</span> or <span class="string">'bionic'</span> as needed</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo add-apt-repository <span class="string">"deb https://cloud.r-project.org/bin/linux/ubuntu <span class="variable">$(lsb_release -cs)</span>-cran40/"</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="2-安装-R-语言"><a href="#2-安装-R-语言" class="headerlink" title="2. 安装 R 语言"></a>2. 安装 R 语言</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 安装 R 语言</span><br><span class="line">$ sudo apt install --no-install-recommends r-base</span><br></pre></td></tr></table></figure>
-<h3 id="3-测试-R-语言"><a href="#3-测试-R-语言" class="headerlink" title="3. 测试 R 语言"></a>3. 测试 R 语言</h3><p>在此页面应能看到 R 的版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 打开 R 交互式窗口</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> R</span></span><br></pre></td></tr></table></figure>
-<h2 id="二-安装宝塔"><a href="#二-安装宝塔" class="headerlink" title="二. 安装宝塔"></a>二. 安装宝塔</h2><p><a href="https://www.bt.cn/new/index.html" target="_blank" rel="noopener">宝塔</a>是一个较为简单快捷的部署工具</p>
-<h3 id="1-选择在线安装"><a href="#1-选择在线安装" class="headerlink" title="1. 选择在线安装"></a>1. 选择在线安装</h3><p>记住给的服务器地址和登陆密码！</p>
-<p><a href="https://imgtu.com/i/jzvfxg" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2022/07/26/jzvfxg.png" alt="jzvfxg.png"></a></p>
-<h3 id="2-进入管理页面"><a href="#2-进入管理页面" class="headerlink" title="2.  进入管理页面"></a>2.  进入管理页面</h3><p>(1) 选择 [软件商店]，一键安装 nginx 1.21.0，php-8</p>
-<p>(2) 选择 [网站]，添加站点，域名为网站域名</p>
-<p>(3) 选择 [软件商店]，php 设置，安装扩展，安装 fileinfo 插件，若报错 <code>Cannot find **auto**conf. Please check your autoconf installation and the $PHP_AUTOCONF environment variable. Then, rerun this script</code></p>
-<p>则运行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt-get install autoconf -y</span></span><br></pre></td></tr></table></figure>
-<p>以安装</p>
-<p>(4) 选择 [软件商店]，php 设置，删除以下被禁用的函数：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">putenv</span><br><span class="line">pcntl_signal</span><br><span class="line">proc_open</span><br><span class="line">exec</span><br></pre></td></tr></table></figure>
-<h2 id="三-部署项目代码"><a href="#三-部署项目代码" class="headerlink" title="三. 部署项目代码"></a>三. 部署项目代码</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 进入目录，参数应与域名相符</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /www/wwwroot/120.48.100.162</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">clone</span> 项目</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/Squ1rrel-K/getLCAI_web.git</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> getLCAI_web</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> composer install</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 建立 .env 文件，生成密匙</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> php -r <span class="string">"file_exists('.env') || copy('.env.example', '.env');"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> php artisan key:generate --ansi</span></span><br></pre></td></tr></table></figure>
-<p>进入宝塔运维主页，选择 [网站]，添加站点，域名为网站域名，修改网站目录的运行目录为 /public </p>
-<h2 id="四-管理权限问题"><a href="#四-管理权限问题" class="headerlink" title="四. 管理权限问题"></a>四. 管理权限问题</h2><p>普通文件夹权限为 755 即可</p>
-<p>storage，resources，scripts 权限必须至少 775</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /www/wwwroot/120.48.100.162/getLCAI_web</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod -R 775 storage/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod -R 775 resources/</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chmod -R 775 scripts/</span></span><br></pre></td></tr></table></figure>
-<h2 id="五-优化项目部署"><a href="#五-优化项目部署" class="headerlink" title="五. 优化项目部署"></a>五. 优化项目部署</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /www/wwwroot/120.48.100.162/getLCAI_web</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> php artisan config:cache <span class="comment"># 生成配置缓存</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> php artisan route:cache <span class="comment"># 生成路由缓存</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run production <span class="comment"># 运行 npm 产品环境</span></span></span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-健身笔记"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/07/25/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"
-    >健身笔记</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/07/25/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2021-07-25T01:39:36.000Z" itemprop="datePublished">2021-07-25</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="分化训练"><a href="#分化训练" class="headerlink" title="分化训练"></a>分化训练</h1><h1 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h1><h1 id="最高原则"><a href="#最高原则" class="headerlink" title="最高原则"></a>最高原则</h1><p>健身先健脑</p>
-<p>科学健身</p>
-<p>避免受伤</p>
-<h1 id="分化训练-3-分化"><a href="#分化训练-3-分化" class="headerlink" title="分化训练 - 3 分化"></a>分化训练 - 3 分化</h1><p>胸 + 三头</p>
-<p>背 + 二头</p>
-<p>肩膀</p>
-<p>平常多踢球，增强臀部，腿部力量</p>
-<h1 id="胸"><a href="#胸" class="headerlink" title="胸"></a>胸</h1><h2 id="哑铃杠铃卧推"><a href="#哑铃杠铃卧推" class="headerlink" title="哑铃杠铃卧推"></a>哑铃杠铃卧推</h2><p>10 kg，12个一组，4组</p>
-<h2 id="上斜杠铃哑铃卧推"><a href="#上斜杠铃哑铃卧推" class="headerlink" title="上斜杠铃哑铃卧推"></a>上斜杠铃哑铃卧推</h2><h2 id="单侧大重量绳索架胸"><a href="#单侧大重量绳索架胸" class="headerlink" title="单侧大重量绳索架胸"></a>单侧大重量绳索架胸</h2><h2 id="俯卧撑"><a href="#俯卧撑" class="headerlink" title="俯卧撑"></a>俯卧撑</h2><h2 id="臂屈伸"><a href="#臂屈伸" class="headerlink" title="臂屈伸"></a>臂屈伸</h2> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/" rel="tag">life</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
   </nav>
   
 </section>

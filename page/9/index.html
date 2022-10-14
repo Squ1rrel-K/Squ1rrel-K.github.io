@@ -155,6 +155,192 @@
     
     
     <article
+  id="post-PAT-A-1005"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/28/PAT-A-1005/"
+    >PAT-A-1005</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/28/PAT-A-1005/" class="article-date">
+  <time datetime="2020-07-28T03:24:56.000Z" itemprop="datePublished">2020-07-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1005"><a href="#PAT-A-1005" class="headerlink" title="PAT-A-1005"></a>PAT-A-1005</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇："><a href="#生僻词汇：" class="headerlink" title="生僻词汇："></a>生僻词汇：</h2><p>consecutive 连续的</p>
+<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给定一个数 A，求各数位之和，格式化输出</p>
+<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>整型范围判定</p>
+<p>C/C++ 字符数组与字符串选择使用</p>
+<p>ASCII 转整型</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>$N$ 的范围是 $10^{100}$ ，显然远超 long long (约 $10^{18}$)，考虑使用 <code>string</code> 接 ASCII 转数字</p>
+<p>注意不要打错字，建议检查，或者直接复制粘贴</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="built_in">string</span> num;</span><br><span class="line"><span class="built_in">string</span> str[<span class="number">10</span>] = &#123;<span class="string">"zero"</span>, <span class="string">"one"</span>, <span class="string">"two"</span>, <span class="string">"three"</span>, <span class="string">"four"</span>, <span class="string">"five"</span>, <span class="string">"six"</span>, <span class="string">"seven"</span>, <span class="string">"eight"</span>, <span class="string">"nine"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; num;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//各数位之和</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num.length(); i++) &#123;</span><br><span class="line">        sum += num[i] - <span class="string">'0'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//转字符串</span></span><br><span class="line">    <span class="built_in">string</span> res = to_string(sum);</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//格式化输出，输出尾部不应有0</span></span><br><span class="line">    <span class="keyword">while</span> (i != res.length()) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i != res.length() - <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; str[res[i] - <span class="string">'0'</span>] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; str[res[i] - <span class="string">'0'</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-免费博客制作教程"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/"
+    >免费博客制作教程</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/28/%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/" class="article-date">
+  <time datetime="2020-07-28T03:02:03.000Z" itemprop="datePublished">2020-07-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="免费博客制作教程"><a href="#免费博客制作教程" class="headerlink" title="免费博客制作教程"></a>免费博客制作教程</h1><p><strong>本篇教程使用 Git + Github Page + hexo</strong>，服务器与框架均免费使用，可搭配域名。</p>
+<h2 id="获取-github-page"><a href="#获取-github-page" class="headerlink" title="获取 github page"></a>获取 github page</h2><p>参考 <a href="https://pages.github.com/" target="_blank" rel="noopener">官方教程</a></p>
+<p>申请仓库，注意仓库命名有硬性要求，一般为 username.github.io</p>
+<p>如 <a href="http://squ1rrel.com/" target="_blank" rel="noopener">Squ1rrel-K.github.io</a></p>
+<h2 id="Git-下安装-hexo"><a href="#Git-下安装-hexo" class="headerlink" title="Git 下安装 hexo"></a>Git 下安装 hexo</h2><p>参考 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
+<p>新建 username.github.io 文件夹</p>
+<p><code>hexo init</code></p>
+<p><code>npm install</code></p>
+<h2 id="安装主题-theme"><a href="#安装主题-theme" class="headerlink" title="安装主题 theme"></a>安装主题 theme</h2><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题区</a></p>
+<p>找到适合自己的主题，按制作者要求处理即可</p>
+<h2 id="写作与上传"><a href="#写作与上传" class="headerlink" title="写作与上传"></a>写作与上传</h2><p>新建文章 <code>hexo new post newTitle</code></p>
+<p>进入 md 软件写作</p>
+<p>渲染上传 <code>hexo d -g</code></p>
+<h3 id="其它常用命令见官方文档"><a href="#其它常用命令见官方文档" class="headerlink" title="其它常用命令见官方文档"></a>其它常用命令见<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-PATA1004"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/27/PATA1004/"
+    >PAT-A-1004</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/PATA1004/" class="article-date">
+  <time datetime="2020-07-27T04:32:35.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1004"><a href="#PAT-A-1004" class="headerlink" title="PAT-A-1004"></a>PAT-A-1004</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇"><a href="#生僻词汇" class="headerlink" title="生僻词汇"></a>生僻词汇</h2><p>hierarchy 层级</p>
+<p>pedigree 家谱</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-PATA1003"
   class="article article-type-post"
   itemscope
@@ -516,223 +702,13 @@
 </article>
 
     
-    <article
-  id="post-栈"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/26/%E6%A0%88/"
-    >栈</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/26/%E6%A0%88/" class="article-date">
-  <time datetime="2020-06-26T03:22:34.000Z" itemprop="datePublished">2020-06-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/">基础类型</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><h1 id="堆栈-顺序数组实现"><a href="#堆栈-顺序数组实现" class="headerlink" title="堆栈 - 顺序数组实现"></a>堆栈 - 顺序数组实现</h1><p>堆栈本质上是特殊的线性表，只是对于元素的存取做出了一定的规定</p>
-<p>起床时最先穿的内裤，睡觉时确实最后一层才能脱</p>
-<p>可见生活中也有很多堆栈性质的例子</p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> *data;</span><br><span class="line">    <span class="keyword">int</span> top;</span><br><span class="line">    <span class="keyword">int</span> maxSize;</span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">Stack</span>;</span></span><br></pre></td></tr></table></figure>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p><code>top = -1</code> 时栈空</p>
-<p><code>top = maxSize - 1</code> 时栈满</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Stack <span class="title">createStack</span><span class="params">(<span class="keyword">int</span> maxSize)</span> </span>&#123;</span><br><span class="line">    Stack s = (Stack) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    s-&gt;data = (<span class="keyword">int</span> *) <span class="built_in">malloc</span>(maxSize * <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    s-&gt;top = <span class="number">-1</span>;</span><br><span class="line">    s-&gt;maxSize = maxSize;</span><br><span class="line">    <span class="keyword">return</span> s;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="栈满判断"><a href="#栈满判断" class="headerlink" title="栈满判断"></a>栈满判断</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isFull</span><span class="params">(Stack s)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (s-&gt;top == s-&gt;maxSize - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="入栈"><a href="#入栈" class="headerlink" title="入栈"></a>入栈</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">push</span><span class="params">(Stack s, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isFull(s)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"栈满"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        s-&gt;top++;</span><br><span class="line">        s-&gt;data[s-&gt;top] = value;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="栈空"><a href="#栈空" class="headerlink" title="栈空"></a>栈空</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isEmpty</span><span class="params">(Stack s)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (s-&gt;top == <span class="number">-1</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="出栈"><a href="#出栈" class="headerlink" title="出栈"></a>出栈</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pop</span><span class="params">(Stack s)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (isEmpty(s)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"栈空"</span>);</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (s-&gt;data[s-&gt;top--]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>取首元素与出栈：一定是先出后取</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-PATA1001"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/13/PATA1001/"
-    >PAT-A-1001</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/13/PATA1001/" class="article-date">
-  <time datetime="2020-06-13T04:52:38.000Z" itemprop="datePublished">2020-06-13</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="PAT-A-1001"><a href="#PAT-A-1001" class="headerlink" title="PAT-A-1001"></a>PAT-A-1001</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-CPP" target="_blank" rel="noopener">所有甲级题全解</a></p>
-<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400" target="_blank" rel="noopener">原题链接</a></p>
-<h2 id="生僻词汇："><a href="#生僻词汇：" class="headerlink" title="生僻词汇："></a>生僻词汇：</h2><p>Comma 逗号</p>
-<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给定 $a$，$b$，未超出 <code>int</code> 范围</p>
-<p>计算出和，按要求格式化输出</p>
-<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>整数范围的把握</p>
-<p>整数转字符串</p>
-<p>字符串格式化处理</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>用 C++ <code>string</code> 更方便</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a, b, sum;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    sum = a + b;</span><br><span class="line">    <span class="built_in">string</span> str = to_string(sum);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//如果 sum 是负数，位数应减去1</span></span><br><span class="line">    <span class="keyword">int</span> comma;</span><br><span class="line">    <span class="keyword">if</span> (sum &lt; <span class="number">0</span>) comma = (<span class="keyword">int</span>) (str.length() - <span class="number">2</span>) / <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">else</span> comma = (<span class="keyword">int</span>) (str.length() - <span class="number">1</span>) / <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//从尾部向前 3*i 位加逗号</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = comma; i &gt;= <span class="number">1</span>; i--) &#123;</span><br><span class="line">        str.insert(str.length() - <span class="number">3</span> * i, <span class="string">","</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-数据结构读书笔记"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-    >数据结构-线性表</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2020-06-12T16:31:43.000Z" itemprop="datePublished">2020-06-13</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/">线性表</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><p>同一类型元素</p>
-<p>有序</p>
-<p>线性结构</p>
-<h1 id="线性表顺序存储"><a href="#线性表顺序存储" class="headerlink" title="线性表顺序存储"></a>线性表顺序存储</h1><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">PtrToSqList</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data[<span class="number">1024</span>];</span><br><span class="line">    <span class="keyword">int</span> last;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">typedef</span> PtrToSqList List;</span><br></pre></td></tr></table></figure>
-<p>用数组储存线性表</p>
-<p>1024 可替换为任何合适的数</p>
-<p>last 本质上是指向表尾的指针，因为数组角标的特殊性，直接使用表尾角标即可</p>
-<p>C语言值传递，传递大数组显然很蠢比，不如传数组指针</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">List <span class="title">makeEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List l = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    l-&gt;last = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>申请内存，不然空指针</p>
-<p><code>last = -1</code>​ 表示表空</p>
-<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">insert</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> index = <span class="built_in">position</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!(index &gt;= <span class="number">0</span> &amp;&amp; index &lt;= l-&gt;last + <span class="number">1</span>)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (l-&gt;last == <span class="number">1023</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"表满"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l-&gt;last; i &gt;= index; i--) &#123;</span><br><span class="line">            l-&gt;data[i + <span class="number">1</span>] = l-&gt;data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        l-&gt;data[index] = value;</span><br><span class="line">        l-&gt;last++;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>凡是数组相关的，形参有位置一定要判断是否合法</p>
-<p>注意角标</p>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">delete</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> index = <span class="built_in">position</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!(index &gt;= <span class="number">0</span> &amp;&amp; index &lt;= l-&gt;last)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (l-&gt;last == <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"表空"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = index; i &lt;= l-&gt;last; i++) &#123;</span><br><span class="line">            l-&gt;data[i] = l-&gt;data[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        l-&gt;last--;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="链表-线性表链式存储"><a href="#链表-线性表链式存储" class="headerlink" title="链表-线性表链式存储"></a>链表-线性表链式存储</h1><p>单链表一定要有一个空的头结点，主要目的是保持引用传递时，头结点指针不会随着第一个结点的变化而变化，进而引起不必要的维护漏洞</p>
-<h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">List</span>;</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">PtrToList</span>;</span></span><br></pre></td></tr></table></figure>
-<p><code>List</code> 虽然跟 <code>PtrToList</code> 定义一致，但是 <code>List</code> 侧重于其指向的内容，<code>PtrToList</code> 侧重于自己是一个指针的身份事实</p>
-<h3 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">List <span class="title">makeEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List head = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    head-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    List l = head;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>申请内存，不然空指针</p>
-<p>注意 <code>l</code> 将永远指向 <code>head</code> 结点，但仅限单链表</p>
-<h3 id="表长度"><a href="#表长度" class="headerlink" title="表长度"></a>表长度</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">length</span><span class="params">(List l)</span> </span>&#123;</span><br><span class="line">    PtrToList p = l;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">while</span> (p) &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        cnt++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>逻辑相连，动态的代价就是长度不确定性</p>
-<h3 id="插入-1"><a href="#插入-1" class="headerlink" title="插入"></a>插入</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">insert</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList pre = l;</span><br><span class="line">    List tmp = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    tmp-&gt;data = value;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent + <span class="number">1</span>)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span> - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp-&gt;next = pre-&gt;next;</span><br><span class="line">        pre-&gt;next = tmp;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><h4 id="按位索引"><a href="#按位索引" class="headerlink" title="按位索引"></a>按位索引</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findByPosition</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList p = l;</span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span>; i++) &#123;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p-&gt;data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>检测位置合法性</p>
-<h4 id="按值索引"><a href="#按值索引" class="headerlink" title="按值索引"></a>按值索引</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findByValue</span><span class="params">(List l, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList p = l;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= lent; i++) &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;data == value) &#123;</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>没找到应该返回 <code>false</code></p>
-<h3 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">delete</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList pre = l;</span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span> - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        PtrToList cur = pre-&gt;next;</span><br><span class="line">        pre-&gt;next = cur-&gt;next;</span><br><span class="line">        <span class="built_in">free</span>(cur);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/8/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/8/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/10/">下一页</a>
   </nav>
   
 </section>

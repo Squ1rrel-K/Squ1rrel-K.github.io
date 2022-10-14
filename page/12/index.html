@@ -155,6 +155,230 @@
     
     
     <article
+  id="post-PAT-B-1003"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/27/PAT-B-1003/"
+    >PAT-B-1003</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/01/27/PAT-B-1003/" class="article-date">
+  <time datetime="2020-01-27T03:13:52.000Z" itemprop="datePublished">2020-01-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-B/">PAT B</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="1003-我要通过！"><a href="#1003-我要通过！" class="headerlink" title="1003 我要通过！"></a>1003 我要通过！</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>“答案正确” 是自动判题系统给出的最令人欢喜的回复。本题属于 PAT 的“答案正确”大派送 —— 只要读入的字符串满足下列条件，系统就输出“答案正确”，否则输出“答案错误”。</p>
+<p>得到“答案正确”的条件是：</p>
+<ol>
+<li><p>字符串中必须仅有 P、 A、 T这三种字符，不可以包含其它字符；</p>
+</li>
+<li><p>任意形如 xPATx 的字符串都可以获得“答案正确”，其中 x 或者是空字符串，或者是仅由字母 A 组成的字符串；</p>
+</li>
+<li><p>如果 aPbTc 是正确的，那么 aPbATca 也是正确的，其中 a、 b、 c 均或者是空字符串，或者是仅由字母 A 组成的字符串。</p>
+</li>
+</ol>
+<p>现在就请你为 PAT 写一个自动裁判程序，判定哪些字符串是可以获得“答案正确”的。</p>
+<h2 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h2><p>每个测试输入包含 1 个测试用例。第 1 行给出一个正整数 n (&lt;10)，是需要检测的字符串个数。接下来每个字符串占一行，字符串长度不超过 100，且不包含空格。</p>
+<h2 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h2><p>每个字符串的检测结果占一行，如果该字符串可以获得“答案正确”，则输出 YES，否则输出 NO。</p>
+<h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><p>8</p>
+<p>PAT</p>
+<p>PAAT</p>
+<p>AAPATAA</p>
+<p>AAPAATAAAA</p>
+<p>xPATx</p>
+<p>PT</p>
+<p>Whatever</p>
+<p>APAAATAA</p>
+<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><p>YES</p>
+<p>YES</p>
+<p>YES</p>
+<p>YES</p>
+<p>NO</p>
+<p>NO</p>
+<p>NO</p>
+<p>NO</p>
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>这题我想复杂了，看到条件二 xPATx 不自觉想到正则表达式的反向引用，但是条件三用正则比较复杂，虽然此题 AC 了，但是做的实在是很不漂亮，以后有时间还得重新研究一下。</p>
+<p> 条件1，2都非常简单</p>
+<p>条件3要难点在于条件是递归式的，简单计算易得， a * b = c</p>
+<p>c++ 应该使用 “.” 保证转义，如 <code>.1</code></p>
+<p>正则搜索迭代器 <code>regex_search()</code> 注意不能用 “A*” 等无底线要求，会无限迭代</p>
+<p> 最后输出注意空行 <code>\n</code></p>
+<h2 id="举一反三"><a href="#举一反三" class="headerlink" title="举一反三"></a>举一反三</h2><p> 正则虽好，其局限性也要在考虑范围内</p>
+<p> 推荐一本正则表达式的阅读书籍，我已经看完了，写的非常好:<br><a href="https://baike.baidu.com/item/%E7%B2%BE%E9%80%9A%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89/8496437?fr=aladdin" target="_blank" rel="noopener">精通正则表达式</a></p>
+<p>我这边有复印版，想要的朋友也可以联系我</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;regex&gt;</span></span></span><br><span class="line"><span class="comment">/*注意事项：</span></span><br><span class="line"><span class="comment"> * 条件1，2都非常简单</span></span><br><span class="line"><span class="comment"> * 条件3要难点在于条件是递归式的，简单计算易得， a * b = c</span></span><br><span class="line"><span class="comment"> * c++ 应该使用 "\\" 保证转义，如 "\\1"</span></span><br><span class="line"><span class="comment"> * 正则迭代器注意不能用 "A*" 等无底线要求，会无限迭代</span></span><br><span class="line"><span class="comment"> * 最后输出注意空行 "\n"</span></span><br><span class="line"><span class="comment"> * */</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line"><span class="built_in">string</span> str;</span><br><span class="line"><span class="function">regex <span class="title">regex_1</span><span class="params">(<span class="string">"[P|A|T]+"</span>)</span></span>;<span class="comment">//满足条件一</span></span><br><span class="line"><span class="function">regex <span class="title">regex_2</span><span class="params">(<span class="string">"(A*)PAT\\1"</span>)</span></span>;<span class="comment">//满足条件二直接输出</span></span><br><span class="line"><span class="function">regex <span class="title">regex_3</span><span class="params">(<span class="string">"A*PA+TA*"</span>)</span></span>;<span class="comment">//条件三的大前提</span></span><br><span class="line"><span class="function">regex <span class="title">regex_4</span><span class="params">(<span class="string">"A+"</span>)</span></span>;<span class="comment">//找到 A 的数量</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">checkString</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">bool</span> r1, r2, r3, r4;</span><br><span class="line">    smatch result;</span><br><span class="line">    <span class="built_in">string</span> temp[<span class="number">3</span>];</span><br><span class="line">    <span class="built_in">string</span>::const_iterator iterStart = str.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="built_in">string</span>::const_iterator iterEnd = str.<span class="built_in">end</span>();</span><br><span class="line"></span><br><span class="line">    r1 = regex_match(str, regex_1);</span><br><span class="line">    r2 = regex_match(str, regex_2);</span><br><span class="line">    r3 = regex_match(str, regex_3);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//使用迭代器，将正则匹配到的结果存在 temp[] 里</span></span><br><span class="line">    <span class="keyword">while</span> (regex_search(iterStart, iterEnd, result, regex_4)) &#123;</span><br><span class="line">        temp[i++] = result[<span class="number">0</span>];</span><br><span class="line">        iterStart = result[<span class="number">0</span>].second;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//满足 a * b = c</span></span><br><span class="line">    r4 = ((temp[<span class="number">0</span>].<span class="built_in">size</span>() * temp[<span class="number">1</span>].<span class="built_in">size</span>() == temp[<span class="number">2</span>].<span class="built_in">size</span>()));</span><br><span class="line"></span><br><span class="line">    <span class="comment">//r1 必须满足，r2 或 r3 &amp;&amp; r4 满足即可</span></span><br><span class="line">    <span class="keyword">if</span> (r1 &amp;&amp; (r2 || (r3 &amp;&amp; r4))) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; num;</span><br><span class="line">    <span class="built_in">string</span> arr[num];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; str;</span><br><span class="line">        <span class="keyword">if</span> (checkString(str)) &#123;</span><br><span class="line">            arr[i] = <span class="string">"YES"</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> arr[i] = <span class="string">"NO"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; arr[i] &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-PAT-B-1002"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/27/PAT-B-1002/"
+    >PAT-B-1002</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/01/27/PAT-B-1002/" class="article-date">
+  <time datetime="2020-01-27T03:05:22.000Z" itemprop="datePublished">2020-01-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-B/">PAT B</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="1002-写出这个数-20分"><a href="#1002-写出这个数-20分" class="headerlink" title="1002 写出这个数 (20分)"></a>1002 写出这个数 (20分)</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>读入一个正整数 n，计算其各位数字之和，用汉语拼音写出和的每一位数字。</p>
+<h2 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h2><p>每个测试输入包含 1 个测试用例，即给出自然数 n 的值。这里保证 n 小于 10^100</p>
+<h2 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h2><p>在一行内输出 n 的各位数字之和的每一位，拼音数字间有 1 空格，但一行中最后一个拼音数字后没有空格。</p>
+<h2 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h2><p>1234567890987654321123456789</p>
+<h2 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h2><p>yi san wu</p>
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>考察的重点其实是 string char 和 int 来回转换</p>
+<p>读取求和即可，注意末位没有空格</p>
+<h2 id="举一反三"><a href="#举一反三" class="headerlink" title="举一反三"></a>举一反三</h2><p>一个利用 ASCII 取巧的方法：</p>
+<p>本质上是各字符编码的号的距离</p>
+<p>想从<code>char</code> 获得<code>int</code>，使用<code>-&#39;0&#39;</code></p>
+<p>如 <code>1 = &#39;1&#39;-&#39;0&#39;</code></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> input;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">string</span> arr[<span class="number">10</span>] = &#123;</span><br><span class="line">            <span class="string">"ling"</span>, <span class="string">"yi"</span>, <span class="string">"er"</span>, <span class="string">"san"</span>, <span class="string">"si"</span>, <span class="string">"wu"</span>, <span class="string">"liu"</span>, <span class="string">"qi"</span>, <span class="string">"ba"</span>, <span class="string">"jiu"</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; input;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; input.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        sum += input[i] - <span class="string">'0'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">string</span> res = to_string(sum);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; res.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        <span class="comment">// If reach the end, cout end</span></span><br><span class="line">        <span class="keyword">if</span> (i == res.<span class="built_in">size</span>() - <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; arr[res[i] - <span class="string">'0'</span>];</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">            <span class="comment">// else print number and space</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; arr[res[i] - <span class="string">'0'</span>];</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span>;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-使用数学工具来定义"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/"
+    >使用数学工具来定义</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/01/26/%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%AE%9A%E4%B9%89/" class="article-date">
+  <time datetime="2020-01-26T02:23:24.000Z" itemprop="datePublished">2020-01-26</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="算法复杂度：-S-n-与-T-n"><a href="#算法复杂度：-S-n-与-T-n" class="headerlink" title="算法复杂度：$S(n)$ 与 $T(n)$"></a>算法复杂度：$S(n)$ 与 $T(n)$</h2><p>复杂度的观察应该是宏观的，不用纠结于每行代码运行时的消耗，而是从另一个高度把握。</p>
+<h3 id="空间复杂度-S-n"><a href="#空间复杂度-S-n" class="headerlink" title="空间复杂度 $S(n)$"></a>空间复杂度 $S(n)$</h3><p>我们做一个简单的规定：$S(n)$ 为算法的空间复杂度，观察程序执行时占用储存单元的长度。n 即为数据的规模，显然复杂度过高会吃爆内存造成程序中断。</p>
+<p>现代计算机 pc 内存多以 GB 为单位，程序的空间占用不是这么紧缺。换言之，空间复杂度为一般程序次要的考察因素。</p>
+<p>嵌入式开发，大型服务器运维，仍需要考虑空间分配。</p>
+<h3 id="时间复杂度-T-n"><a href="#时间复杂度-T-n" class="headerlink" title="时间复杂度 $T(n)$"></a>时间复杂度 $T(n)$</h3><p>$T(n)$ 关注的是程序的运行时间与数据规模 n 的 关系，无论时代如何发展，只要人们不能减速时间，时间消耗就还是最重要的程序消耗，当然，计算机的发展会加快计算速度，并提升 cpu 带宽，但是与如今程序规模的发展相比，仍是杯水车薪。大量并发，亿万级大数据已成主流，时间就是金钱。</p>
+<p>所以，对程序时间消耗有更强的掌控力已经是程序员的必修课。</p>
+<h3 id="最小上界-O-n"><a href="#最小上界-O-n" class="headerlink" title="最小上界 $O(n)$"></a>最小上界 $O(n)$</h3><p>关于上下界的严格数学证明不再赘述</p>
+<p>引入 $O(n)$ 作为对程序时间复杂度的粗略上界估计，$O(n)$ 为最小上界</p>
+<h3 id="算法的渐进表示"><a href="#算法的渐进表示" class="headerlink" title="算法的渐进表示"></a>算法的渐进表示</h3><ol>
+<li>算法加和，考虑更慢的一边</li>
+<li>算法的嵌套，复杂度做乘法</li>
+<li>$T(n)$ 是 n 的 k 阶多项式，$T(n)=\Theta(n^k)$</li>
+<li>for 循环嵌套，$T(n)$ 为各层循环次数的积再乘以循环体复杂度</li>
+<li>if-else 结构考虑条件，两个分支，三者中最慢的一个。</li>
+</ol>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-我们为什么要学习数据结构和算法"
   class="article article-type-post"
   itemscope
@@ -284,63 +508,13 @@
 </article>
 
     
-    <article
-  id="post-Hello-World"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/01/25/Hello-World/"
-    >Hello World</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/01/25/Hello-World/" class="article-date">
-  <time datetime="2020-01-25T11:22:46.000Z" itemprop="datePublished">2020-01-25</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>$xyz$</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/others/" rel="tag">others</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/11/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+    <a class="extend prev" rel="prev" href="/page/11/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/">下一页</a>
   </nav>
   
 </section>
