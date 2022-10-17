@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>论文研讨会笔记</title>
-    <url>/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="Prescribed-Time-Stabilization-of-Controllable-Planar-Systems-Using-Switched-State-Feedback"><a href="#Prescribed-Time-Stabilization-of-Controllable-Planar-Systems-Using-Switched-State-Feedback" class="headerlink" title="Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback"></a>Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</h1><p>10.16</p>
+    <title>论文研讨会笔记 - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
+    <url>/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</url>
+    <content><![CDATA[<p>10.16</p>
 <h2 id="Thesis-Statement"><a href="#Thesis-Statement" class="headerlink" title="Thesis Statement"></a>Thesis Statement</h2><p>double control to $0$</p>
 <h2 id="Main-Contribution"><a href="#Main-Contribution" class="headerlink" title="Main Contribution"></a>Main Contribution</h2><p>Using switch state feedback to solve problems in </p>
 <p>$u_1 + u_2$, double controller</p>
@@ -16,6 +16,9 @@
 <h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><h2 id="Good-Sentences"><a href="#Good-Sentences" class="headerlink" title="Good Sentences"></a>Good Sentences</h2><p>The approach is based on $\cdots$.</p>
 <p>$\cdots$, governed by $\cdots$, remains an active research area.</p>
 ]]></content>
+      <categories>
+        <category>paper</category>
+      </categories>
       <tags>
         <tag>scientific research</tag>
       </tags>
@@ -26,6 +29,9 @@
     <content><![CDATA[<h1 id="项目拷贝"><a href="#项目拷贝" class="headerlink" title="项目拷贝"></a>项目拷贝</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:YourUserName/YourRepositories.git</span><br></pre></td></tr></table></figure>
 <h1 id="本地化"><a href="#本地化" class="headerlink" title="本地化"></a>本地化</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">composer install </span><br><span class="line">cp .env.example .env # Then modify .env file</span><br><span class="line">php artisan key:generate</span><br><span class="line">npm install</span><br><span class="line">npm install vue-loader vue-template-compiler --save-dev</span><br><span class="line"><span class="meta">#</span><span class="bash"> modify webpack, add vue() to import chain</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
       <tags>
         <tag>coding</tag>
       </tags>
@@ -91,6 +97,9 @@
 <h1 id="省略号-cdots"><a href="#省略号-cdots" class="headerlink" title="省略号 $\cdots$"></a>省略号 $\cdots$</h1><p>\cdots</p>
 <h1 id="分号-frac-x-y"><a href="#分号-frac-x-y" class="headerlink" title="分号 $\frac{x}{y}$"></a>分号 $\frac{x}{y}$</h1><p>\frac 或 \dfrac</p>
 ]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
       <tags>
         <tag>scientific research</tag>
       </tags>
@@ -360,7 +369,8 @@ S^T(x) & R(x)
 <h2 id="五-优化项目部署"><a href="#五-优化项目部署" class="headerlink" title="五. 优化项目部署"></a>五. 优化项目部署</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /www/wwwroot/120.48.100.162/getLCAI_web</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> php artisan config:cache <span class="comment"># 生成配置缓存</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> php artisan route:cache <span class="comment"># 生成路由缓存</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run production <span class="comment"># 运行 npm 产品环境</span></span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>服务器部署</category>
+        <category>server</category>
+        <category>tutorial</category>
       </categories>
       <tags>
         <tag>coding</tag>

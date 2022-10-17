@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-17T01:58:34.208Z</updated>
+  <updated>2022-10-17T03:57:51.023Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>论文研讨会笔记</title>
-    <link href="http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0/</id>
+    <title>论文研讨会笔记 - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
+    <link href="http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/"/>
+    <id>http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</id>
     <published>2022-10-17T01:14:01.000Z</published>
-    <updated>2022-10-17T01:58:34.208Z</updated>
+    <updated>2022-10-17T03:57:51.023Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,15 @@
       
         
         
-          &lt;h1 id=&quot;Prescribed-Time-Stabilization-of-Controllable-Planar-Systems-Using-Switched-State-Feedback&quot;&gt;&lt;a
+          &lt;p&gt;10.16&lt;/p&gt;
+&lt;h2 id=&quot;Thesis-Statement&quot;&gt;&lt;a href=&quot;#Thesis-Statement&quot; class=&quot;headerlink&quot; title=&quot;Thesis Statement&quot;&gt;&lt;/a&gt;Thesis
         
       
     
     </summary>
     
+    
+      <category term="paper" scheme="http://yoursite.com/categories/paper/"/>
     
     
       <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
@@ -46,7 +49,7 @@
     <link href="http://yoursite.com/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
     <id>http://yoursite.com/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/</id>
     <published>2022-10-14T02:20:41.000Z</published>
-    <updated>2022-10-15T11:36:53.029Z</updated>
+    <updated>2022-10-17T03:59:09.255Z</updated>
     
     <summary type="html">
     
@@ -60,6 +63,8 @@
     
     </summary>
     
+    
+      <category term="tutorial" scheme="http://yoursite.com/categories/tutorial/"/>
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
@@ -141,7 +146,7 @@
     <link href="http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
     <published>2022-10-06T02:25:30.000Z</published>
-    <updated>2022-10-17T01:44:36.184Z</updated>
+    <updated>2022-10-17T03:58:51.952Z</updated>
     
     <summary type="html">
     
@@ -156,6 +161,8 @@
     
     </summary>
     
+    
+      <category term="tutorial" scheme="http://yoursite.com/categories/tutorial/"/>
     
     
       <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
@@ -451,7 +458,7 @@
     <link href="http://yoursite.com/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
     <id>http://yoursite.com/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</id>
     <published>2022-07-26T11:07:10.000Z</published>
-    <updated>2022-09-20T10:11:53.212Z</updated>
+    <updated>2022-10-17T03:59:42.916Z</updated>
     
     <summary type="html">
     
@@ -466,7 +473,9 @@
     </summary>
     
     
-      <category term="服务器部署" scheme="http://yoursite.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/"/>
+      <category term="server" scheme="http://yoursite.com/categories/server/"/>
+    
+      <category term="tutorial" scheme="http://yoursite.com/categories/server/tutorial/"/>
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
