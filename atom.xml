@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-15T11:36:53.029Z</updated>
+  <updated>2022-10-17T01:58:34.208Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文研讨会笔记</title>
+    <link href="http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-10-17T01:14:01.000Z</published>
+    <updated>2022-10-17T01:58:34.208Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Prescribed-Time-Stabilization-of-Controllable-Planar-Systems-Using-Switched-State-Feedback&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+    
+  </entry>
   
   <entry>
     <title>Laravel Vue 项目本地化部署</title>
@@ -116,7 +141,7 @@
     <link href="http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
     <published>2022-10-06T02:25:30.000Z</published>
-    <updated>2022-10-07T11:28:35.977Z</updated>
+    <updated>2022-10-17T01:44:36.184Z</updated>
     
     <summary type="html">
     
@@ -487,31 +512,6 @@
         
         
           &lt;h1 id=&quot;Linux-常用命令&quot;&gt;&lt;a href=&quot;#Linux-常用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux 常用命令&quot;&gt;&lt;/a&gt;Linux 常用命令&lt;/h1&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Google软件测试之道读书笔记</title>
-    <link href="http://yoursite.com/2021/03/02/Google%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2021/03/02/Google%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2021-03-02T13:55:44.000Z</published>
-    <updated>2022-09-20T10:11:53.202Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Google软件测试之道-读书笔记&quot;&gt;&lt;a href=&quot;#Google软件测试之道-读书笔记&quot; class=&quot;headerlink&quot; title=&quot;Google软件测试之道 读书笔记&quot;&gt;&lt;/a&gt;Google软件测试之道
         
       
     
