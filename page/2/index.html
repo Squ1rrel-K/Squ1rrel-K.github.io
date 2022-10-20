@@ -443,11 +443,19 @@
        
   <h1 id="范数-x"><a href="#范数-x" class="headerlink" title="范数 $||x||$"></a>范数 $||x||$</h1><p>定义了向量空间里的距离，使得向量之间的比较成为了可能</p>
 <p>可以把一个实数列表，映射为一个数</p>
+<p><strong>当维数超过三维，距离这个概念应该被进一步抽象，转为表示高维点之间的时空关系，便有了范数</strong></p>
 <h5 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h5><p>L0 范数，向量非 0 元素个数，即稀疏度</p>
 <p>L1 范数，曼哈顿距离：一个向量中所有元素的绝对值之和</p>
 <p>L2 范数，欧几里得范数：是一个向量中所有元素取平方和，然后再开平方（向量的模）</p>
+<h1 id="特征值"><a href="#特征值" class="headerlink" title="特征值"></a>特征值</h1><p>原空间某一个基在变换后，其空间的长度变化系数，$&gt;0$ 表示方向一致，$&lt;0$ 表示方向相反</p>
+<p>变换后夹角 $&lt;90^\circ$，说明变换后的向量投影回原向量时方向不变</p>
+<p>用特征值做限制可以更直观也更严格地表达出这一个特点</p>
 <h1 id="奇异矩阵"><a href="#奇异矩阵" class="headerlink" title="奇异矩阵"></a>奇异矩阵</h1><p>行列式为 $0$，没有可逆矩阵好兄弟，可谓之奇异</p>
-<h1 id="正定矩阵"><a href="#正定矩阵" class="headerlink" title="正定矩阵"></a>正定矩阵</h1><h5 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h5><h5 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h5><h1 id="对角占优矩阵"><a href="#对角占优矩阵" class="headerlink" title="对角占优矩阵"></a>对角占优矩阵</h1><h5 id="对角线元素比其他之和要大"><a href="#对角线元素比其他之和要大" class="headerlink" title="对角线元素比其他之和要大"></a>对角线元素比其他之和要大</h5><p>设 $A$ 是 $n$ 阶矩阵，若 $A$ 满足</p>
+<h1 id="正定矩阵-positive-definite-matrix"><a href="#正定矩阵-positive-definite-matrix" class="headerlink" title="正定矩阵 positive-definite matrix"></a>正定矩阵 positive-definite matrix</h1><p><a href="https://zhuanlan.zhihu.com/p/345077039" target="_blank" rel="noopener">一个矩阵正定(Possitive definite) 到底能说明什么，能解决什么问题？</a></p>
+<p>可以将正定矩阵理解为矩阵版标量正系数 [知乎，若辰]</p>
+<p>线性代数是研究变换的，一个作用在向量上的矩阵正定，事实上是一个相当强的限制，其规定向量被变换后，方向不变</p>
+<p>正定代表二次型系统在空间内有最优解问题</p>
+<h1 id="对角占优矩阵"><a href="#对角占优矩阵" class="headerlink" title="对角占优矩阵"></a>对角占优矩阵</h1><h5 id="对角线元素比其他之和要大"><a href="#对角线元素比其他之和要大" class="headerlink" title="对角线元素比其他之和要大"></a>对角线元素比其他之和要大</h5><p>设 $A$ 是 $n$ 阶矩阵，若 $A$ 满足</p>
 <script type="math/tex; mode=display">
 |a_{ii}|\geq \sum_{j=1,j\neq i}^{n}|a_{ij}|, i=1,2 \cdots n,</script><p>至少一个严格不等式成立，$A$ 为弱对角占优；</p>
 <p>每个严格不等式都成立，$A$ 为严格对角占优</p>
