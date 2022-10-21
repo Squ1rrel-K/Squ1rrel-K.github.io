@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-18T11:47:54.523Z</updated>
+  <updated>2022-10-21T02:44:56.993Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科研兴趣点</title>
+    <link href="http://yoursite.com/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/"/>
+    <id>http://yoursite.com/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/</id>
+    <published>2022-10-21T02:31:48.000Z</published>
+    <updated>2022-10-21T02:44:56.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;博弈论&lt;/p&gt;
+&lt;p&gt;人工智能&lt;/p&gt;
+&lt;p&gt;机器学习&lt;/p&gt;
+&lt;p&gt;政治经济学&lt;/p&gt;
+&lt;p&gt;社会学&lt;/p&gt;
+&lt;p&gt;数学分析&lt;/p&gt;
+&lt;p&gt;高等代数&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>讲座笔记-洪奕光-复杂多智能体系统的分析与调控</title>
+    <link href="http://yoursite.com/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/"/>
+    <id>http://yoursite.com/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/</id>
+    <published>2022-10-21T02:27:16.000Z</published>
+    <updated>2022-10-21T02:45:38.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;一定要找具体的研究问题是什么！&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;观点&quot;&gt;&lt;a href=&quot;#观点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学分析读书笔记</title>
+    <link href="http://yoursite.com/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-10-21T00:47:36.000Z</published>
+    <updated>2022-10-21T01:22:09.022Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+    
+  </entry>
   
   <entry>
     <title>论文研讨会笔记 - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
@@ -275,7 +350,7 @@
     <link href="http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2022-10-05T08:02:10.000Z</published>
-    <updated>2022-10-20T01:43:02.863Z</updated>
+    <updated>2022-10-21T02:22:59.967Z</updated>
     
     <summary type="html">
     
@@ -447,85 +522,6 @@
     
     
       <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于 Ubuntu 的 Laravel 服务器部署</title>
-    <link href="http://yoursite.com/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
-    <id>http://yoursite.com/2022/07/26/%E5%9F%BA%E4%BA%8EUbuntu%E7%9A%84Laravel%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CR%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</id>
-    <published>2022-07-26T11:07:10.000Z</published>
-    <updated>2022-10-17T03:59:42.916Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;基本信息&quot;&gt;&lt;a href=&quot;#基本信息&quot; class=&quot;headerlink&quot; title=&quot;基本信息&quot;&gt;&lt;/a&gt;基本信息&lt;/h1&gt;&lt;p&gt;服务器：百度云，2核/4GB内存/80GB磁盘/6Mbps带宽/Ubuntu (
-        
-      
-    
-    </summary>
-    
-    
-      <category term="server" scheme="http://yoursite.com/categories/server/"/>
-    
-      <category term="tutorial" scheme="http://yoursite.com/categories/server/tutorial/"/>
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>健身笔记</title>
-    <link href="http://yoursite.com/2021/07/25/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2021/07/25/%E5%81%A5%E8%BA%AB%E7%AC%94%E8%AE%B0/</id>
-    <published>2021-07-25T01:39:36.000Z</published>
-    <updated>2022-09-21T12:21:50.564Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;分化训练&quot;&gt;&lt;a href=&quot;#分化训练&quot; class=&quot;headerlink&quot; title=&quot;分化训练&quot;&gt;&lt;/a&gt;分化训练&lt;/h1&gt;&lt;h1 id=&quot;原则&quot;&gt;&lt;a href=&quot;#原则&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="life" scheme="http://yoursite.com/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 常用命令</title>
-    <link href="http://yoursite.com/2021/03/04/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2021/03/04/Linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
-    <published>2021-03-04T07:41:51.000Z</published>
-    <updated>2022-09-21T07:00:20.751Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Linux-常用命令&quot;&gt;&lt;a href=&quot;#Linux-常用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux 常用命令&quot;&gt;&lt;/a&gt;Linux 常用命令&lt;/h1&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
     
     
       <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
