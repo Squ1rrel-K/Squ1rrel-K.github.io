@@ -36,7 +36,9 @@
   <entry>
     <title>数学分析读书笔记</title>
     <url>/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><strong>数学是最高抽象的学科，不要尝试具体的理解所有理论，即使有数形结合跟其他学科的应用</strong></p>
+<p><strong>数学是形而上的本能直觉</strong></p>
+]]></content>
       <tags>
         <tag>scientific research</tag>
       </tags>
@@ -263,7 +265,7 @@ S^T(x) & R(x)
   <entry>
     <title>一些科研的问题</title>
     <url>/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="邻接矩阵为什么要求拉普拉斯矩阵？"><a href="#邻接矩阵为什么要求拉普拉斯矩阵？" class="headerlink" title="邻接矩阵为什么要求拉普拉斯矩阵？"></a>邻接矩阵为什么要求拉普拉斯矩阵？</h1><h1 id="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"><a href="#拉布拉斯矩阵放弃了节点的内耦合，如何弥补？" class="headerlink" title="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"></a>拉布拉斯矩阵放弃了节点的内耦合，如何弥补？</h1><h1 id="矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？"><a href="#矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？" class="headerlink" title="矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？"></a>矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？</h1><h1 id="很多模型出现了-theta-1-theta-，是为了凑某个线性关系吗？为什么不是-2-theta"><a href="#很多模型出现了-theta-1-theta-，是为了凑某个线性关系吗？为什么不是-2-theta" class="headerlink" title="很多模型出现了 $\theta$, $1-\theta$，是为了凑某个线性关系吗？为什么不是 $2-\theta$ ?"></a>很多模型出现了 $\theta$, $1-\theta$，是为了凑某个线性关系吗？为什么不是 $2-\theta$ ?</h1>]]></content>
+    <content><![CDATA[<h1 id="邻接矩阵为什么要求拉普拉斯矩阵？"><a href="#邻接矩阵为什么要求拉普拉斯矩阵？" class="headerlink" title="邻接矩阵为什么要求拉普拉斯矩阵？"></a>邻接矩阵为什么要求拉普拉斯矩阵？</h1><h1 id="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"><a href="#拉布拉斯矩阵放弃了节点的内耦合，如何弥补？" class="headerlink" title="拉布拉斯矩阵放弃了节点的内耦合，如何弥补？"></a>拉布拉斯矩阵放弃了节点的内耦合，如何弥补？</h1><h1 id="矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？"><a href="#矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？" class="headerlink" title="矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？"></a>矩阵可以代表二次型，正定与否可以表示系统性质，那为什么系统就一定得是二次的？</h1><h1 id="很多模型出现了-theta-，-1-theta-，是为了凑某个线性关系吗？为什么不是-theta-，-2-theta"><a href="#很多模型出现了-theta-，-1-theta-，是为了凑某个线性关系吗？为什么不是-theta-，-2-theta" class="headerlink" title="很多模型出现了 $\theta$，$1-\theta$，是为了凑某个线性关系吗？为什么不是 $\theta$，$2-\theta$ ?"></a>很多模型出现了 $\theta$，$1-\theta$，是为了凑某个线性关系吗？为什么不是 $\theta$，$2-\theta$ ?</h1>]]></content>
       <tags>
         <tag>scientific research</tag>
       </tags>
