@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">464</span>
+            <span class="post-count">467</span>
         </span>
     </span>
 
@@ -117,7 +117,7 @@
 <p>合并到 laravel 的 package.json 中</p>
 <p>以 vue-element-admin 为主</p>
 <h5 id="复制-babel-config-js-到-laravel-根目录"><a href="#复制-babel-config-js-到-laravel-根目录" class="headerlink" title="复制 babel.config.js 到 laravel 根目录"></a>复制 babel.config.js 到 laravel 根目录</h5><h5 id="复制项目"><a href="#复制项目" class="headerlink" title="复制项目"></a>复制项目</h5><p>将 vue-element-admin 中整个 src 目录下的文件复制到 laravel 项目中的 resources/vue-element-admin 目录中</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run dev</span></span><br></pre></td></tr></table></figure>
+<h5 id="npm-安装"><a href="#npm-安装" class="headerlink" title="npm 安装"></a>npm 安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run dev</span></span><br></pre></td></tr></table></figure>
 <h1 id="部分问题"><a href="#部分问题" class="headerlink" title="部分问题"></a>部分问题</h1><h5 id="别名定义"><a href="#别名定义" class="headerlink" title="别名定义"></a>别名定义</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Module not found: Error: Can't resolve '@/views/zip/index' in '/path/to/laravel-vue-admin/resources/backend/router'</span><br></pre></td></tr></table></figure>
 <p>在 webpack.mix.js 中增加项目 src 目录的别名</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// webpack.mix.js</span></span><br><span class="line">mix.webpackConfig(&#123;</span><br><span class="line">  resolve: &#123;</span><br><span class="line">    alias: &#123;</span><br><span class="line">      <span class="string">'@'</span>: path.resolve(__dirname, <span class="string">'resources/vue-element-admin/src'</span>),</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
