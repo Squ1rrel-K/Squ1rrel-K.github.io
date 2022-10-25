@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2022-10-22T05:51:32.558Z</updated>
+  <updated>2022-10-25T01:53:12.675Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jetbrain 全家桶快捷键</title>
+    <link href="http://yoursite.com/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://yoursite.com/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2022-10-25T01:48:40.000Z</published>
+    <updated>2022-10-25T01:53:12.675Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;通用&quot;&gt;&lt;a href=&quot;#通用&quot; class=&quot;headerlink&quot; title=&quot;通用&quot;&gt;&lt;/a&gt;通用&lt;/h1&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>laravel vue-element-admin 安装指南</title>
@@ -509,31 +534,6 @@
     
     
       <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EditorConfig 使用说明</title>
-    <link href="http://yoursite.com/2022/09/20/EditorConfig-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
-    <id>http://yoursite.com/2022/09/20/EditorConfig-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
-    <published>2022-09-20T07:25:29.000Z</published>
-    <updated>2022-09-20T10:11:53.202Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;EditorConfig-使用说明&quot;&gt;&lt;a href=&quot;#EditorConfig-使用说明&quot; class=&quot;headerlink&quot; title=&quot;EditorConfig 使用说明&quot;&gt;&lt;/a&gt;EditorConfig
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
     
   </entry>
   

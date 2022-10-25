@@ -155,6 +155,110 @@
     
     
     <article
+  id="post-设计模式读书笔记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
+    >设计模式读书笔记</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-05-18T02:55:50.000Z" itemprop="datePublished">2020-05-18</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>我一直持有一个观点：代码首先是给人看的，其次才是给机器读的，不然搞什么面向对象又是面向过程，一个文件塞满理论上也能满足计算机的要求，但是想让人看懂，易于操控，就需要理解语言创造者的苦心。而进阶的编程爱好者，对于设计模式的理解便显得弥足珍贵了，本文为多语言各种设计模式的横纵向比较分析与记录。</p>
+<h1 id="创造者模式"><a href="#创造者模式" class="headerlink" title="创造者模式"></a>创造者模式</h1><p>与其说是创造对象，不如说是产品说明，此类模式关心一个实例创造前的全部内容，如同造汽车前，设计和制造流水线工程。</p>
+<p><strong>这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活</strong></p>
+<h2 id="工厂模式-Factory-Pattern"><a href="#工厂模式-Factory-Pattern" class="headerlink" title="工厂模式 Factory Pattern"></a>工厂模式 Factory Pattern</h2><p>不涉及创造实例</p>
+<p>大部分程序一直在研究的就是解耦，因为高度耦合会带来难以维护，变量联系过于紧密等问题，我们希望模块化，而不是牵一发而动全身，因此创造对象时一大堆初始化工作不应该放在业务代码里，应该有一个工厂一样的接口代为保存，这样核心业务变化的时候，不用在所有创造实例的业务里修改，只需要修改工厂即可。</p>
+<h2 id="抽象工厂模式-Abstract-Factory-Pattern"><a href="#抽象工厂模式-Abstract-Factory-Pattern" class="headerlink" title="抽象工厂模式 Abstract Factory Pattern"></a>抽象工厂模式 Abstract Factory Pattern</h2><p>工厂的工厂</p>
+<p>当业务复杂化后，需要对工厂本身抽象，进而满足工厂实例跟着业务实例的变化，如流水线核心不变，生产轿车还是跑车这种小细节变化，只需要实例化抽象工厂就能满足要求。</p>
+<h2 id="单例模式-Singleton-Pattern"><a href="#单例模式-Singleton-Pattern" class="headerlink" title="单例模式 Singleton Pattern"></a>单例模式 Singleton Pattern</h2><p>有且只有自己存在</p>
+<p>单例的核心思想是全局唯一性，本类实例化自己，且唯一，外部只能销毁和创建调用，不能去关心内部逻辑。</p>
+<p>适用于全局唯一的实例，如单线程。</p>
+<h2 id="建造者模式-Builder-Pattern"><a href="#建造者模式-Builder-Pattern" class="headerlink" title="建造者模式 Builder Pattern"></a>建造者模式 Builder Pattern</h2><p>核心是造变形金刚</p>
+<p>变形金刚由多个部件组成，部件本身复杂多变，但是合体变形金刚的算法或者结构却是相对简单的，这时考虑使用建造者模式。</p>
+<p>比起工厂模式更关心部件的组装顺序。</p>
+<h2 id="原型模式-Prototype-Pattern"><a href="#原型模式-Prototype-Pattern" class="headerlink" title="原型模式 Prototype Pattern"></a>原型模式 Prototype Pattern</h2><p>克隆人</p>
+<p>当新建对象代价很大的时候，对象需要复用时使用。</p>
+<p>如一个对象需要在一个高代价的数据库操作之后被创建。可以缓存该对象，在下一个请求时返回它的克隆，在需要的时候更新数据库，以此来减少数据库调用。</p>
+<h2 id="对象池模式-Pool"><a href="#对象池模式-Pool" class="headerlink" title="对象池模式 Pool"></a>对象池模式 Pool</h2><p>水库存水</p>
+<p>老是用水龙头取水，水龙头容易坏，还容易无法满足需求，先搞个水库，把常用对象扔进去，异步的存取使用，避免同步操作带来的消耗。</p>
+<p>如：线程池、数据库连接池、任务队列池、图片资源对象池。</p>
+<p>举例：laravel 的邮件发送是同步的，修改成一个队列池，每个新请求会被放到池子里，服务器可以从容不迫的 FIFO 处理任务。 </p>
+<h2 id="多例模式-Multiton"><a href="#多例模式-Multiton" class="headerlink" title="多例模式 Multiton"></a>多例模式 Multiton</h2><p>包含多个实例的单例模式</p>
+<p>如多个数据库链接。</p>
+<h2 id="静态工厂模式-Static-Factory"><a href="#静态工厂模式-Static-Factory" class="headerlink" title="静态工厂模式 Static Factory"></a>静态工厂模式 Static Factory</h2><p>针对静态资源的工厂模式</p>
+<h1 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h1><h2 id="适配器模式-Adapter-Pattern"><a href="#适配器模式-Adapter-Pattern" class="headerlink" title="适配器模式 Adapter Pattern"></a>适配器模式 Adapter Pattern</h2><p>电力中的转换器也是相同思路，220v 换成 120v 需要一个接口处理，就是适配器。</p>
+<p>当年写 Android 的时候，适配器是必须掌握的知识。</p>
+<p>缺点就是反常规，看不懂会奇怪，明明 A 类的资源，怎么扔 B 类还能用？</p>
+<h2 id="桥接模式-bridge-Pattern"><a href="#桥接模式-bridge-Pattern" class="headerlink" title="桥接模式  bridge Pattern"></a>桥接模式  bridge Pattern</h2><p>桥接的核心思路是将抽象与行为解耦，从继承关系弱化为关联模式</p>
+<p>如一个实例面临多个并列行为的关系时，可以用桥接，如设计一杯饮料，杯子大小，饮料内容，配料均有多个选择，使用桥接很适合。</p>
+<h2 id="共享模式-Flyweight"><a href="#共享模式-Flyweight" class="headerlink" title="共享模式 Flyweight"></a>共享模式 Flyweight</h2><p>核心是高度重复资源的可重复利用性，多跟工厂模式共用，当遇到请求时，首先检索共享池里是否有合适对象，否则创造并返回。</p>
+<p>面临高度重复的请求时，最大程度减少资源开销。</p>
+<h2 id="装饰模式-Decorator"><a href="#装饰模式-Decorator" class="headerlink" title="装饰模式 Decorator"></a>装饰模式 Decorator</h2><p>动态基于对象新的功能，像打补丁一样，不在意被装饰对象本身细节。</p>
+<p>相当于万智牌的合变放在下面，下面的生物只给了异能，别的啥事没干。</p>
+<h2 id="组合模式-Composite"><a href="#组合模式-Composite" class="headerlink" title="组合模式 Composite"></a>组合模式 Composite</h2><p>本质上是树形结构的封装利用，利用树形结构的访问速度优势，迭代得获取各组件。</p>
+<p>非叶节点也可以看成另一个组构体。</p>
+<h2 id="代理模式-Proxy-Pattern"><a href="#代理模式-Proxy-Pattern" class="headerlink" title="代理模式 Proxy Pattern"></a>代理模式 Proxy Pattern</h2><p>核心在于请求本身涉及安全性或者大花销等问题，需要代理看看给不给权限，不然对象造完了再研究给不给权限就没什么意义了。</p>
+<p>相当于请个管家管一下。</p>
+<h2 id="外观模式-Facade"><a href="#外观模式-Facade" class="headerlink" title="外观模式 Facade"></a>外观模式 Facade</h2><p>比起小管家，Facade 是总管，对一个系统的访问做整理跟统筹，最大程度降耦，保证子系统自由性。</p>
+<h1 id="行为类模式"><a href="#行为类模式" class="headerlink" title="行为类模式"></a>行为类模式</h1><h2 id="迭代模式-Iterator"><a href="#迭代模式-Iterator" class="headerlink" title="迭代模式 Iterator"></a>迭代模式 Iterator</h2><p>迭代器的抽象，没啥好说的，核心在于不暴露内部结构的遍历。</p>
+<h2 id="模板模式-Template"><a href="#模板模式-Template" class="headerlink" title="模板模式 Template"></a>模板模式 Template</h2><p>定义操作骨架，通过继承丰富内容或者实现。</p>
+<p>抽象类常用思想，定义却不完化，给予后人补充说明。</p>
+<h2 id="责任链-Chain-of-Responsibility"><a href="#责任链-Chain-of-Responsibility" class="headerlink" title="责任链 Chain of Responsibility"></a>责任链 Chain of Responsibility</h2><p>请求来源高度不确定性，使用 cor 可以使链上任意一个类的负担不至于过重，统一一个 handler 分配工作。</p>
+<h2 id="备忘模式-Memento"><a href="#备忘模式-Memento" class="headerlink" title="备忘模式 Memento"></a>备忘模式 Memento</h2><p>可能二次需要的内容做保存。</p>
+<p>如 laravel 中的 <code>old()</code>方法。</p>
+<h2 id="中介者-Mediator"><a href="#中介者-Mediator" class="headerlink" title="中介者 Mediator"></a>中介者 Mediator</h2><p>各个对象之间的交互操作非常多;每个对象的行为操作都依赖彼此对方,修改一个对象的行 为,同时会涉及到修改很多其他对象的行为。</p>
+<p>如 laravel 中的 <code>Controller</code></p>
+<h2 id="解释器-Interpreter"><a href="#解释器-Interpreter" class="headerlink" title="解释器 Interpreter"></a>解释器 Interpreter</h2><p>很少会用到，关注于非可识别语言的解释，如正则，表达式等。</p>
+<h2 id="策略模式-Strategy"><a href="#策略模式-Strategy" class="headerlink" title="策略模式 Strategy"></a>策略模式 Strategy</h2><p>也叫算法簇模式，针对不同需求，有策略的分派不同算法解决问题。</p>
+<h2 id="状态模式-State"><a href="#状态模式-State" class="headerlink" title="状态模式 State"></a>状态模式 State</h2><p>就是状态机。</p>
+<h2 id="观察者-Observer"><a href="#观察者-Observer" class="headerlink" title="观察者 Observer"></a>观察者 Observer</h2><p>常驻内存检测变化，一旦变化就触发。</p>
+<h2 id="访问者模式-visitor"><a href="#访问者模式-visitor" class="headerlink" title="访问者模式 visitor"></a>访问者模式 visitor</h2><p>作用于某个对象群中各个对象的操作. 它可以使你在不改变这些对象本身的情况下,定义 作用于这些对象的新操作. </p>
+<h2 id="命令模式-Command"><a href="#命令模式-Command" class="headerlink" title="命令模式 Command"></a>命令模式 Command</h2><p>Laravel 中的 Artisan 是很典型的命令模式，请求对象化。</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-终于修好了"
   class="article article-type-post"
   itemscope
@@ -364,57 +468,6 @@
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-新年计划"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/"
-    >新年计划</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/01/27/%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92/" class="article-date">
-  <time datetime="2020-01-27T06:51:50.000Z" itemprop="datePublished">2020-01-27</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="新年计划"><a href="#新年计划" class="headerlink" title="新年计划"></a>新年计划</h1><p>新的一年，最大的愿望就是摆脱浮躁，一次只做一件事，一次做好一件事。</p>
-<p>洗去浮华，从头开始；惜时如命，夯实基础。</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plan/" rel="tag">plan</a></li></ul>
 
     </footer>
   </div>

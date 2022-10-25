@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Jetbrain 全家桶快捷键</title>
+    <url>/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<h1 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ctrl + shift + S</td>
+<td>打开 setting</td>
+</tr>
+<tr>
+<td>ctrl + D</td>
+<td>复制本行去下一行</td>
+</tr>
+<tr>
+<td>ctrl + alt + L</td>
+<td>Format code</td>
+</tr>
+<tr>
+<td>ctrl + F</td>
+<td>本文件 search</td>
+</tr>
+<tr>
+<td>ctrl +shift + F</td>
+<td>全文件 search</td>
+</tr>
+<tr>
+<td>ctrl + R</td>
+<td>本文件 replace</td>
+</tr>
+<tr>
+<td>ctrl +shift + R</td>
+<td>全文件 replace</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <tags>
+        <tag>coding</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>laravel vue-element-admin 安装指南</title>
     <url>/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p><a href="http://www.phpxs.com/post/8290/" target="_blank" rel="noopener">参考教程</a></p>
