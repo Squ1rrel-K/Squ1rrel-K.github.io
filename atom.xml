@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2022-10-30T02:31:51.172Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://squ1rrel-k.github.io/"/>
+  <updated>2022-10-30T03:05:52.043Z</updated>
+  <id>https://squ1rrel-k.github.io/</id>
   
   <author>
     <name>Jack Kong</name>
@@ -17,9 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Notebook - module</title>
+    <link href="https://squ1rrel-k.github.io/2022/10/30/Notebook%20-%20module/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/30/Notebook%20-%20module/</id>
+    <published>2022-10-30T03:05:33.000Z</published>
+    <updated>2022-10-30T03:05:52.043Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Thesis-Statement&quot;&gt;&lt;a href=&quot;#Thesis-Statement&quot; class=&quot;headerlink&quot; title=&quot;Thesis Statement&quot;&gt;&lt;/a&gt;Thesis Statement&lt;/h2&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="paper" scheme="https://squ1rrel-k.github.io/categories/paper/"/>
+    
+    
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notebook - Distributed Secure Cooperative Control Under Denial-of-Service Attacks From Multiple Adversaries</title>
+    <link href="https://squ1rrel-k.github.io/2022/10/30/Notebook%20-%20Distributed-Secure-Cooperative-Control-Under-Denial-of-Service-Attacks-From-Multiple-AdversariesWen/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/30/Notebook%20-%20Distributed-Secure-Cooperative-Control-Under-Denial-of-Service-Attacks-From-Multiple-AdversariesWen/</id>
+    <published>2022-10-30T03:03:01.000Z</published>
+    <updated>2022-10-31T00:56:54.738Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; 10.30 He&lt;/p&gt;
+&lt;h2 id=&quot;Thesis-Statement&quot;&gt;&lt;a href=&quot;#Thesis-Statement&quot; class=&quot;headerlink&quot; title=&quot;Thesis Statement&quot;&gt;&lt;/a&gt;Thesis
+        
+      
+    
+    </summary>
+    
+    
+      <category term="paper" scheme="https://squ1rrel-k.github.io/categories/paper/"/>
+    
+    
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
+    
+  </entry>
+  
+  <entry>
     <title>正则表达式教程</title>
-    <link href="http://yoursite.com/2022/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2022/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%95%99%E7%A8%8B/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%95%99%E7%A8%8B/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%95%99%E7%A8%8B/</id>
     <published>2022-10-30T02:25:15.000Z</published>
     <updated>2022-10-30T02:31:51.172Z</updated>
     
@@ -40,14 +95,14 @@
     
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>Jetbrain 全家桶快捷键</title>
-    <link href="http://yoursite.com/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    <id>http://yoursite.com/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/25/Jetbrain-%E5%85%A8%E5%AE%B6%E6%A1%B6%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
     <published>2022-10-25T01:48:40.000Z</published>
     <updated>2022-10-25T01:53:12.675Z</updated>
     
@@ -65,14 +120,14 @@
     
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>laravel vue-element-admin 安装指南</title>
-    <link href="http://yoursite.com/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-22T05:20:26.000Z</published>
     <updated>2022-10-30T02:24:09.149Z</updated>
     
@@ -91,14 +146,14 @@
     
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>科研兴趣点</title>
-    <link href="http://yoursite.com/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/"/>
-    <id>http://yoursite.com/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/</id>
     <published>2022-10-21T02:31:48.000Z</published>
     <updated>2022-10-21T02:44:56.993Z</updated>
     
@@ -123,14 +178,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>讲座笔记-洪奕光-复杂多智能体系统的分析与调控</title>
-    <link href="http://yoursite.com/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/"/>
-    <id>http://yoursite.com/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/</id>
     <published>2022-10-21T02:27:16.000Z</published>
     <updated>2022-10-21T02:45:38.054Z</updated>
     
@@ -149,14 +204,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>数学分析读书笔记</title>
-    <link href="http://yoursite.com/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-21T00:47:36.000Z</published>
     <updated>2022-10-21T03:49:39.048Z</updated>
     
@@ -176,16 +231,16 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
-    <title>论文研讨会笔记 - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
-    <link href="http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/"/>
-    <id>http://yoursite.com/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</id>
+    <title>Notebook - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
+    <link href="https://squ1rrel-k.github.io/2022/10/17/Notebook%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/17/Notebook%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</id>
     <published>2022-10-17T01:14:01.000Z</published>
-    <updated>2022-10-18T11:47:54.523Z</updated>
+    <updated>2022-10-30T03:05:04.970Z</updated>
     
     <summary type="html">
     
@@ -193,7 +248,7 @@
       
         
         
-          &lt;p&gt;10.16&lt;/p&gt;
+          &lt;p&gt;10.16   Tao&lt;/p&gt;
 &lt;h2 id=&quot;Thesis-Statement&quot;&gt;&lt;a href=&quot;#Thesis-Statement&quot; class=&quot;headerlink&quot; title=&quot;Thesis Statement&quot;&gt;&lt;/a&gt;Thesis
         
       
@@ -201,17 +256,17 @@
     </summary>
     
     
-      <category term="paper" scheme="http://yoursite.com/categories/paper/"/>
+      <category term="paper" scheme="https://squ1rrel-k.github.io/categories/paper/"/>
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>Laravel Vue 项目本地化部署</title>
-    <link href="http://yoursite.com/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
-    <id>http://yoursite.com/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/</id>
     <published>2022-10-14T02:20:41.000Z</published>
     <updated>2022-10-17T03:59:09.255Z</updated>
     
@@ -228,17 +283,17 @@
     </summary>
     
     
-      <category term="tutorial" scheme="http://yoursite.com/categories/tutorial/"/>
+      <category term="tutorial" scheme="https://squ1rrel-k.github.io/categories/tutorial/"/>
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>一些好的句子</title>
-    <link href="http://yoursite.com/2022/10/13/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%9A%84%E5%8F%A5%E5%AD%90/"/>
-    <id>http://yoursite.com/2022/10/13/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%9A%84%E5%8F%A5%E5%AD%90/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/13/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%9A%84%E5%8F%A5%E5%AD%90/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/13/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%9A%84%E5%8F%A5%E5%AD%90/</id>
     <published>2022-10-13T02:33:22.000Z</published>
     <updated>2022-10-13T04:52:46.300Z</updated>
     
@@ -256,14 +311,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>从递归到分治，贪心，动归</title>
-    <link href="http://yoursite.com/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/"/>
-    <id>http://yoursite.com/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/</id>
     <published>2022-10-13T01:43:47.000Z</published>
     <updated>2022-10-13T02:34:27.593Z</updated>
     
@@ -273,14 +328,14 @@
     
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>近期工作计划</title>
-    <link href="http://yoursite.com/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
-    <id>http://yoursite.com/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/12/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
     <published>2022-10-12T11:45:20.000Z</published>
     <updated>2022-10-12T11:50:56.240Z</updated>
     
@@ -301,14 +356,14 @@
     
     
     
-      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+      <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
     
   </entry>
   
   <entry>
     <title>常用 Markdown 数学公式</title>
-    <link href="http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    <id>http://yoursite.com/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
     <published>2022-10-06T02:25:30.000Z</published>
     <updated>2022-10-17T03:58:51.952Z</updated>
     
@@ -326,17 +381,17 @@
     </summary>
     
     
-      <category term="tutorial" scheme="http://yoursite.com/categories/tutorial/"/>
+      <category term="tutorial" scheme="https://squ1rrel-k.github.io/categories/tutorial/"/>
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>从场论到图论：梯度，旋度，散度，通量，拉布拉斯算子与矩阵，图算法</title>
-    <link href="http://yoursite.com/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/"/>
-    <id>http://yoursite.com/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/</id>
     <published>2022-10-06T02:02:22.000Z</published>
     <updated>2022-10-06T05:36:40.455Z</updated>
     
@@ -355,14 +410,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>M 矩阵</title>
-    <link href="http://yoursite.com/2022/10/06/M-%E7%9F%A9%E9%98%B5/"/>
-    <id>http://yoursite.com/2022/10/06/M-%E7%9F%A9%E9%98%B5/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/06/M-%E7%9F%A9%E9%98%B5/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/06/M-%E7%9F%A9%E9%98%B5/</id>
     <published>2022-10-06T01:34:06.000Z</published>
     <updated>2022-10-12T11:44:23.670Z</updated>
     
@@ -380,14 +435,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>从《三体》到线性代数，矩阵，基，行列式的本质</title>
-    <link href="http://yoursite.com/2022/10/05/%E4%BB%8E%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E5%88%B0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%EF%BC%8C%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9F%BA%EF%BC%8C%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/"/>
-    <id>http://yoursite.com/2022/10/05/%E4%BB%8E%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E5%88%B0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%EF%BC%8C%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9F%BA%EF%BC%8C%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/05/%E4%BB%8E%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E5%88%B0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%EF%BC%8C%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9F%BA%EF%BC%8C%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/05/%E4%BB%8E%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E5%88%B0%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%EF%BC%8C%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9F%BA%EF%BC%8C%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E6%9C%AC%E8%B4%A8/</id>
     <published>2022-10-05T12:17:38.000Z</published>
     <updated>2022-10-06T04:20:05.434Z</updated>
     
@@ -405,14 +460,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>部分知识补充</title>
-    <link href="http://yoursite.com/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/"/>
-    <id>http://yoursite.com/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/05/%E9%83%A8%E5%88%86%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/</id>
     <published>2022-10-05T08:05:16.000Z</published>
     <updated>2022-10-20T01:50:12.577Z</updated>
     
@@ -430,14 +485,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>一些科研的问题</title>
-    <link href="http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2022-10-05T08:02:10.000Z</published>
     <updated>2022-10-21T03:50:26.562Z</updated>
     
@@ -455,14 +510,14 @@
     
     
     
-      <category term="scientific research" scheme="http://yoursite.com/tags/scientific-research/"/>
+      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
   <entry>
     <title>技术短板与补充</title>
-    <link href="http://yoursite.com/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/"/>
-    <id>http://yoursite.com/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/</id>
+    <link href="https://squ1rrel-k.github.io/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/"/>
+    <id>https://squ1rrel-k.github.io/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/</id>
     <published>2022-10-05T00:39:17.000Z</published>
     <updated>2022-10-10T01:09:15.895Z</updated>
     
@@ -481,61 +536,7 @@
     
     
     
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT-A-1002</title>
-    <link href="http://yoursite.com/2022/09/29/PAT-A-1002/"/>
-    <id>http://yoursite.com/2022/09/29/PAT-A-1002/</id>
-    <published>2022-09-29T00:52:13.000Z</published>
-    <updated>2022-09-29T01:06:37.492Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PAT-A-1002&quot;&gt;&lt;a href=&quot;#PAT-A-1002&quot; class=&quot;headerlink&quot; title=&quot;PAT-A-1002&quot;&gt;&lt;/a&gt;PAT-A-1002&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PAT" scheme="http://yoursite.com/categories/PAT/"/>
-    
-      <category term="PAT A" scheme="http://yoursite.com/categories/PAT/PAT-A/"/>
-    
-    
-      <category term="coding" scheme="http://yoursite.com/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>研究生生活工作时间表</title>
-    <link href="http://yoursite.com/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/"/>
-    <id>http://yoursite.com/2022/09/28/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/</id>
-    <published>2022-09-28T01:48:45.000Z</published>
-    <updated>2022-10-12T11:44:00.971Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;研究生生活工作时间表&quot;&gt;&lt;a href=&quot;#研究生生活工作时间表&quot; class=&quot;headerlink&quot; title=&quot;研究生生活工作时间表&quot;&gt;&lt;/a&gt;研究生生活工作时间表&lt;/h1&gt;&lt;h2 id=&quot;休息日&quot;&gt;&lt;a href=&quot;#休息日&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="plan" scheme="http://yoursite.com/tags/plan/"/>
+      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   

@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Notebook - module</title>
+    <url>/2022/10/30/Notebook%20-%20module/</url>
+    <content><![CDATA[<h2 id="Thesis-Statement"><a href="#Thesis-Statement" class="headerlink" title="Thesis Statement"></a>Thesis Statement</h2><h2 id="Main-Contribution"><a href="#Main-Contribution" class="headerlink" title="Main Contribution"></a>Main Contribution</h2><h2 id="New-Knowledge"><a href="#New-Knowledge" class="headerlink" title="New Knowledge"></a>New Knowledge</h2><h2 id="Words-and-Phrases"><a href="#Words-and-Phrases" class="headerlink" title="Words and Phrases"></a>Words and Phrases</h2><h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><h2 id="Good-Sentences"><a href="#Good-Sentences" class="headerlink" title="Good Sentences"></a>Good Sentences</h2>]]></content>
+      <categories>
+        <category>paper</category>
+      </categories>
+      <tags>
+        <tag>scientific research</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Notebook - Distributed Secure Cooperative Control Under Denial-of-Service Attacks From Multiple Adversaries</title>
+    <url>/2022/10/30/Notebook%20-%20Distributed-Secure-Cooperative-Control-Under-Denial-of-Service-Attacks-From-Multiple-AdversariesWen/</url>
+    <content><![CDATA[<p> 10.30 He</p>
+<h2 id="Thesis-Statement"><a href="#Thesis-Statement" class="headerlink" title="Thesis Statement"></a>Thesis Statement</h2><h2 id="Main-Contribution"><a href="#Main-Contribution" class="headerlink" title="Main Contribution"></a>Main Contribution</h2><h2 id="New-Knowledge"><a href="#New-Knowledge" class="headerlink" title="New Knowledge"></a>New Knowledge</h2><p>Zeno behavior: 事件连续触发，消耗更大</p>
+<h2 id="Words-and-Phrases"><a href="#Words-and-Phrases" class="headerlink" title="Words and Phrases"></a>Words and Phrases</h2><p>asymptotic consensus  渐进一致性</p>
+<p>denote 标志，预示</p>
+<p>prominent 重要的</p>
+<h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><h2 id="Good-Sentences"><a href="#Good-Sentences" class="headerlink" title="Good Sentences"></a>Good Sentences</h2><p>the $\cdots$ is hardly guaranteed, as many bad shits emerge, such as $\cdots$</p>
+]]></content>
+      <categories>
+        <category>paper</category>
+      </categories>
+      <tags>
+        <tag>scientific research</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>正则表达式教程</title>
     <url>/2022/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>正则表达式被大部分语言所支持</p>
@@ -148,10 +176,10 @@
       </tags>
   </entry>
   <entry>
-    <title>论文研讨会笔记 - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
-    <url>/2022/10/17/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AE%A8%E4%BC%9A%E7%AC%94%E8%AE%B0%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</url>
-    <content><![CDATA[<p>10.16</p>
-<h2 id="Thesis-Statement"><a href="#Thesis-Statement" class="headerlink" title="Thesis Statement"></a>Thesis Statement</h2><p>double control to $0$</p>
+    <title>Notebook - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
+    <url>/2022/10/17/Notebook%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</url>
+    <content><![CDATA[<p>10.16   Tao</p>
+<h2 id="Thesis-Statement"><a href="#Thesis-Statement" class="headerlink" title="Thesis Statement"></a>Thesis Statement</h2><p>double $u$, control to $0$</p>
 <h2 id="Main-Contribution"><a href="#Main-Contribution" class="headerlink" title="Main Contribution"></a>Main Contribution</h2><p>Using switch state feedback to solve problems in </p>
 <p>$u_1 + u_2$, double controller</p>
 <p>From an arbitrarily small domain to $0$</p>
