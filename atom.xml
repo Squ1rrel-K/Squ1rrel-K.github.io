@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2022-10-30T03:05:52.043Z</updated>
+  <updated>2022-11-09T13:57:43.908Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>时间分配指南</title>
+    <link href="https://squ1rrel-k.github.io/2022/11/09/%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%E6%8C%87%E5%8D%97/"/>
+    <id>https://squ1rrel-k.github.io/2022/11/09/%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%E6%8C%87%E5%8D%97/</id>
+    <published>2022-11-09T13:46:50.000Z</published>
+    <updated>2022-11-09T13:57:43.908Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;讲课尽量靠前，避免跟考试，作业挤在一起&lt;/p&gt;
+&lt;p&gt;·选讲课尽量靠前，避免跟考试，作业挤在一起&lt;/p&gt;
+&lt;p&gt;中午回宿舍休息一下，11 点到
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>Notebook - module</title>
@@ -511,32 +538,6 @@
     
     
       <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>技术短板与补充</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/05/%E6%8A%80%E6%9C%AF%E7%9F%AD%E6%9D%BF%E4%B8%8E%E8%A1%A5%E5%85%85/</id>
-    <published>2022-10-05T00:39:17.000Z</published>
-    <updated>2022-10-10T01:09:15.895Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前端工作流：&quot;&gt;&lt;a href=&quot;#前端工作流：&quot; class=&quot;headerlink&quot; title=&quot;前端工作流：&quot;&gt;&lt;/a&gt;前端工作流：&lt;/h1&gt;&lt;p&gt;Sass&lt;/p&gt;
-&lt;h1 id=&quot;版本控制：&quot;&gt;&lt;a href=&quot;#版本控制：&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
