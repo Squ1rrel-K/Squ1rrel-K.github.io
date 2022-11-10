@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2022-11-09T13:57:43.908Z</updated>
+  <updated>2022-11-10T05:23:23.983Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>秋冬季节健身指南</title>
+    <link href="https://squ1rrel-k.github.io/2022/11/10/%E7%A7%8B%E5%86%AC%E5%AD%A3%E8%8A%82%E5%81%A5%E8%BA%AB%E6%8C%87%E5%8D%97/"/>
+    <id>https://squ1rrel-k.github.io/2022/11/10/%E7%A7%8B%E5%86%AC%E5%AD%A3%E8%8A%82%E5%81%A5%E8%BA%AB%E6%8C%87%E5%8D%97/</id>
+    <published>2022-11-10T05:09:55.000Z</published>
+    <updated>2022-11-10T05:23:23.983Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;近期因为健身后不注意保暖重感冒一次，如果不是身体比较强壮，高概率是个发烧&lt;/p&gt;
+&lt;p&gt;吃一堑长一智，记录一下天寒时健身的注意事项&lt;/p&gt;
+&lt;h1 id=&quot;关于健身&quot;&gt;&lt;a href=&quot;#关于健身&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="work out" scheme="https://squ1rrel-k.github.io/tags/work-out/"/>
+    
+  </entry>
+  
+  <entry>
     <title>时间分配指南</title>
     <link href="https://squ1rrel-k.github.io/2022/11/09/%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%E6%8C%87%E5%8D%97/"/>
     <id>https://squ1rrel-k.github.io/2022/11/09/%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%E6%8C%87%E5%8D%97/</id>
     <published>2022-11-09T13:46:50.000Z</published>
-    <updated>2022-11-09T13:57:43.908Z</updated>
+    <updated>2022-11-10T05:23:47.644Z</updated>
     
     <summary type="html">
     
@@ -30,8 +57,7 @@
         
         
           &lt;p&gt;讲课尽量靠前，避免跟考试，作业挤在一起&lt;/p&gt;
-&lt;p&gt;·选讲课尽量靠前，避免跟考试，作业挤在一起&lt;/p&gt;
-&lt;p&gt;中午回宿舍休息一下，11 点到
+&lt;p&gt;中午回宿舍休息一下，11 点到 13
         
       
     
@@ -505,31 +531,6 @@
         
         
           &lt;h1 id=&quot;范数-x&quot;&gt;&lt;a href=&quot;#范数-x&quot; class=&quot;headerlink&quot; title=&quot;范数 $||x||$&quot;&gt;&lt;/a&gt;范数
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一些科研的问题</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/05/%E4%B8%80%E4%BA%9B%E7%A7%91%E7%A0%94%E7%9A%84%E9%97%AE%E9%A2%98/</id>
-    <published>2022-10-05T08:02:10.000Z</published>
-    <updated>2022-10-21T03:50:26.562Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;邻接矩阵为什么要求拉普拉斯矩阵？&quot;&gt;&lt;a href=&quot;#邻接矩阵为什么要求拉普拉斯矩阵？&quot; class=&quot;headerlink&quot; title=&quot;邻接矩阵为什么要求拉普拉斯矩阵？&quot;&gt;&lt;/a&gt;邻接矩阵为什么要求拉普拉斯矩阵？&lt;/h1&gt;&lt;h1
         
       
     
