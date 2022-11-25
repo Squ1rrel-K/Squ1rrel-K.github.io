@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2022-11-25T06:47:54.144Z</updated>
+  <updated>2022-11-25T06:50:58.282Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://squ1rrel-k.github.io/2022/11/25/finite-fixed-and-prescribed-time-control/"/>
     <id>https://squ1rrel-k.github.io/2022/11/25/finite-fixed-and-prescribed-time-control/</id>
     <published>2022-11-25T06:35:05.000Z</published>
-    <updated>2022-11-25T06:47:54.144Z</updated>
+    <updated>2022-11-25T06:50:58.282Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,8 @@
       
         
         
-          &lt;p&gt;自从 Lyapunov 提出系统稳定性概念以来，应用端对系统稳定（多系统同步）的收敛时间提出了更高的要求&lt;/p&gt;
-&lt;p&gt;原有的渐进稳定：&lt;/p&gt;
-&lt;script type=&quot;math/tex;
+          &lt;p&gt;一句话：无限的，有限的，可算出来固定值的，可以规定的&lt;/p&gt;
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;自从 Lyapunov
         
       
     

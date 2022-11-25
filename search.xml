@@ -3,11 +3,12 @@
   <entry>
     <title>finite, fixed, and prescribed time control</title>
     <url>/2022/11/25/finite-fixed-and-prescribed-time-control/</url>
-    <content><![CDATA[<p>自从 Lyapunov 提出系统稳定性概念以来，应用端对系统稳定（多系统同步）的收敛时间提出了更高的要求</p>
+    <content><![CDATA[<p>一句话：无限的，有限的，可算出来固定值的，可以规定的</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从 Lyapunov 提出系统稳定性概念以来，应用端对系统稳定（多系统同步）的收敛时间提出了更高的要求</p>
 <p>原有的渐进稳定：</p>
 <script type="math/tex; mode=display">\lim\limits_{t\rightarrow\infty}||x_i(t)-x_i||=0</script><p>只能证明收敛的存在性，无法在应用需要的<strong>有限时间</strong>内完成收敛</p>
 <p>因此对时间要求严格，不依赖系统初值的系统便更具有优势</p>
-<h1 id="Finite-time-control-有限时间控制"><a href="#Finite-time-control-有限时间控制" class="headerlink" title="Finite time control 有限时间控制"></a>Finite time control 有限时间控制</h1><h1 id="fixed-time-control-固定时间控制"><a href="#fixed-time-control-固定时间控制" class="headerlink" title="fixed time control 固定时间控制"></a>fixed time control 固定时间控制</h1><h1 id="prescribed-time-control-有限时间控制"><a href="#prescribed-time-control-有限时间控制" class="headerlink" title="prescribed time control 有限时间控制"></a>prescribed time control 有限时间控制</h1><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1>]]></content>
+<h1 id="Finite-time-control-有限时间控制"><a href="#Finite-time-control-有限时间控制" class="headerlink" title="Finite time control 有限时间控制"></a>Finite time control 有限时间控制</h1><h1 id="Fixed-time-control-固定时间控制"><a href="#Fixed-time-control-固定时间控制" class="headerlink" title="Fixed time control 固定时间控制"></a>Fixed time control 固定时间控制</h1><h1 id="Prescribed-time-control-有限时间控制"><a href="#Prescribed-time-control-有限时间控制" class="headerlink" title="Prescribed time control 有限时间控制"></a>Prescribed time control 有限时间控制</h1><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1>]]></content>
       <categories>
         <category>concept</category>
       </categories>
