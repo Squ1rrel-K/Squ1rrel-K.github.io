@@ -155,6 +155,66 @@
     
     
     <article
+  id="post-剑指offer-JZ4"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/03/01/%E5%89%91%E6%8C%87offer-JZ4/"
+    >剑指offer JZ4</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/03/01/%E5%89%91%E6%8C%87offer-JZ4/" class="article-date">
+  <time datetime="2021-03-01T09:51:37.000Z" itemprop="datePublished">2021-03-01</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%88%B7%E9%A2%98/">刷题</a> / <a class="article-category-link" href="/categories/%E5%88%B7%E9%A2%98/%E6%A0%91/">树</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="JZ4"><a href="#JZ4" class="headerlink" title="JZ4"></a>JZ4</h1><p><a href="https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。</p>
+<h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><p>中序+其他序造树，分随机存储（数组），顺序存储（链表）两种，找 root 两边 dfs 递归即可，PAT 送分题</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="常规题"><a href="#常规题" class="headerlink" title="常规题"></a>常规题</h3><p>$T:O(n)$</p>
+<p>$S:O(n)$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode *<span class="title">reConstructBinaryTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vin)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> buildTree(pre, vin, <span class="number">0</span>, pre.<span class="built_in">size</span>() - <span class="number">1</span>, <span class="number">0</span>, vin.<span class="built_in">size</span>() - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">TreeNode *<span class="title">buildTree</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;pre, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;vin, <span class="keyword">int</span> preL, <span class="keyword">int</span> preR, <span class="keyword">int</span> inL, <span class="keyword">int</span> inR)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//返回</span></span><br><span class="line">        <span class="keyword">if</span> (preL &gt; preR) <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="comment">//新根</span></span><br><span class="line">        TreeNode *root = <span class="keyword">new</span> TreeNode(pre[preL]);</span><br><span class="line">        <span class="comment">//找 vin 中的根</span></span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i = inL; i &lt;= inR; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (pre[preL] == vin[i]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//递归子树</span></span><br><span class="line">        <span class="keyword">int</span> numLeft = i - inL;</span><br><span class="line">        root-&gt;left = buildTree(pre, vin, preL + <span class="number">1</span>, preL + numLeft, inL, i - <span class="number">1</span>);</span><br><span class="line">        root-&gt;right = buildTree(pre, vin, preL + numLeft + <span class="number">1</span>, preR, i + <span class="number">1</span>, inR);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-剑指offer-JZ3"
   class="article article-type-post"
   itemscope
@@ -376,62 +436,6 @@
        
   <h1 id="Clion-ctrl-alt-L-格式化代码无效"><a href="#Clion-ctrl-alt-L-格式化代码无效" class="headerlink" title="Clion ctrl+alt+L 格式化代码无效"></a>Clion ctrl+alt+L 格式化代码无效</h1><p>网易云快捷键占用了</p>
  
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-基础排序算法"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/02/07/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"
-    >基础排序算法</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/02/07/%E5%9F%BA%E7%A1%80%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="article-date">
-  <time datetime="2021-02-07T12:31:29.000Z" itemprop="datePublished">2021-02-07</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">基础算法</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="基础排序算法"><a href="#基础排序算法" class="headerlink" title="基础排序算法"></a>基础排序算法</h1><h2 id="STL-sort-方法"><a href="#STL-sort-方法" class="headerlink" title="STL - sort 方法"></a>STL - sort 方法</h2><p>源码实现：快排结合插排，堆排</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node a, node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.xxx &lt; b.xxx;</span><br><span class="line">&#125;</span><br><span class="line">sort(a, a + maxn, cmp) <span class="comment">//如果a是2维数组，首地址为a[0]，一定要注意</span></span><br></pre></td></tr></table></figure>
-<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2> 
       <!-- reward -->
       
     </div>

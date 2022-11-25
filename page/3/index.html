@@ -155,6 +155,86 @@
     
     
     <article
+  id="post-laravel-vue-element-admin-安装指南"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/"
+    >laravel vue-element-admin 安装指南</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/22/laravel-vue-element-admin-%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/" class="article-date">
+  <time datetime="2022-10-22T05:20:26.000Z" itemprop="datePublished">2022-10-22</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><a href="http://www.phpxs.com/post/8290/" target="_blank" rel="noopener">参考教程</a></p>
+<h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><p><em>php: ^7.4</em></p>
+<p><em>laravel: 7.*</em></p>
+<p><em>element: ^2.13.2</em></p>
+<p><em>vue: ^2.6.10</em></p>
+<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><h5 id="安装项目"><a href="#安装项目" class="headerlink" title="安装项目"></a>安装项目</h5><p>更具体内容见 <a href="https://squ1rrel-k.github.io/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/" target="_blank" rel="noopener">此教程</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer create-project laravel/laravel YourProjectName --prefer-dist <span class="string">"7.*"</span></span></span><br></pre></td></tr></table></figure>
+<h5 id="安装-vue-element-admin"><a href="#安装-vue-element-admin" class="headerlink" title="安装 vue-element-admin"></a>安装 vue-element-admin</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</span></span><br></pre></td></tr></table></figure>
+<h5 id="合并-package-json"><a href="#合并-package-json" class="headerlink" title="合并 package.json"></a>合并 package.json</h5><p>将 vue-element-admin 中 package.json 的 dependencies，devDependencies </p>
+<p>合并到 laravel 的 package.json 中</p>
+<p>以 vue-element-admin 为主</p>
+<h5 id="复制-babel-config-js-到-laravel-根目录"><a href="#复制-babel-config-js-到-laravel-根目录" class="headerlink" title="复制 babel.config.js 到 laravel 根目录"></a>复制 babel.config.js 到 laravel 根目录</h5><h5 id="复制项目"><a href="#复制项目" class="headerlink" title="复制项目"></a>复制项目</h5><p>将 vue-element-admin 中整个 src 目录下的文件复制到 laravel 项目中的 resources/vue-element-admin 目录中</p>
+<h5 id="npm-安装"><a href="#npm-安装" class="headerlink" title="npm 安装"></a>npm 安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run dev</span></span><br></pre></td></tr></table></figure>
+<h1 id="部分问题"><a href="#部分问题" class="headerlink" title="部分问题"></a>部分问题</h1><h5 id="别名定义"><a href="#别名定义" class="headerlink" title="别名定义"></a>别名定义</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Module not found: Error: Can't resolve '@/views/zip/index' in '/path/to/laravel-vue-admin/resources/backend/router'</span><br></pre></td></tr></table></figure>
+<p>在 webpack.mix.js 中增加项目 src 目录的别名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// webpack.mix.js</span></span><br><span class="line">mix.webpackConfig(&#123;</span><br><span class="line">  resolve: &#123;</span><br><span class="line">    alias: &#123;</span><br><span class="line">      <span class="string">'@'</span>: path.resolve(__dirname, <span class="string">'resources/vue-element-admin/src'</span>),</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="babel-失败"><a href="#babel-失败" class="headerlink" title="babel 失败"></a>babel 失败</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Module build failed (from ./node_modules/babel-loader/lib/index.js):</span><br></pre></td></tr></table></figure>
+<p>复制 babel.config.js 到 laravel 根目录</p>
+<h5 id="字体加载失败"><a href="#字体加载失败" class="headerlink" title="字体加载失败"></a>字体加载失败</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> error  in ./resources/vue-element/src/assets/font/DS-DIGIT.TTF</span><br><span class="line"></span><br><span class="line">Module parse failed: Unexpected character '' (1:0)</span><br><span class="line">You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders</span><br></pre></td></tr></table></figure>
+<p>安装 npm 的 file-loader，ttf-loader</p>
+<p>并在 webpack.mix.js 中增加关于新的 module loader 的 webpack config </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install file-loader ttf-loader -D</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//webpack.mix.js</span></span><br><span class="line">mix.webpackConfig(&#123;</span><br><span class="line">    resolve: &#123;</span><br><span class="line">        alias: &#123;</span><br><span class="line">            <span class="string">'@'</span>: path.resolve(__dirname, <span class="string">'resources/vue-element/src'</span>),</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//加入新的 module 的加载规则</span></span><br><span class="line">    <span class="built_in">module</span>: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: <span class="regexp">/\.TTF$/</span>,</span><br><span class="line">                use: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: <span class="string">'file-loader'</span>,</span><br><span class="line">                        options: &#123;</span><br><span class="line">                            name: <span class="string">'./font/[hash].[ext]'</span>,</span><br><span class="line">                        &#125;,</span><br><span class="line">                    &#125;,</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="图片不显示"><a href="#图片不显示" class="headerlink" title="图片不显示"></a>图片不显示</h5> <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src=[object module]</span><br></pre></td></tr></table></figure>
+<p> vue 默认使用的是 commonjs，webpack ^4.* 使用的是 es6 语法，两边任意一边凑过去都可以</p>
+<p>可以在 webpack.mix.js 的 rules 中加入以下（但是没有解决我的问题）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  test: <span class="regexp">/\.(png|jpe?g|gif|svg)$/</span>,</span><br><span class="line">  loader: <span class="string">'url-loader'</span>,</span><br><span class="line">  options: &#123;</span><br><span class="line">    esModule: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>或可以降低 file-loader 的版本</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install file-loader@3.*</span></span><br></pre></td></tr></table></figure>
+<h5 id="最后的-webpack-mix-js"><a href="#最后的-webpack-mix-js" class="headerlink" title="最后的 webpack.mix.js"></a>最后的 webpack.mix.js</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// webpack.mix.js</span></span><br><span class="line"><span class="keyword">const</span> mix = <span class="built_in">require</span>(<span class="string">'laravel-mix'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> |--------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment"> | Mix Asset Management</span></span><br><span class="line"><span class="comment"> |--------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment"> |</span></span><br><span class="line"><span class="comment"> | Mix provides a clean, fluent API for defining some Webpack build steps</span></span><br><span class="line"><span class="comment"> | for your Laravel application. By default, we are compiling the Sass</span></span><br><span class="line"><span class="comment"> | file for the application as well as bundling up all the JS files.</span></span><br><span class="line"><span class="comment"> |</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">mix.js(<span class="string">'resources/vue-element/src/main.js'</span>, <span class="string">'public/js'</span>)</span><br><span class="line">    .sass(<span class="string">'resources/sass/app.scss'</span>, <span class="string">'public/css'</span>);</span><br><span class="line"></span><br><span class="line">mix.webpackConfig(&#123;</span><br><span class="line">    resolve: &#123;</span><br><span class="line">        alias: &#123;</span><br><span class="line">            <span class="string">'@'</span>: path.resolve(__dirname, <span class="string">'resources/vue-element/src'</span>),</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="built_in">module</span>: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: <span class="regexp">/\.TTF$/</span>,</span><br><span class="line">                use: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: <span class="string">'file-loader'</span>,</span><br><span class="line">                        options: &#123;</span><br><span class="line">                            name: <span class="string">'./font/[hash].[ext]'</span>,</span><br><span class="line">                        &#125;,</span><br><span class="line">                    &#125;,</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-科研兴趣点"
   class="article article-type-post"
   itemscope
@@ -379,62 +459,6 @@
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scientific-research/" rel="tag">scientific research</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-Laravel-Vue-项目本地化部署"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/"
-    >Laravel Vue 项目本地化部署</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/" class="article-date">
-  <time datetime="2022-10-14T02:20:41.000Z" itemprop="datePublished">2022-10-14</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/tutorial/">tutorial</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="项目拷贝"><a href="#项目拷贝" class="headerlink" title="项目拷贝"></a>项目拷贝</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:YourUserName/YourRepositories.git</span><br></pre></td></tr></table></figure>
-<h1 id="本地化"><a href="#本地化" class="headerlink" title="本地化"></a>本地化</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">composer install </span><br><span class="line">cp .env.example .env # Then modify .env file</span><br><span class="line">php artisan key:generate</span><br><span class="line">npm install</span><br><span class="line">npm install vue-loader vue-template-compiler --save-dev</span><br><span class="line"><span class="meta">#</span><span class="bash"> modify webpack, add vue() to import chain</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
 
     </footer>
   </div>
