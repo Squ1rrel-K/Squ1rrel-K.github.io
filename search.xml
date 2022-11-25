@@ -3,7 +3,7 @@
   <entry>
     <title>finite, fixed, and prescribed time control</title>
     <url>/2022/11/25/finite-fixed-and-prescribed-time-control/</url>
-    <content><![CDATA[<p>一句话：无限的，有限的，可算出来固定值的，可以规定的</p>
+    <content><![CDATA[<p>一句话：理论收敛，初值依赖，初值不依赖但是无法用户设定，用户设定的</p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从 Lyapunov 提出系统稳定性概念以来，应用端对系统稳定（多系统同步）的收敛时间提出了更高的要求</p>
 <p>原有的渐进稳定：</p>
 <script type="math/tex; mode=display">\lim\limits_{t\rightarrow\infty}||x_i(t)-x_i||=0</script><p>只能证明收敛的存在性，无法在应用需要的<strong>有限时间</strong>内完成收敛</p>
