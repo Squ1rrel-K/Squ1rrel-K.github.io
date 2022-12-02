@@ -3,26 +3,26 @@
   <entry>
     <title>碎碎念</title>
     <url>/2022/12/02/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</url>
-    <content><![CDATA[<h3 id="11-19-观《坠落》有感"><a href="#11-19-观《坠落》有感" class="headerlink" title="11.19 观《坠落》有感"></a>11.19 观《坠落》有感</h3><p>恐惧是生物进化的核心构成，克服所有恐惧是愚蠢的，学会敬畏</p>
-<p>运动的女性，有肌肉的身体曲线可真好看</p>
-<h3 id="11-20"><a href="#11-20" class="headerlink" title="11.20"></a>11.20</h3><p>网络最本质的拓扑是图吗，还有比点，边表示更抽象的拓扑吗？</p>
-<p><br/></p>
-<p>不能解构的，就砌进神像里，但是神像的存在本身不就是提示了吗？</p>
-<p>有缺点的战士终竟是战士，完美的苍蝇也终竟不过是苍蝇</p>
-<h3 id="11-22"><a href="#11-22" class="headerlink" title="11.22"></a>11.22</h3><p>参与博弈的原因，就是因为自私个体拿不到所有的信息（如 Laplacian matrix $\lambda_2$）</p>
-<p>所以博弈天然是完全分布式的</p>
-<p>区别在于信息交互的时候要考虑广义人性</p>
+    <content><![CDATA[<h3 id="12-1"><a href="#12-1" class="headerlink" title="12.1"></a>12.1</h3><p>工作受到阻碍，或瓶颈期的时候，第一时间想到的应该是去健身</p>
+<h3 id="11-28"><a href="#11-28" class="headerlink" title="11.28"></a>11.28</h3><p>世界杯提到的半自动越位技术，本质上跟豪汇报的《Event-Triggered Distributed Average Tracking Control for Lipschitz-Type Nonlinear Multiagent Systems》差不多</p>
+<p>事件触发 $==$ 可能的越位事件（裁判组规定的触发事件，如红牌，越位）</p>
+<p>分布式观测器的平均值 $==$ $N$ 个高速摄像机拍摄画面信息的综合考察</p>
+<h3 id="11-27"><a href="#11-27" class="headerlink" title="11.27"></a>11.27</h3><p>看文章应该是每周优先级最高的工作</p>
+<h3 id="11-25"><a href="#11-25" class="headerlink" title="11.25"></a>11.25</h3><p>我的问题不就在答案里吗，sb</p>
+<h3 id="11-24"><a href="#11-24" class="headerlink" title="11.24"></a>11.24</h3><p>新的知识，第一次接触，不要贪图吃透，掌握最基本的概念即可，后面新接触的次数与其重要性是正相关的，无需担心</p>
 <h3 id="11-23"><a href="#11-23" class="headerlink" title="11.23"></a>11.23</h3><p>我们组的同步研究，往往多智能体是听话的，博弈的前提是个体自私，但是不好融入</p>
 <p>因为代价可能是没有熟悉的应用模型解释（自私无人器 == 模拟生物进化？）</p>
 <p>但是之前讲到的 DDOS 攻击，除了触发事件分布式的合作抵抗，加入博弈色彩有没有机会提升整体的防御水平</p>
 <p>博弈可能是完全或非完全信息的，但一定天然是分布式的</p>
-<h3 id="11-24"><a href="#11-24" class="headerlink" title="11.24"></a>11.24</h3><p>新的知识，第一次接触，不要贪图吃透，掌握最基本的概念即可，后面新接触的次数与其重要性是正相关的，无需担心</p>
-<h3 id="11-25"><a href="#11-25" class="headerlink" title="11.25"></a>11.25</h3><p>我的问题不就在答案里吗，sb</p>
-<h3 id="11-27"><a href="#11-27" class="headerlink" title="11.27"></a>11.27</h3><p>看文章应该是每周优先级最高的工作</p>
-<h3 id="11-28"><a href="#11-28" class="headerlink" title="11.28"></a>11.28</h3><p>世界杯提到的半自动越位技术，本质上跟豪汇报的《Event-Triggered Distributed Average Tracking Control for Lipschitz-Type Nonlinear Multiagent Systems》差不多</p>
-<p>事件触发 $==$ 可能的越位事件（裁判组规定的触发事件，如红牌，越位）</p>
-<p>分布式观测器的平均值 $==$ $N$ 个高速摄像机拍摄画面信息的综合考察</p>
-<h3 id="12-1"><a href="#12-1" class="headerlink" title="12.1"></a>12.1</h3><p>工作受到阻碍，或瓶颈期的时候，第一时间想到的应该是去健身</p>
+<h3 id="11-22"><a href="#11-22" class="headerlink" title="11.22"></a>11.22</h3><p>参与博弈的原因，就是因为自私个体拿不到所有的信息（如 Laplacian matrix $\lambda_2$）</p>
+<p>所以博弈天然是完全分布式的</p>
+<p>区别在于信息交互的时候要考虑广义人性</p>
+<h3 id="11-20"><a href="#11-20" class="headerlink" title="11.20"></a>11.20</h3><p>网络最本质的拓扑是图吗，还有比点，边表示更抽象的拓扑吗？</p>
+<p><br/></p>
+<p>不能解构的，就砌进神像里，但是神像的存在本身不就是提示了吗？</p>
+<p>有缺点的战士终竟是战士，完美的苍蝇也终竟不过是苍蝇</p>
+<h3 id="11-19-观《坠落》有感"><a href="#11-19-观《坠落》有感" class="headerlink" title="11.19 观《坠落》有感"></a>11.19 观《坠落》有感</h3><p>恐惧是生物进化的核心构成，克服所有恐惧是愚蠢的，学会敬畏</p>
+<p>运动的女性，有肌肉的身体曲线可真好看</p>
 ]]></content>
       <tags>
         <tag>anything</tag>
