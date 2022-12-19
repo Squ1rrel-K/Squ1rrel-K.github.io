@@ -475,7 +475,7 @@
 <p>刘慈欣牛逼！</p>
 ]]></content>
       <tags>
-        <tag>scientific research</tag>
+        <tag>informal essay</tag>
       </tags>
   </entry>
   <entry>
@@ -1122,6 +1122,7 @@ S^T(x) & R(x)
 <p>pedigree 家谱</p>
 ]]></content>
       <categories>
+        <category>algorithm</category>
         <category>PAT</category>
         <category>PAT A</category>
       </categories>
