@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>塔科夫视频调色指南</title>
+    <url>/2022/12/27/%E5%A1%94%E7%A7%91%E5%A4%AB%E8%A7%86%E9%A2%91%E8%B0%83%E8%89%B2%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>塔科夫由于游戏背景原因，会出现大量极黑场景</p>
+<p>如：拉闸前的立交桥内部，储备站地下，海关宿舍楼，疗养院楼内。</p>
+<p>在做相关视频时，我们需要一定的调色技术，保证给观众呈现清晰的内容</p>
+<p>软件：pr</p>
+<h1 id="极简教程"><a href="#极简教程" class="headerlink" title="极简教程"></a>极简教程</h1><p>选择素材，找到 Lumetri 颜色</p>
+<p>只需要调整曝光，饱和度</p>
+<p>曝光默认 1 ~ 2，上述极黑场景开到 3  ~ 4</p>
+<p>饱和度除了实验室 125，其它默认 150</p>
+<h1 id="复杂情况"><a href="#复杂情况" class="headerlink" title="复杂情况"></a>复杂情况</h1><p>有时候，我们还需要考虑一些情况</p>
+<p>如：主视角带了面罩，极暗的素材里有大量玩家开灯，主视角玩的喷火龙，地图下雨了，视频录制出来本身就带了一些滤镜成分的要素</p>
+<p>这时要求我们具体情况具体分析，根据自己的需要修改 Lumetri 颜色中的其他属性：高光，阴影，白色，黑色等</p>
+<p>有一些问题可以加扣扣裙：856031690</p>
+<p>up 也可联系裙主，去 up 的 vx 交流裙</p>
+<h1 id="Lumetri-颜色原理"><a href="#Lumetri-颜色原理" class="headerlink" title="Lumetri 颜色原理"></a>Lumetri 颜色原理</h1><p><a href="https://www.bilibili.com/video/BV1nK4y137QJ" target="_blank" rel="noopener">【PR教程】PR调色-Lumetri颜色详细介绍（6集合集）</a></p>
+]]></content>
+      <tags>
+        <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>碎碎念</title>
     <url>/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</url>
-    <content><![CDATA[<p>12.19</p>
-<p>世界杯结束，心愿即成，恢复正常工作作息与锻炼</p>
+    <content><![CDATA[<h3 id="12-19"><a href="#12-19" class="headerlink" title="12.19"></a>12.19</h3><p>世界杯结束，心愿即成，恢复正常工作作息与锻炼</p>
 <h3 id="12-14"><a href="#12-14" class="headerlink" title="12.14"></a>12.14</h3><p>学会分时切块时间的模块化工作办法</p>
 <p>开机第一时间不要想着打开游戏</p>
 <h3 id="12-5"><a href="#12-5" class="headerlink" title="12.5"></a>12.5</h3><p>享受孤独 - BGM 【美丽世界的孤儿】</p>

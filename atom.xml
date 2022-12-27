@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2022-12-19T08:52:32.426Z</updated>
+  <updated>2022-12-27T06:09:36.344Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>碎碎念</title>
-    <link href="https://squ1rrel-k.github.io/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    <id>https://squ1rrel-k.github.io/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</id>
-    <published>2022-12-05T13:47:42.000Z</published>
-    <updated>2022-12-19T08:52:32.426Z</updated>
+    <title>塔科夫视频调色指南</title>
+    <link href="https://squ1rrel-k.github.io/2022/12/27/%E5%A1%94%E7%A7%91%E5%A4%AB%E8%A7%86%E9%A2%91%E8%B0%83%E8%89%B2%E6%8C%87%E5%8D%97/"/>
+    <id>https://squ1rrel-k.github.io/2022/12/27/%E5%A1%94%E7%A7%91%E5%A4%AB%E8%A7%86%E9%A2%91%E8%B0%83%E8%89%B2%E6%8C%87%E5%8D%97/</id>
+    <published>2022-12-27T05:44:58.000Z</published>
+    <updated>2022-12-27T06:09:36.344Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,37 @@
       
         
         
-          &lt;p&gt;12.19&lt;/p&gt;
-&lt;p&gt;世界杯结束，心愿即成，恢复正常工作作息与锻炼&lt;/p&gt;
-&lt;h3 id=&quot;12-14&quot;&gt;&lt;a href=&quot;#12-14&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;塔科夫由于游戏背景原因，会出现大量极黑场景&lt;/p&gt;
+&lt;p&gt;如：拉闸前的立交桥内部，储备站地下，海关宿舍楼，疗养院楼内。&lt;/p&gt;
+&lt;p&gt;在做相关视频时，我们需要一定的调色技术，保证给观众呈现清晰的内容&lt;/p&gt;
+&lt;p&gt;软件：pr&lt;/p&gt;
+&lt;h1 id=&quot;极简教程&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="tutorial" scheme="https://squ1rrel-k.github.io/tags/tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>碎碎念</title>
+    <link href="https://squ1rrel-k.github.io/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <id>https://squ1rrel-k.github.io/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</id>
+    <published>2022-12-05T13:47:42.000Z</published>
+    <updated>2022-12-19T09:18:13.480Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;12-19&quot;&gt;&lt;a href=&quot;#12-19&quot; class=&quot;headerlink&quot; title=&quot;12.19&quot;&gt;&lt;/a&gt;12.19&lt;/h3&gt;&lt;p&gt;世界杯结束，心愿即成，恢复正常工作作息与锻炼&lt;/p&gt;
+&lt;h3 id=&quot;12-14&quot;&gt;&lt;a
         
       
     
@@ -518,32 +546,6 @@
     
     
       <category term="tutorial" scheme="https://squ1rrel-k.github.io/categories/tutorial/"/>
-    
-    
-      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从场论到图论：梯度，旋度，散度，通量，拉布拉斯算子与矩阵，图算法</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/06/%E4%BB%8E%E5%9C%BA%E8%AE%BA%E5%88%B0%E5%9B%BE%E8%AE%BA%EF%BC%9A%E6%A2%AF%E5%BA%A6%EF%BC%8C%E6%97%8B%E5%BA%A6%EF%BC%8C%E6%95%A3%E5%BA%A6%EF%BC%8C%E9%80%9A%E9%87%8F%EF%BC%8C%E6%8B%89%E5%B8%83%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%E4%B8%8E%E7%9F%A9%E9%98%B5%EF%BC%8C%E5%9B%BE%E7%AE%97%E6%B3%95/</id>
-    <published>2022-10-06T02:02:22.000Z</published>
-    <updated>2022-10-06T05:36:40.455Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/67336297/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【其实贼简单】拉普拉斯算子和拉普拉斯矩阵&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;方向导数与梯度&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
     
     
       <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
