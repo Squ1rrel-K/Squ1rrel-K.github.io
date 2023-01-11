@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2022-12-27T06:09:36.344Z</updated>
+  <updated>2023-01-08T06:55:19.585Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么样的素材才是好素材</title>
+    <link href="https://squ1rrel-k.github.io/2023/01/08/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E7%B4%A0%E6%9D%90%E6%89%8D%E6%98%AF%E5%A5%BD%E7%B4%A0%E6%9D%90/"/>
+    <id>https://squ1rrel-k.github.io/2023/01/08/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E7%B4%A0%E6%9D%90%E6%89%8D%E6%98%AF%E5%A5%BD%E7%B4%A0%E6%9D%90/</id>
+    <published>2023-01-08T05:32:15.000Z</published>
+    <updated>2023-01-08T06:55:19.585Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;收到了大量投稿&lt;/p&gt;
+&lt;p&gt;这段时间收到了大量投稿，发现我与各位 up 对于何为好的素材，以及如何以高性价比找到合适素材的方式，仍有争执&lt;/p&gt;
+&lt;p&gt;写这篇文章，与大家讨论，希望能有所收获&lt;/p&gt;
+&lt;h1 id=&quot;切片是不是好的素材？&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="tutorial" scheme="https://squ1rrel-k.github.io/tags/tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>塔科夫视频调色指南</title>
@@ -521,34 +549,6 @@
     
     
       <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用 Markdown 数学公式</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/06/%E5%B8%B8%E7%94%A8-Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
-    <published>2022-10-06T02:25:30.000Z</published>
-    <updated>2022-10-17T03:58:51.952Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;上标-X-2&quot;&gt;&lt;a href=&quot;#上标-X-2&quot; class=&quot;headerlink&quot; title=&quot;上标 $X^2$&quot;&gt;&lt;/a&gt;上标 $X^2$&lt;/h1&gt;&lt;p&gt;X^2&lt;/p&gt;
-&lt;h1 id=&quot;下标-X-2&quot;&gt;&lt;a href=&quot;#下标-X-2&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="tutorial" scheme="https://squ1rrel-k.github.io/categories/tutorial/"/>
-    
-    
-      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
     
   </entry>
   
