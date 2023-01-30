@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>工作指南</title>
+    <url>/2023/01/30/%E5%B7%A5%E4%BD%9C%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h1 id="人工智能与统计学"><a href="#人工智能与统计学" class="headerlink" title="人工智能与统计学"></a>人工智能与统计学</h1><h3 id="模型部分"><a href="#模型部分" class="headerlink" title="模型部分"></a>模型部分</h3><p>掌握基本的模型原理，基本代码实现（R，python）</p>
+<h3 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h3><p>numpy，pandas 基础，掌握基本数据处理，统计指标</p>
+<p>seaborn，pyplot 绘图基础，基本的图像</p>
+<p>R 的基础</p>
+<h1 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h1><p>扎实的数学基础</p>
+<h3 id="数学分析"><a href="#数学分析" class="headerlink" title="数学分析"></a>数学分析</h3><p>带着问题学习，概念为主，习题适量</p>
+<h1 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h1><p>独立，扎实的项目构建能力</p>
+<h3 id="Laravel"><a href="#Laravel" class="headerlink" title="Laravel"></a>Laravel</h3><p>（✔）完全的独立构建能力</p>
+]]></content>
+      <tags>
+        <tag>scientific research</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>近期工作计划</title>
     <url>/2023/01/13/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<h1 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h1><p>数据挖掘作业</p>
@@ -361,21 +377,6 @@
       </tags>
   </entry>
   <entry>
-    <title>科研兴趣点</title>
-    <url>/2022/10/21/%E7%A7%91%E7%A0%94%E5%85%B4%E8%B6%A3%E7%82%B9/</url>
-    <content><![CDATA[<p>博弈论</p>
-<p>人工智能</p>
-<p>机器学习</p>
-<p>政治经济学</p>
-<p>社会学</p>
-<p>数学分析</p>
-<p>高等代数</p>
-]]></content>
-      <tags>
-        <tag>scientific research</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>讲座笔记-洪奕光-复杂多智能体系统的分析与调控</title>
     <url>/2022/10/21/%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0-%E6%B4%AA%E5%A5%95%E5%85%89-%E5%A4%8D%E6%9D%82%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E8%B0%83%E6%8E%A7/</url>
     <content><![CDATA[<p><strong>一定要找具体的研究问题是什么！</strong></p>
@@ -632,34 +633,6 @@ S^T(x) & R(x)
       </categories>
       <tags>
         <tag>coding</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>研一第一学期工作计划</title>
-    <url>/2022/09/28/%E7%A0%94%E4%B8%80%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<h1 id="研一第一学期工作计划"><a href="#研一第一学期工作计划" class="headerlink" title="研一第一学期工作计划"></a>研一第一学期工作计划</h1><p>打基础为主，重心放在项目跟基础知识构架</p>
-<h2 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h2><p>重概念，轻计算，掌握主要框架知识为主要矛盾</p>
-<p>408 为纲，计组，OS，DS，计网</p>
-<p>计组：王道</p>
-<p>OS：王道</p>
-<p>DS：已熟练</p>
-<p>计网：王道</p>
-<h2 id="网络基础"><a href="#网络基础" class="headerlink" title="网络基础"></a>网络基础</h2><p>《网络科学导论》熟读，非精读，了解基本研究方向，更具体的工作方向等待刘院指导</p>
-<h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2><p>算法：熟练 PAT 甲级，完善解法分析代码库</p>
-<p>网站开发：复习 Laravel L01，Laravel L02</p>
-<h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h2><p>前两个月做技术储备，后面先进行多智能体官网的开发，具体细节在技术储备结束后找胡老师</p>
-<h2 id="课程"><a href="#课程" class="headerlink" title="课程"></a>课程</h2><p>《算法分析》：顺道复习 DS，跟进课程进度，但是看网课</p>
-<h2 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h2><p>每周至少一次 vrchat 练习口语，争取 11 月 20 日的考试拿到免修的 C+ 等级</p>
-<h2 id="练字"><a href="#练字" class="headerlink" title="练字"></a>练字</h2><p>钢笔，中文，英文</p>
-<p>方法论还要去知乎查询</p>
-<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><p>头眼每周一期</p>
-<p>每日花 1 h，做 20 min 的集锦，不做精剪</p>
-<p>998 合作视频每周一期</p>
-<p>每日 8 点半左右开小会</p>
-<h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><p>每周至少 2 篇有质量的内容</p>
-]]></content>
-      <tags>
-        <tag>plan</tag>
       </tags>
   </entry>
   <entry>
