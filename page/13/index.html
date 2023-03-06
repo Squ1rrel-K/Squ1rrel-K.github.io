@@ -155,6 +155,494 @@
     
     
     <article
+  id="post-PATA1004"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/27/PATA1004/"
+    >PAT-A-1004</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/PATA1004/" class="article-date">
+  <time datetime="2020-07-27T04:32:35.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/algorithm/">algorithm</a> / <a class="article-category-link" href="/categories/algorithm/PAT/">PAT</a> / <a class="article-category-link" href="/categories/algorithm/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1004"><a href="#PAT-A-1004" class="headerlink" title="PAT-A-1004"></a>PAT-A-1004</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇"><a href="#生僻词汇" class="headerlink" title="生僻词汇"></a>生僻词汇</h2><p>hierarchy 层级</p>
+<p>pedigree 家谱</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-PATA1003"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/27/PATA1003/"
+    >PAT-A-1003</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/PATA1003/" class="article-date">
+  <time datetime="2020-07-27T00:29:21.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1003"><a href="#PAT-A-1003" class="headerlink" title="PAT-A-1003"></a>PAT-A-1003</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805523835109376" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇"><a href="#生僻词汇" class="headerlink" title="生僻词汇"></a>生僻词汇</h2><p>scattered 分散的</p>
+<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>你是个救援队头子，要从 A 到 B 点去救人，路途城市的人手可以捎上，求最短路径数量，跟最短路情况下最多救援队人数</p>
+<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>图的最短路径问题</p>
+<p>多路径的第二权计算</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>非负权最短路显然用 Dijkstra 算法</p>
+<p>多解用 <code>vector</code> 储存</p>
+<p>计算比较第二权，即点权：人手</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxN = <span class="number">501</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, c1, c2, p1, p2, l, minDis = INF, maxPeo = <span class="number">0</span>, numOfDis = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> G[maxN][maxN], w[maxN], d[maxN];</span><br><span class="line"><span class="keyword">bool</span> vis[maxN] = &#123;<span class="literal">false</span>&#125;;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre[maxN];</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; tmp;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dij</span><span class="params">(<span class="keyword">int</span> c)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//重置距离</span></span><br><span class="line">    <span class="built_in">fill</span>(d, d + maxN, INF);</span><br><span class="line">    d[c] = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//找最近的结点 n 次</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="comment">//找下一个最近的结点 u</span></span><br><span class="line">        <span class="keyword">int</span> u = <span class="number">-1</span>, Min = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vis[v] == <span class="literal">false</span> &amp;&amp; d[v] &lt; Min) &#123;</span><br><span class="line">                u = v;</span><br><span class="line">                Min = d[v];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//未找到最近结点 u</span></span><br><span class="line">        <span class="keyword">if</span> (u == <span class="number">-1</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//访问 u</span></span><br><span class="line">        vis[u] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//尝试更新最短距离 u -&gt; v</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++) &#123;</span><br><span class="line">            <span class="comment">//未访问，可访问</span></span><br><span class="line">            <span class="keyword">if</span> (vis[v] == <span class="literal">false</span> &amp;&amp; G[u][v] != INF) &#123;</span><br><span class="line">                <span class="comment">//路径相等</span></span><br><span class="line">                <span class="keyword">if</span> (d[u] + G[u][v] == d[v]) &#123;</span><br><span class="line">                    <span class="comment">//更新前驱结点</span></span><br><span class="line">                    pre[v].push_back(u);</span><br><span class="line">                &#125;</span><br><span class="line">                    <span class="comment">//路径更短，更新</span></span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span> (d[u] + G[u][v] &lt; d[v]) &#123;</span><br><span class="line">                    d[v] = d[u] + G[u][v];</span><br><span class="line">                    pre[v].<span class="built_in">clear</span>();</span><br><span class="line">                    pre[v].push_back(u);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//边界条件</span></span><br><span class="line">    <span class="keyword">if</span> (v == c1) &#123;</span><br><span class="line">        tmp.push_back(v);</span><br><span class="line">        <span class="keyword">int</span> dis = <span class="number">0</span>, peo = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//计算路径 - 边权</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tmp.<span class="built_in">size</span>() - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> u1 = tmp[i], u2 = tmp[i + <span class="number">1</span>];</span><br><span class="line">            dis += G[u1][u2];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//计算人数 - 点权</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; tmp.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> u = tmp[i];</span><br><span class="line">            peo += w[u];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//若为最短路径</span></span><br><span class="line">        <span class="keyword">if</span> (dis &lt; minDis) &#123;</span><br><span class="line">            numOfDis = <span class="number">1</span>;</span><br><span class="line">            minDis = dis;</span><br><span class="line">            maxPeo = peo;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">//若最短路径不唯一</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (dis == minDis) &#123;</span><br><span class="line">            numOfDis++;</span><br><span class="line">            <span class="keyword">if</span> (peo &gt; maxPeo) maxPeo = peo;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp.pop_back();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//递归式</span></span><br><span class="line">    tmp.push_back(v);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pre[v].<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        DFS(pre[v][i]);</span><br><span class="line">    &#125;</span><br><span class="line">    tmp.pop_back();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;n, &amp;m, &amp;c1, &amp;c2);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//点权赋值</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;w[i]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//关闭图</span></span><br><span class="line">    <span class="built_in">fill</span>(G[<span class="number">0</span>], G[<span class="number">0</span>] + maxN * maxN, INF);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//边权赋值</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;p1, &amp;p2, &amp;l);</span><br><span class="line">        G[p1][p2] = G[p2][p1] = l;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Dij(c1);</span><br><span class="line">    DFS(c2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d %d"</span>, numOfDis, maxPeo);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-PATA1002"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/27/PATA1002/"
+    >PAT-A-1002</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/PATA1002/" class="article-date">
+  <time datetime="2020-07-26T23:58:18.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="PAT-A-1002"><a href="#PAT-A-1002" class="headerlink" title="PAT-A-1002"></a>PAT-A-1002</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-C-Cpp" target="_blank" rel="noopener">所有甲级题全解</a></p>
+<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="生僻词汇"><a href="#生僻词汇" class="headerlink" title="生僻词汇"></a>生僻词汇</h2><p>Polynomial 多项式</p>
+<p>exponent 指数</p>
+<p>coefficient 系数</p>
+<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给 A，B 两个多项式，求和</p>
+<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>变量类型合理选择</p>
+<p>简单在线处理</p>
+<p>数组下标模拟多项式指数</p>
+<p>格式化输出</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>$N$ 上界只有 $10^3$，400ms 时限，两个数组直接暴力检索显然可以接受，但是在线处理可以保证时间复杂度始终在 $O(n)$</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxN = <span class="number">1005</span>;</span><br><span class="line"><span class="keyword">double</span> arr[maxN] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> k, n, cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">double</span> an;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t = <span class="number">2</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//循环2次，输入2个多项式</span></span><br><span class="line">    <span class="keyword">while</span> (t--) &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//在线处理</span></span><br><span class="line">        <span class="keyword">while</span> (k--) &#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%lf"</span>, &amp;n, &amp;an);</span><br><span class="line">            arr[n] += an;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//非零项数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; maxN; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) cnt++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, cnt);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = maxN - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">" %d %.1f"</span>, i, arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-晴神笔记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/"
+    >晴神笔记</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/07/27/%E6%99%B4%E7%A5%9E%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-07-26T17:49:43.000Z" itemprop="datePublished">2020-07-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="C-C-算法竞赛常用技巧"><a href="#C-C-算法竞赛常用技巧" class="headerlink" title="C/C++ 算法竞赛常用技巧"></a>C/C++ 算法竞赛常用技巧</h1><h2 id="常用最大值"><a href="#常用最大值" class="headerlink" title="常用最大值"></a>常用最大值</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span></span><br></pre></td></tr></table></figure>
+<p>INF + INF 还在 int 范围里</p>
+<h2 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h2><p><strong>贪心</strong>应大胆尝试，无需证明</p>
+<p>答案确定的问题可以直接<strong>打表</strong>，再输出，就 $O(1)$ 了</p>
+<p>使用<strong>递推</strong>降低难度</p>
+<h1 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h1><h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>范围</th>
+<th>大致范围</th>
+<th>scanf()</th>
+<th>printf()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>int</strong></td>
+<td>$2^{31} - 1$</td>
+<td>$10^{9}$ ~ $10^{10}$</td>
+<td>%d</td>
+<td>%d</td>
+</tr>
+<tr>
+<td><strong>long long</strong></td>
+<td>$2^{63} - 1$</td>
+<td>$10^{18}$ ~ $10^{19}$</td>
+<td>%lld</td>
+<td>%lld</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h2><p>浮点一般用 <strong>double</strong></p>
+<p>精度 15 ~ 16位</p>
+<p>输入: <code>scanf(&quot;%lf&quot;)</code></p>
+<p>输出: <code>printf(&quot;%f&quot;)</code></p>
+<p><code>printf(&quot;%.2f&quot;)</code></p>
+<p><code>printf(&quot;%02d&quot;)</code></p>
+<h3 id="浮点比较精度损失"><a href="#浮点比较精度损失" class="headerlink" title="浮点比较精度损失"></a>浮点比较精度损失</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> eps = <span class="number">1e-8</span></span><br><span class="line">fab(a-b)&lt;eps <span class="comment">//满足条件</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h2><p>-128 ~ 127</p>
+<p>小写字母比大写字母 <strong>ASCII</strong> 大 <strong>32</strong></p>
+<p>输入: <code>scanf(&quot;%c&quot;)</code></p>
+<p>输出: <code>printf(&quot;%c&quot;)</code></p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><p>简单可以用 <code>char[n]</code></p>
+<p>输入: <code>scanf(&quot;%s&quot;,n)</code> <strong>无 &amp; 符号</strong></p>
+<p>C <code>char str[]</code> 末尾需要 ‘\0’ 结束符，<code>scanf(&quot;%s&quot;)</code>, <code>gets()</code> 都自带</p>
+<h4 id="string-h-只能接收字符数组"><a href="#string-h-只能接收字符数组" class="headerlink" title="string.h 只能接收字符数组"></a>string.h 只能接收字符数组</h4><p><code>strlen()</code>  长度</p>
+<p><code>strcmp</code> 字典序，<strong>常用</strong></p>
+<p><code>strcpy()</code> 复制</p>
+<p><code>strcat()</code> 串接</p>
+<h4 id="sscanf-sprintf"><a href="#sscanf-sprintf" class="headerlink" title="sscanf, sprintf"></a>sscanf, sprintf</h4><p><code>sscanf(str, &quot;%d&quot;, &amp;n)</code></p>
+<p><code>sprintf(str,&quot;%d&quot;, n)</code></p>
+<h3 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h3><p>复杂直接用 C++ 的 string</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>$10^6$ 级别以上需要定义在 <code>main()</code> 之外</p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//全赋值 o(n)</span></span><br><span class="line"><span class="keyword">int</span> arr[n] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">bool</span> arr[n] = &#123;<span class="literal">false</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//memset 函数赋值 o(n)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> arr[n];</span><br><span class="line"><span class="built_in">memset</span>(arr, <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>))</span><br><span class="line"><span class="built_in">memset</span>(arr, <span class="number">-1</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>))</span><br><span class="line">    </span><br><span class="line"><span class="comment">//fill 函数赋值 o(n^2)</span></span><br></pre></td></tr></table></figure>
+<h2 id="控制台输入，输出"><a href="#控制台输入，输出" class="headerlink" title="控制台输入，输出"></a>控制台输入，输出</h2><h2 id="C-2"><a href="#C-2" class="headerlink" title="C"></a>C</h2><h3 id="scanf"><a href="#scanf" class="headerlink" title="scanf()"></a>scanf()</h3><p><code>scanf(&quot;%c&quot;)</code> 会读<code>&quot; &quot;</code> 和 <code>&quot;\n&quot;</code></p>
+<h3 id="printf-格式化"><a href="#printf-格式化" class="headerlink" title="printf () 格式化"></a>printf () 格式化</h3><p><strong>%md</strong> 右对齐，空格补</p>
+<p>%0md 右对齐，0 补</p>
+<h3 id="getchar-putchar"><a href="#getchar-putchar" class="headerlink" title="getchar(), putchar()"></a>getchar(), putchar()</h3><p>获取（输出）单个字符，可获得<strong>空格</strong>，<strong>换行</strong></p>
+<h3 id="gets-puts"><a href="#gets-puts" class="headerlink" title="gets(), puts()"></a>gets(), puts()</h3><p>读一行，以 “\n” 结尾</p>
+<h1 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h1><h2 id="C-3"><a href="#C-3" class="headerlink" title="C"></a>C</h2><h3 id="math-h"><a href="#math-h" class="headerlink" title="math.h"></a>math.h</h3><p><code>fabs(double x)</code> 绝对值</p>
+<p><code>floor(double x)</code> 向<strong>下</strong>取整</p>
+<p><code>ceil(double x)</code> 向<strong>上</strong>取整</p>
+<p><code>pow(double x, double y)</code> $x^y$</p>
+<p><code>round(double x)</code> 四舍五入，输入也是 double 型，<strong>题目中说 round up to xxx 指的就是四舍五入</strong></p>
+<h2 id="C-4"><a href="#C-4" class="headerlink" title="C++"></a>C++</h2><h3 id="algorithm"><a href="#algorithm" class="headerlink" title="algorithm"></a>algorithm</h3><p><code>max()</code> <code>min()</code> 浮点，整型均可以</p>
+<p><code>abs(int x)</code>  绝对值</p>
+<p><code>swap()</code> 交换</p>
+<p><code>reverse(it, it2)</code>  范围元素反转</p>
+<p><code>fill(arr, arr + n, x)</code>  范围赋值，注意时间复杂度 $O(n^2)$</p>
+<h4 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//简单cmp</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a &lt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//结构体排序，可多级排序</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(Node a, Node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.id!=b.id) <span class="keyword">return</span> a.id &lt; b.id;<span class="comment">//一级排序</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> a.name &lt; b.name;<span class="comment">//二级排序</span></span><br><span class="line">   </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sort(<span class="built_in">begin</span>(), <span class="built_in">end</span>(),cmp)</span><br></pre></td></tr></table></figure>
+<p><code>lower_bound(first, last, val)</code> 找第一个严格 &gt;= $val$，返回 it；</p>
+<p><code>upper_bound(first, last, val)</code> 找第一个严格 &gt; $val$，返回 it；</p>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><h2 id="STL-sort函数使用"><a href="#STL-sort函数使用" class="headerlink" title="STL-sort函数使用"></a>STL-sort函数使用</h2><p>利用此函数可进行多级排序</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(node a, node b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.xxx &lt; b.xxx;</span><br><span class="line">&#125;</span><br><span class="line">sort(a, a + maxn, cmp)</span><br></pre></td></tr></table></figure>
+<h2 id="冒泡排序-bubble-sort"><a href="#冒泡排序-bubble-sort" class="headerlink" title="冒泡排序 bubble sort"></a>冒泡排序 bubble sort</h2><p>比较 $n-1$ 次，两两交换，把最大（小）值像泡泡一下送上去</p>
+<h2 id="选择排序-Selection-Sort"><a href="#选择排序-Selection-Sort" class="headerlink" title="选择排序 Selection Sort"></a>选择排序 Selection Sort</h2><p>做 $n-1$ 次，每次从头到尾找最大数，给新序列的第一位，以此填补新序列</p>
+<h2 id="插入排序-insert-sort"><a href="#插入排序-insert-sort" class="headerlink" title="插入排序 insert sort"></a>插入排序 insert sort</h2><p><code>a[0]</code> 有序，a[1] 插入，进而 a[2] 插入前序列，以此类推</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insertSort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i - <span class="number">1</span>; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &gt; a[j - <span class="number">1</span>]) <span class="built_in">std</span>::swap(a[j], a[j<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="归并排序-merge-sort"><a href="#归并排序-merge-sort" class="headerlink" title="归并排序 merge sort"></a>归并排序 merge sort</h2><h2 id="快速排序-Quicksort"><a href="#快速排序-Quicksort" class="headerlink" title="快速排序  Quicksort"></a>快速排序  Quicksort</h2><p>p139</p>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>p335</p>
+<h1 id="进制处理"><a href="#进制处理" class="headerlink" title="进制处理"></a>进制处理</h1><p>p93</p>
+<h1 id="散列"><a href="#散列" class="headerlink" title="散列"></a>散列</h1><p>散列<strong>核心思想</strong>是将一定有序的序列降维化</p>
+<p>对应高等数学中的1对1映射</p>
+<p>使一个整数可以尽可能唯一替代一个元素</p>
+<h2 id="整数散列-时间复杂度降维"><a href="#整数散列-时间复杂度降维" class="headerlink" title="整数散列-时间复杂度降维"></a>整数散列-时间复杂度降维</h2><p>输入的数下标作为手段</p>
+<p>统计该数性质</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> hashtable[maxn]</span><br><span class="line"><span class="comment">//此时hashtable[i] 可对应原某有序整数元素</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符串散列-逻辑有序"><a href="#字符串散列-逻辑有序" class="headerlink" title="字符串散列-逻辑有序"></a>字符串散列-逻辑有序</h2><p>p109</p>
+<h2 id="常用算法思想"><a href="#常用算法思想" class="headerlink" title="常用算法思想"></a>常用算法思想</h2><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>递归核心：递归式，边界条件</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="keyword">int</span> value)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(边界条件)&#123;</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    下一层迭代</span><br><span class="line">    e.g: generate(<span class="keyword">int</span> value+<span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><p>贪心核心：求局部最优，进而多次迭代获得全局最优</p>
+<p>多需要数学证明</p>
+<p><strong>贪心是思想不是具体算法</strong></p>
+<h3 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h3><p>多使用有序序列</p>
+<p>每次放弃一半的数据</p>
+<p>将 $O(n)$ 降到 $O(log n)$</p>
+<h3 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h3><p>核心：多个枚举之间<strong>互相牵制</strong></p>
+<p>前指针向下遍历的时候，每走一步都会影响后面元素的选择或范围</p>
+<p>如: 规定 $a+b=X$， 指针等于 $a$ 开始遍历，后指针就等于 $X-a$</p>
+<h1 id="数学问题"><a href="#数学问题" class="headerlink" title="数学问题"></a>数学问题</h1><h2 id="最大公约数"><a href="#最大公约数" class="headerlink" title="最大公约数"></a>最大公约数</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> gcd(b, a % b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a>最小公倍数</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> d = gcd(<span class="keyword">int</span> a, <span class="keyword">int</span> b);</span><br><span class="line"><span class="keyword">int</span> c = a / d * b;</span><br></pre></td></tr></table></figure>
+<h2 id="分数处理"><a href="#分数处理" class="headerlink" title="分数处理"></a>分数处理</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Fraction</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> up;<span class="comment">//分子</span></span><br><span class="line">    <span class="keyword">int</span> down;<span class="comment">//分母</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h3><p>加减法<strong>通分</strong></p>
+<p>乘除法正常</p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
+<li><p>输入为 0，直接判断输出</p>
+</li>
+<li><p>输入先化简</p>
+</li>
+<li><p>分母 down 为 1 时，直接输出整数</p>
+</li>
+<li><p>分子<strong>绝对值</strong>大于分母，为<strong>假分数</strong>，输出<strong>带分数</strong>，</p>
+<p>整数: <code>up / down</code></p>
+<p>分子: <code>abs(up) % down</code></p>
+<p>分母: down</p>
+</li>
+</ul>
+<h2 id="素数"><a href="#素数" class="headerlink" title="素数"></a>素数</h2><p>p160</p>
+<h2 id="质因子分解"><a href="#质因子分解" class="headerlink" title="质因子分解"></a>质因子分解</h2><p>p161</p>
+<h2 id="大整数处理-小学数学模拟"><a href="#大整数处理-小学数学模拟" class="headerlink" title="大整数处理-小学数学模拟"></a>大整数处理-小学数学模拟</h2><p>p170</p>
+<h2 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h2><p>p181</p>
+<h1 id="C-STL"><a href="#C-STL" class="headerlink" title="C++ STL"></a>C++ STL</h1><p><code>begin()</code> 是首地址</p>
+<p><code>end()</code> 是尾地址下一位</p>
+<p>即<code>[b, e)</code></p>
+<p>只有 vector 和 string 支持 <code>it+n</code> 的写法</p>
+<p>循环遍历结束条件是 <code>it!=v.end()</code></p>
+<h2 id="vector-可变数组"><a href="#vector-可变数组" class="headerlink" title="vector 可变数组"></a>vector 可变数组</h2><h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><ol>
+<li>下标 <code>v[i] == *(v.begin()+i)</code></li>
+<li>迭代器</li>
+</ol>
+<h3 id="常用函数-1"><a href="#常用函数-1" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">v.push_back(x)</span><br><span class="line">v.pop_back(x)<span class="comment">//删除尾元素</span></span><br><span class="line">v.<span class="built_in">size</span>()</span><br><span class="line">v.<span class="built_in">clear</span>()</span><br><span class="line">v.insert(it, x)<span class="comment">//注意首元素是迭代器</span></span><br><span class="line">v.erase(it)</span><br><span class="line">v.erase(it, last)<span class="comment">//左闭右开</span></span><br></pre></td></tr></table></figure>
+<h2 id="set-集合"><a href="#set-集合" class="headerlink" title="set 集合"></a>set 集合</h2><p>自动有序（递增），无重复元素</p>
+<p>红黑树实现</p>
+<h3 id="访问-1"><a href="#访问-1" class="headerlink" title="访问"></a>访问</h3><p>只能迭代器访问</p>
+<h3 id="常用函数-2"><a href="#常用函数-2" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">st.insert(x)<span class="comment">//自动处理，不需要迭代器给位置</span></span><br><span class="line">st.<span class="built_in">find</span>(x)<span class="comment">//返回的是迭代器（指针）</span></span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">typename</span>&gt;::iterator it = st.<span class="built_in">find</span>(x)</span><br><span class="line">st.erase(x)</span><br><span class="line">st.erase(it, last)<span class="comment">//可实现删除 *it 及其后所以元素</span></span><br><span class="line">st.<span class="built_in">size</span>()</span><br><span class="line">st.<span class="built_in">clear</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="unorder-set-无序集合"><a href="#unorder-set-无序集合" class="headerlink" title="unorder_set 无序集合"></a>unorder_set 无序集合</h2><p>无序，无重复元素</p>
+<p>散列实现</p>
+<p>常用函数基本同上</p>
+<h2 id="string-字符串"><a href="#string-字符串" class="headerlink" title="string 字符串"></a>string 字符串</h2><p><code>#include &lt;string&gt;</code></p>
+<p>输入输出只能用 cin，cout</p>
+<p><code>printf()</code> 输出或用 <code>str.c_str()</code></p>
+<h3 id="访问-2"><a href="#访问-2" class="headerlink" title="访问"></a>访问</h3><p><code>str[i] == *(str.begin()+i)</code></p>
+<h3 id="常用函数-3"><a href="#常用函数-3" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str += str1<span class="comment">//拼接</span></span><br><span class="line"><span class="keyword">int</span> b = str1 == str2 <span class="comment">//字典序比较大小    </span></span><br><span class="line">length() == <span class="built_in">size</span>()</span><br><span class="line">insert(pos, x)</span><br><span class="line">insert(it, it2, it3)<span class="comment">//串[it2, it3)插在it位置上</span></span><br><span class="line">erase(first, last)</span><br><span class="line">erase(pos, length)<span class="comment">//不包括pos</span></span><br><span class="line"><span class="built_in">clear</span>()</span><br><span class="line">substr(pos, len)</span><br><span class="line"><span class="built_in">find</span>(str2)</span><br><span class="line">replace(pos, len ,str2)</span><br></pre></td></tr></table></figure>
+<h2 id="map-映射"><a href="#map-映射" class="headerlink" title="map 映射"></a>map 映射</h2><p>按键递增排序</p>
+<p>红黑树实现</p>
+<p><code>char []</code> 是数组，不能做键值</p>
+<p><code>map&lt;typename, typename&gt; mp</code></p>
+<h3 id="访问-3"><a href="#访问-3" class="headerlink" title="访问"></a>访问</h3><ol>
+<li><p>下标（键唯一）</p>
+</li>
+<li><p>迭代器</p>
+<p>it-&gt;first 键</p>
+<p>it-&gt;second 值</p>
+</li>
+</ol>
+<h3 id="常用函数-4"><a href="#常用函数-4" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">find</span>()</span><br><span class="line">earse()</span><br><span class="line"><span class="built_in">size</span>()</span><br><span class="line"><span class="built_in">clear</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="unordered-map-无序映射"><a href="#unordered-map-无序映射" class="headerlink" title="unordered_map 无序映射"></a>unordered_map 无序映射</h2><p>无序</p>
+<p>散列实现</p>
+<p>常用函数基本同上</p>
+<h2 id="queue-队列"><a href="#queue-队列" class="headerlink" title="queue 队列"></a>queue 队列</h2><h3 id="访问-4"><a href="#访问-4" class="headerlink" title="访问"></a>访问</h3><p><code>front()</code> <code>back()</code></p>
+<h3 id="常用函数-5"><a href="#常用函数-5" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">push()</span><br><span class="line">pop()</span><br><span class="line">empty()</span><br><span class="line"><span class="built_in">size</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="priority-queue-优先队列"><a href="#priority-queue-优先队列" class="headerlink" title="priority_queue 优先队列"></a>priority_queue 优先队列</h2><p>自动有序</p>
+<p>堆实现</p>
+<p><code>priority_queue &lt;int, vector&lt;typename&gt; less&lt;int&gt; &gt; q</code></p>
+<p><code>priority_queue &lt;int, vector&lt;typename&gt; greater&lt;int&gt; &gt; q</code></p>
+<h3 id="访问-5"><a href="#访问-5" class="headerlink" title="访问"></a>访问</h3><p><code>top()</code></p>
+<h2 id="stack-栈"><a href="#stack-栈" class="headerlink" title="stack 栈"></a>stack 栈</h2><p><code>top()</code> 访问</p>
+<h3 id="常用函数-6"><a href="#常用函数-6" class="headerlink" title="常用函数"></a>常用函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">push()</span><br><span class="line">top()</span><br><span class="line">pop()</span><br><span class="line">empty()</span><br><span class="line">size()</span><br></pre></td></tr></table></figure>
+<h2 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h2><p><code>#include &lt;utility&gt;</code></p>
+<p>二元结构体</p>
+<h3 id="定义可直接初始化"><a href="#定义可直接初始化" class="headerlink" title="定义可直接初始化"></a>定义可直接初始化</h3><p><code>pair &lt;int, int&gt; p(1,1)</code></p>
+<h3 id="访问-6"><a href="#访问-6" class="headerlink" title="访问"></a>访问</h3><p><code>p.first</code></p>
+<p><code>p.second</code></p>
+<h3 id="可直接比较"><a href="#可直接比较" class="headerlink" title="可直接比较"></a>可直接比较</h3><p>先比 first</p>
+<p>再比 second</p>
+<h1 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h1><p>多使用<strong>递归</strong>处理</p>
+<p>核心：面对多种选择永远头铁一个分类的选择，如：岔路口永远左拐</p>
+<h1 id="BFS"><a href="#BFS" class="headerlink" title="BFS"></a>BFS</h1><p>多使用<strong>队列</strong>处理</p>
+<p>核心：追求广度，面面俱到</p>
+<p>小技巧：队列多处理数组<strong>下标而非元素</strong></p>
+<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><p>链表表示</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Tree</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    Tree* lc;</span><br><span class="line">    Tree* rc;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>数组表示</p>
+<p>数组下标可以提供表示，完全不需要 <code>int id</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Tree</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="keyword">int</span> lc;</span><br><span class="line">    <span class="keyword">int</span> rc;</span><br><span class="line">&#125;tree[maxn];</span><br></pre></td></tr></table></figure>
+<h2 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h2><p><strong>具有唯一性</strong></p>
+<p>除了最深一层叶子，其他层全部挂满节点</p>
+<h3 id="二叉树-4种遍历"><a href="#二叉树-4种遍历" class="headerlink" title="二叉树 4种遍历"></a>二叉树 4种遍历</h3><p>这里的X序遍历，指的是根节点 root 的先后顺序，而且只有 root 能获取内容</p>
+<p>中序 + 先序或后序或层序  可唯一确定一棵二叉树</p>
+<h3 id="先序遍历-DFS思想"><a href="#先序遍历-DFS思想" class="headerlink" title="先序遍历 - DFS思想"></a>先序遍历 - DFS思想</h3><p>第一个一定是根</p>
+<p>递归实现</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">preOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">    preOrder(root-&gt;lc);</span><br><span class="line">    preOrder(root-&gt;rc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="中序遍历-分左右"><a href="#中序遍历-分左右" class="headerlink" title="中序遍历 - 分左右"></a>中序遍历 - 分左右</h3><p>递归实现</p>
+<p>满足二叉树分左右的性质，比较重要</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    inOrder(root-&gt;lc);</span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">    inOrder(root-&gt;rc);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="后序遍历-最后一个一定是根"><a href="#后序遍历-最后一个一定是根" class="headerlink" title="后序遍历 - 最后一个一定是根"></a>后序遍历 - 最后一个一定是根</h3><p>递归实现</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">postOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==<span class="literal">NULL</span>) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    postOrder(root-&gt;lc);</span><br><span class="line">    postOrder(root-&gt;rc);</span><br><span class="line">    <span class="built_in">get</span> root data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="层序遍历-BFS思想"><a href="#层序遍历-BFS思想" class="headerlink" title="层序遍历 - BFS思想"></a>层序遍历 - BFS思想</h3><p>队列实现，可以在 <code>struct</code> 中加 <strong>深度depth</strong> 或者 <strong>层数layer</strong> 以应对深度判断</p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>初始化</p>
+<p>入队</p>
+<p>读</p>
+<p>弹</p>
+<p>子树入队</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">layerOrder</span><span class="params">(Tree* root)</span></span>&#123;</span><br><span class="line">    <span class="built_in">queue</span>&lt;Tree*&gt; q;</span><br><span class="line">    root-&gt;layer = <span class="number">1</span>;</span><br><span class="line">    q.push(root);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        Tree* top = q.front();<span class="comment">//获取结点</span></span><br><span class="line">        q.pop();</span><br><span class="line">        <span class="keyword">do</span> sth. with top;</span><br><span class="line">        <span class="comment">//左子树不空</span></span><br><span class="line">        <span class="keyword">if</span>(top-&gt;lc!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">            top-&gt;lc-&gt;layer =  top-&gt;layer + <span class="number">1</span>;</span><br><span class="line">            q.push(top-&gt;lc);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//右子树不空</span></span><br><span class="line">        <span class="keyword">if</span>(top-&gt;rc!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">            top-&gt;rc-&gt;layer = top-&gt;layer + <span class="number">1</span>;</span><br><span class="line">            q.push(top-&gt;rc);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="确定二叉树"><a href="#确定二叉树" class="headerlink" title="确定二叉树"></a>确定二叉树</h3><p>中序提供左右</p>
+<p>先，后，层提供根结点</p>
+<p>基本步骤</p>
+<ul>
+<li>画图，标号下标[1, n]</li>
+<li><code>Tree* create(int l, int r, int l, int y)</code> </li>
+<li>如果先，中，层长度&lt;=0，直接返回</li>
+<li>新建结点 root</li>
+<li>在中序中找根结点 root</li>
+<li>递归给 root 左右子结点</li>
+<li>返回 root</li>
+</ul>
+<h2 id="二叉查找树-BST"><a href="#二叉查找树-BST" class="headerlink" title="二叉查找树 BST"></a>二叉查找树 BST</h2><p>中序遍历，一定有序</p>
+<p>查找 $O(log n)$</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>p313</p>
+<h2 id="平衡二叉树-AVL"><a href="#平衡二叉树-AVL" class="headerlink" title="平衡二叉树 - AVL"></a>平衡二叉树 - AVL</h2><p><code>struct</code> 多了一个 <code>height</code></p>
+<p>当 <strong>root-&gt;left-&gt;height</strong> 与 <strong>root-&gt;left-&gt;height</strong> 差 2 时，做平衡</p>
+<h3 id="4种变化"><a href="#4种变化" class="headerlink" title="4种变化"></a>4种变化</h3><p>方法论：</p>
+<ol>
+<li>判断哪一种旋转</li>
+</ol>
+<h1 id="并查集-特化树"><a href="#并查集-特化树" class="headerlink" title="并查集 - 特化树"></a>并查集 - 特化树</h1><p>如果说树是找儿子的过程</p>
+<p>并查集更关心找爹</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> f[n]</span><br><span class="line">f[<span class="number">1</span>]=<span class="number">1</span> <span class="comment">//1的爹是1，1就是根结点</span></span><br><span class="line">f[<span class="number">2</span>]=<span class="number">1</span> <span class="comment">//2的爹是1</span></span><br></pre></td></tr></table></figure>
+<h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><ul>
+<li>判断不在一个集合</li>
+<li>让 b 的根结点指向 a</li>
+</ul>
+<h2 id="路径压缩"><a href="#路径压缩" class="headerlink" title="路径压缩"></a>路径压缩</h2><p>只关心大家的爹</p>
+<p>那就每人都指向根结点</p>
+<p>查询缩到 $O(1)$</p>
+<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p>比树来说，图更加自由</p>
+<p>导致有环的风险，必须加 <code>vis[maxn]</code> 限制仅访问一次</p>
+<p>每个结点不能保证一定被别人访问，需要 <code>Trave()</code> 保证每个结点一定能被看到一次</p>
+<h2 id="DFS遍历-递归实现"><a href="#DFS遍历-递归实现" class="headerlink" title="DFS遍历 - 递归实现"></a>DFS遍历 - 递归实现</h2><h3 id="邻接矩阵版"><a href="#邻接矩阵版" class="headerlink" title="邻接矩阵版"></a>邻接矩阵版</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxv = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];</span><br><span class="line"><span class="keyword">bool</span> vis[maxn] = &#123;<span class="literal">false</span>&#125;</span><br><span class="line"><span class="keyword">int</span> depth[maxn];</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里 depth 没屌用，实际问题可以用 &amp;depth 获取深度，或者直接给 depth[maxn] 送过去</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> depth)</span></span>&#123;</span><br><span class="line">    <span class="comment">//访问该节点</span></span><br><span class="line">    vis[u]= ture;</span><br><span class="line">    </span><br><span class="line">    尝试访问其他人</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">        <span class="comment">//未访问且能访问</span></span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span> &amp;&amp; G[u][v] != INF)&#123;</span><br><span class="line">            DFS(v, depth+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFSTrave</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span>) DFS(v, <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="BFS遍历-队列实现"><a href="#BFS遍历-队列实现" class="headerlink" title="BFS遍历 - 队列实现"></a>BFS遍历 - 队列实现</h2><p>邻接矩阵版</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];</span><br><span class="line"><span class="keyword">bool</span> vis[maxn] = &#123;<span class="literal">false</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> BFS(<span class="keyword">int</span> u)&#123;</span><br><span class="line">    <span class="comment">//初始化</span></span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//入</span></span><br><span class="line">    q.push(u);</span><br><span class="line">    vis[u] = <span class="literal">true</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">        <span class="comment">//弹</span></span><br><span class="line">        <span class="keyword">int</span> u = q.front();</span><br><span class="line">        q.pop();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//找</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(vis[v] == <span class="literal">false</span> &amp;&amp; G[u][v] != INF)&#123;</span><br><span class="line">                q.push[v];</span><br><span class="line">                vis[v] = <span class="literal">true</span>;</span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFSTrave</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> v =<span class="number">0</span>; v &lt; n;v++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(vis[v]==<span class="literal">false</span>) BFS(v);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最短路径"><a href="#最短路径" class="headerlink" title="最短路径"></a>最短路径</h2><h3 id="Dijkstra算法-无负权边-（DFS遍历）"><a href="#Dijkstra算法-无负权边-（DFS遍历）" class="headerlink" title="Dijkstra算法  - 无负权边 （DFS遍历）"></a>Dijkstra算法  - 无负权边 （DFS遍历）</h3><p>找 a 到 b 的最短路径</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3fffffff</span>;</span><br><span class="line"><span class="keyword">int</span> n, G[maxn][maxn];<span class="comment">//可处理边权</span></span><br><span class="line"><span class="keyword">int</span> weight[maxn];<span class="comment">//处理点权</span></span><br><span class="line"><span class="keyword">int</span> d[maxn];</span><br><span class="line"><span class="keyword">int</span> vis[maxn];<span class="comment">//检测是否访问，防止环导致死循环</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pre[maxn];<span class="comment">//最短路径递归树</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; best, tmp;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(<span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//边界条件</span></span><br><span class="line">    <span class="keyword">if</span> (v == st) &#123;</span><br><span class="line">        tmp.push_back(v);</span><br><span class="line">        best = v;</span><br><span class="line">        tmp.pop_back();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//递归遍历</span></span><br><span class="line">    tmp.push_back(v);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pre[v].<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">        DFS(pre[v][i]);</span><br><span class="line">    &#125;</span><br><span class="line">    tmp.pop_back();</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dij</span><span class="params">(<span class="keyword">int</span> st)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">fill</span>(d, d + maxn, INF);</span><br><span class="line">    d[st] = <span class="number">0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//找N次，保证结点都能尝试判断到</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> u = <span class="number">-1</span>, MIN = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vis[j] == <span class="literal">false</span> &amp;&amp; d[j] &lt; MIN) &#123;</span><br><span class="line">                u = j;</span><br><span class="line">                MIN = d[j];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (u == <span class="number">-1</span>) <span class="keyword">return</span>;</span><br><span class="line">            vis[u] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> v = <span class="number">0</span>; v &lt; n; v++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (vis[v] == <span class="literal">false</span> &amp;&amp; G[u][v] != INF) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (d[u] + G[u][v] &lt; d[v]) &#123;</span><br><span class="line">                        d[v] = d[u] + G[u][v];</span><br><span class="line">                        pre[v].<span class="built_in">clear</span>();</span><br><span class="line">                        pre[v].push_back(u);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (d[u] + G[u][v] == d[v]) &#123;</span><br><span class="line">                        pre[v].push_back(u);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-栈"
   class="article article-type-post"
   itemscope
@@ -209,309 +697,6 @@
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-PATA1001"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/13/PATA1001/"
-    >PAT-A-1001</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/13/PATA1001/" class="article-date">
-  <time datetime="2020-06-13T04:52:38.000Z" itemprop="datePublished">2020-06-13</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PAT/">PAT</a> / <a class="article-category-link" href="/categories/PAT/PAT-A/">PAT A</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="PAT-A-1001"><a href="#PAT-A-1001" class="headerlink" title="PAT-A-1001"></a>PAT-A-1001</h1><p><a href="https://github.com/Squ1rrel-K/PAT-A-CPP" target="_blank" rel="noopener">所有甲级题全解</a></p>
-<p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400" target="_blank" rel="noopener">原题链接</a></p>
-<h2 id="生僻词汇："><a href="#生僻词汇：" class="headerlink" title="生僻词汇："></a>生僻词汇：</h2><p>Comma 逗号</p>
-<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给定 $a$，$b$，未超出 <code>int</code> 范围</p>
-<p>计算出和，按要求格式化输出</p>
-<h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><p>整数范围的把握</p>
-<p>整数转字符串</p>
-<p>字符串格式化处理</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>用 C++ <code>string</code> 更方便</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a, b, sum;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    sum = a + b;</span><br><span class="line">    <span class="built_in">string</span> str = to_string(sum);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//如果 sum 是负数，位数应减去1</span></span><br><span class="line">    <span class="keyword">int</span> comma;</span><br><span class="line">    <span class="keyword">if</span> (sum &lt; <span class="number">0</span>) comma = (<span class="keyword">int</span>) (str.length() - <span class="number">2</span>) / <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">else</span> comma = (<span class="keyword">int</span>) (str.length() - <span class="number">1</span>) / <span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//从尾部向前 3*i 位加逗号</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = comma; i &gt;= <span class="number">1</span>; i--) &#123;</span><br><span class="line">        str.insert(str.length() - <span class="number">3</span> * i, <span class="string">","</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-数据结构读书笔记"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-    >数据结构-线性表</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2020-06-12T16:31:43.000Z" itemprop="datePublished">2020-06-13</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%80%A7%E8%A1%A8/">线性表</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><p>同一类型元素</p>
-<p>有序</p>
-<p>线性结构</p>
-<h1 id="线性表顺序存储"><a href="#线性表顺序存储" class="headerlink" title="线性表顺序存储"></a>线性表顺序存储</h1><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">PtrToSqList</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data[<span class="number">1024</span>];</span><br><span class="line">    <span class="keyword">int</span> last;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">typedef</span> PtrToSqList List;</span><br></pre></td></tr></table></figure>
-<p>用数组储存线性表</p>
-<p>1024 可替换为任何合适的数</p>
-<p>last 本质上是指向表尾的指针，因为数组角标的特殊性，直接使用表尾角标即可</p>
-<p>C语言值传递，传递大数组显然很蠢比，不如传数组指针</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">List <span class="title">makeEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List l = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    l-&gt;last = <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>申请内存，不然空指针</p>
-<p><code>last = -1</code>​ 表示表空</p>
-<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">insert</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> index = <span class="built_in">position</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!(index &gt;= <span class="number">0</span> &amp;&amp; index &lt;= l-&gt;last + <span class="number">1</span>)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (l-&gt;last == <span class="number">1023</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"表满"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = l-&gt;last; i &gt;= index; i--) &#123;</span><br><span class="line">            l-&gt;data[i + <span class="number">1</span>] = l-&gt;data[i];</span><br><span class="line">        &#125;</span><br><span class="line">        l-&gt;data[index] = value;</span><br><span class="line">        l-&gt;last++;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>凡是数组相关的，形参有位置一定要判断是否合法</p>
-<p>注意角标</p>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">delete</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> index = <span class="built_in">position</span> - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (!(index &gt;= <span class="number">0</span> &amp;&amp; index &lt;= l-&gt;last)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (l-&gt;last == <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"表空"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = index; i &lt;= l-&gt;last; i++) &#123;</span><br><span class="line">            l-&gt;data[i] = l-&gt;data[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        l-&gt;last--;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="链表-线性表链式存储"><a href="#链表-线性表链式存储" class="headerlink" title="链表-线性表链式存储"></a>链表-线性表链式存储</h1><p>单链表一定要有一个空的头结点，主要目的是保持引用传递时，头结点指针不会随着第一个结点的变化而变化，进而引起不必要的维护漏洞</p>
-<h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> _<span class="title">node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">List</span>;</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">node</span> *<span class="title">PtrToList</span>;</span></span><br></pre></td></tr></table></figure>
-<p><code>List</code> 虽然跟 <code>PtrToList</code> 定义一致，但是 <code>List</code> 侧重于其指向的内容，<code>PtrToList</code> 侧重于自己是一个指针的身份事实</p>
-<h3 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">List <span class="title">makeEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List head = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    head-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    List l = head;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>申请内存，不然空指针</p>
-<p>注意 <code>l</code> 将永远指向 <code>head</code> 结点，但仅限单链表</p>
-<h3 id="表长度"><a href="#表长度" class="headerlink" title="表长度"></a>表长度</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">length</span><span class="params">(List l)</span> </span>&#123;</span><br><span class="line">    PtrToList p = l;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">while</span> (p) &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        cnt++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>逻辑相连，动态的代价就是长度不确定性</p>
-<h3 id="插入-1"><a href="#插入-1" class="headerlink" title="插入"></a>插入</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">insert</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList pre = l;</span><br><span class="line">    List tmp = (List) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    tmp-&gt;data = value;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent + <span class="number">1</span>)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span> - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp-&gt;next = pre-&gt;next;</span><br><span class="line">        pre-&gt;next = tmp;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><h4 id="按位索引"><a href="#按位索引" class="headerlink" title="按位索引"></a>按位索引</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findByPosition</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList p = l;</span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span>; i++) &#123;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p-&gt;data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>检测位置合法性</p>
-<h4 id="按值索引"><a href="#按值索引" class="headerlink" title="按值索引"></a>按值索引</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findByValue</span><span class="params">(List l, <span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList p = l;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= lent; i++) &#123;</span><br><span class="line">        p = p-&gt;next;</span><br><span class="line">        <span class="keyword">if</span> (p-&gt;data == value) &#123;</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>没找到应该返回 <code>false</code></p>
-<h3 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">delete</span><span class="params">(List l, <span class="keyword">int</span> <span class="built_in">position</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> lent = length(l);</span><br><span class="line">    PtrToList pre = l;</span><br><span class="line">    <span class="keyword">if</span> (!(<span class="built_in">position</span> &gt;= <span class="number">1</span> &amp;&amp; <span class="built_in">position</span> &lt;= lent)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"位置非法"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="built_in">position</span> - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            pre = pre-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        PtrToList cur = pre-&gt;next;</span><br><span class="line">        pre-&gt;next = cur-&gt;next;</span><br><span class="line">        <span class="built_in">free</span>(cur);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-设计模式读书笔记"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-    >设计模式读书笔记</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/05/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2020-05-18T02:55:50.000Z" itemprop="datePublished">2020-05-18</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a> / <a class="article-category-link" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>我一直持有一个观点：代码首先是给人看的，其次才是给机器读的，不然搞什么面向对象又是面向过程，一个文件塞满理论上也能满足计算机的要求，但是想让人看懂，易于操控，就需要理解语言创造者的苦心。而进阶的编程爱好者，对于设计模式的理解便显得弥足珍贵了，本文为多语言各种设计模式的横纵向比较分析与记录。</p>
-<h1 id="创造者模式"><a href="#创造者模式" class="headerlink" title="创造者模式"></a>创造者模式</h1><p>与其说是创造对象，不如说是产品说明，此类模式关心一个实例创造前的全部内容，如同造汽车前，设计和制造流水线工程。</p>
-<p><strong>这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活</strong></p>
-<h2 id="工厂模式-Factory-Pattern"><a href="#工厂模式-Factory-Pattern" class="headerlink" title="工厂模式 Factory Pattern"></a>工厂模式 Factory Pattern</h2><p>不涉及创造实例</p>
-<p>大部分程序一直在研究的就是解耦，因为高度耦合会带来难以维护，变量联系过于紧密等问题，我们希望模块化，而不是牵一发而动全身，因此创造对象时一大堆初始化工作不应该放在业务代码里，应该有一个工厂一样的接口代为保存，这样核心业务变化的时候，不用在所有创造实例的业务里修改，只需要修改工厂即可。</p>
-<h2 id="抽象工厂模式-Abstract-Factory-Pattern"><a href="#抽象工厂模式-Abstract-Factory-Pattern" class="headerlink" title="抽象工厂模式 Abstract Factory Pattern"></a>抽象工厂模式 Abstract Factory Pattern</h2><p>工厂的工厂</p>
-<p>当业务复杂化后，需要对工厂本身抽象，进而满足工厂实例跟着业务实例的变化，如流水线核心不变，生产轿车还是跑车这种小细节变化，只需要实例化抽象工厂就能满足要求。</p>
-<h2 id="单例模式-Singleton-Pattern"><a href="#单例模式-Singleton-Pattern" class="headerlink" title="单例模式 Singleton Pattern"></a>单例模式 Singleton Pattern</h2><p>有且只有自己存在</p>
-<p>单例的核心思想是全局唯一性，本类实例化自己，且唯一，外部只能销毁和创建调用，不能去关心内部逻辑。</p>
-<p>适用于全局唯一的实例，如单线程。</p>
-<h2 id="建造者模式-Builder-Pattern"><a href="#建造者模式-Builder-Pattern" class="headerlink" title="建造者模式 Builder Pattern"></a>建造者模式 Builder Pattern</h2><p>核心是造变形金刚</p>
-<p>变形金刚由多个部件组成，部件本身复杂多变，但是合体变形金刚的算法或者结构却是相对简单的，这时考虑使用建造者模式。</p>
-<p>比起工厂模式更关心部件的组装顺序。</p>
-<h2 id="原型模式-Prototype-Pattern"><a href="#原型模式-Prototype-Pattern" class="headerlink" title="原型模式 Prototype Pattern"></a>原型模式 Prototype Pattern</h2><p>克隆人</p>
-<p>当新建对象代价很大的时候，对象需要复用时使用。</p>
-<p>如一个对象需要在一个高代价的数据库操作之后被创建。可以缓存该对象，在下一个请求时返回它的克隆，在需要的时候更新数据库，以此来减少数据库调用。</p>
-<h2 id="对象池模式-Pool"><a href="#对象池模式-Pool" class="headerlink" title="对象池模式 Pool"></a>对象池模式 Pool</h2><p>水库存水</p>
-<p>老是用水龙头取水，水龙头容易坏，还容易无法满足需求，先搞个水库，把常用对象扔进去，异步的存取使用，避免同步操作带来的消耗。</p>
-<p>如：线程池、数据库连接池、任务队列池、图片资源对象池。</p>
-<p>举例：laravel 的邮件发送是同步的，修改成一个队列池，每个新请求会被放到池子里，服务器可以从容不迫的 FIFO 处理任务。 </p>
-<h2 id="多例模式-Multiton"><a href="#多例模式-Multiton" class="headerlink" title="多例模式 Multiton"></a>多例模式 Multiton</h2><p>包含多个实例的单例模式</p>
-<p>如多个数据库链接。</p>
-<h2 id="静态工厂模式-Static-Factory"><a href="#静态工厂模式-Static-Factory" class="headerlink" title="静态工厂模式 Static Factory"></a>静态工厂模式 Static Factory</h2><p>针对静态资源的工厂模式</p>
-<h1 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h1><h2 id="适配器模式-Adapter-Pattern"><a href="#适配器模式-Adapter-Pattern" class="headerlink" title="适配器模式 Adapter Pattern"></a>适配器模式 Adapter Pattern</h2><p>电力中的转换器也是相同思路，220v 换成 120v 需要一个接口处理，就是适配器。</p>
-<p>当年写 Android 的时候，适配器是必须掌握的知识。</p>
-<p>缺点就是反常规，看不懂会奇怪，明明 A 类的资源，怎么扔 B 类还能用？</p>
-<h2 id="桥接模式-bridge-Pattern"><a href="#桥接模式-bridge-Pattern" class="headerlink" title="桥接模式  bridge Pattern"></a>桥接模式  bridge Pattern</h2><p>桥接的核心思路是将抽象与行为解耦，从继承关系弱化为关联模式</p>
-<p>如一个实例面临多个并列行为的关系时，可以用桥接，如设计一杯饮料，杯子大小，饮料内容，配料均有多个选择，使用桥接很适合。</p>
-<h2 id="共享模式-Flyweight"><a href="#共享模式-Flyweight" class="headerlink" title="共享模式 Flyweight"></a>共享模式 Flyweight</h2><p>核心是高度重复资源的可重复利用性，多跟工厂模式共用，当遇到请求时，首先检索共享池里是否有合适对象，否则创造并返回。</p>
-<p>面临高度重复的请求时，最大程度减少资源开销。</p>
-<h2 id="装饰模式-Decorator"><a href="#装饰模式-Decorator" class="headerlink" title="装饰模式 Decorator"></a>装饰模式 Decorator</h2><p>动态基于对象新的功能，像打补丁一样，不在意被装饰对象本身细节。</p>
-<p>相当于万智牌的合变放在下面，下面的生物只给了异能，别的啥事没干。</p>
-<h2 id="组合模式-Composite"><a href="#组合模式-Composite" class="headerlink" title="组合模式 Composite"></a>组合模式 Composite</h2><p>本质上是树形结构的封装利用，利用树形结构的访问速度优势，迭代得获取各组件。</p>
-<p>非叶节点也可以看成另一个组构体。</p>
-<h2 id="代理模式-Proxy-Pattern"><a href="#代理模式-Proxy-Pattern" class="headerlink" title="代理模式 Proxy Pattern"></a>代理模式 Proxy Pattern</h2><p>核心在于请求本身涉及安全性或者大花销等问题，需要代理看看给不给权限，不然对象造完了再研究给不给权限就没什么意义了。</p>
-<p>相当于请个管家管一下。</p>
-<h2 id="外观模式-Facade"><a href="#外观模式-Facade" class="headerlink" title="外观模式 Facade"></a>外观模式 Facade</h2><p>比起小管家，Facade 是总管，对一个系统的访问做整理跟统筹，最大程度降耦，保证子系统自由性。</p>
-<h1 id="行为类模式"><a href="#行为类模式" class="headerlink" title="行为类模式"></a>行为类模式</h1><h2 id="迭代模式-Iterator"><a href="#迭代模式-Iterator" class="headerlink" title="迭代模式 Iterator"></a>迭代模式 Iterator</h2><p>迭代器的抽象，没啥好说的，核心在于不暴露内部结构的遍历。</p>
-<h2 id="模板模式-Template"><a href="#模板模式-Template" class="headerlink" title="模板模式 Template"></a>模板模式 Template</h2><p>定义操作骨架，通过继承丰富内容或者实现。</p>
-<p>抽象类常用思想，定义却不完化，给予后人补充说明。</p>
-<h2 id="责任链-Chain-of-Responsibility"><a href="#责任链-Chain-of-Responsibility" class="headerlink" title="责任链 Chain of Responsibility"></a>责任链 Chain of Responsibility</h2><p>请求来源高度不确定性，使用 cor 可以使链上任意一个类的负担不至于过重，统一一个 handler 分配工作。</p>
-<h2 id="备忘模式-Memento"><a href="#备忘模式-Memento" class="headerlink" title="备忘模式 Memento"></a>备忘模式 Memento</h2><p>可能二次需要的内容做保存。</p>
-<p>如 laravel 中的 <code>old()</code>方法。</p>
-<h2 id="中介者-Mediator"><a href="#中介者-Mediator" class="headerlink" title="中介者 Mediator"></a>中介者 Mediator</h2><p>各个对象之间的交互操作非常多;每个对象的行为操作都依赖彼此对方,修改一个对象的行 为,同时会涉及到修改很多其他对象的行为。</p>
-<p>如 laravel 中的 <code>Controller</code></p>
-<h2 id="解释器-Interpreter"><a href="#解释器-Interpreter" class="headerlink" title="解释器 Interpreter"></a>解释器 Interpreter</h2><p>很少会用到，关注于非可识别语言的解释，如正则，表达式等。</p>
-<h2 id="策略模式-Strategy"><a href="#策略模式-Strategy" class="headerlink" title="策略模式 Strategy"></a>策略模式 Strategy</h2><p>也叫算法簇模式，针对不同需求，有策略的分派不同算法解决问题。</p>
-<h2 id="状态模式-State"><a href="#状态模式-State" class="headerlink" title="状态模式 State"></a>状态模式 State</h2><p>就是状态机。</p>
-<h2 id="观察者-Observer"><a href="#观察者-Observer" class="headerlink" title="观察者 Observer"></a>观察者 Observer</h2><p>常驻内存检测变化，一旦变化就触发。</p>
-<h2 id="访问者模式-visitor"><a href="#访问者模式-visitor" class="headerlink" title="访问者模式 visitor"></a>访问者模式 visitor</h2><p>作用于某个对象群中各个对象的操作. 它可以使你在不改变这些对象本身的情况下,定义 作用于这些对象的新操作. </p>
-<h2 id="命令模式-Command"><a href="#命令模式-Command" class="headerlink" title="命令模式 Command"></a>命令模式 Command</h2><p>Laravel 中的 Artisan 是很典型的命令模式，请求对象化。</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-终于修好了"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/05/18/%E7%BB%88%E4%BA%8E%E4%BF%AE%E5%A5%BD%E4%BA%86/"
-    >终于修好了</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2020/05/18/%E7%BB%88%E4%BA%8E%E4%BF%AE%E5%A5%BD%E4%BA%86/" class="article-date">
-  <time datetime="2020-05-18T02:52:52.000Z" itemprop="datePublished">2020-05-18</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="博客终于修好了"><a href="#博客终于修好了" class="headerlink" title="博客终于修好了"></a>博客终于修好了</h1><p>问题是我用的别的博主的主题，本身是一个 git 仓库，github 的仓库嵌套，内层会被 <code>git add -A</code> 忽略。</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/" rel="tag">life</a></li></ul>
 
     </footer>
   </div>

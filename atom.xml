@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://squ1rrel-k.github.io/"/>
-  <updated>2023-01-30T08:27:46.022Z</updated>
+  <updated>2023-03-06T00:54:37.309Z</updated>
   <id>https://squ1rrel-k.github.io/</id>
   
   <author>
@@ -15,6 +15,117 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本周工作计划</title>
+    <link href="https://squ1rrel-k.github.io/2023/03/06/%E6%9C%AC%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    <id>https://squ1rrel-k.github.io/2023/03/06/%E6%9C%AC%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
+    <published>2023-03-06T00:45:20.000Z</published>
+    <updated>2023-03-06T00:54:37.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;文章&quot;&gt;&lt;a href=&quot;#文章&quot; class=&quot;headerlink&quot; title=&quot;文章&quot;&gt;&lt;/a&gt;文章&lt;/h1&gt;&lt;p&gt;完成 $V$ 函数篇&lt;/p&gt;
+&lt;p&gt;推进健身那篇&lt;/p&gt;
+&lt;p&gt;推进 $Laplace$ 算子那篇&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拉普拉斯特征值的性质</title>
+    <link href="https://squ1rrel-k.github.io/2023/03/01/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%89%B9%E5%BE%81%E5%80%BC%E7%9A%84%E6%80%A7%E8%B4%A8/"/>
+    <id>https://squ1rrel-k.github.io/2023/03/01/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%89%B9%E5%BE%81%E5%80%BC%E7%9A%84%E6%80%A7%E8%B4%A8/</id>
+    <published>2023-03-01T07:05:18.000Z</published>
+    <updated>2023-03-01T07:05:18.085Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>拉普拉斯矩阵与拉普拉斯算子</title>
+    <link href="https://squ1rrel-k.github.io/2023/03/01/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90/"/>
+    <id>https://squ1rrel-k.github.io/2023/03/01/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90/</id>
+    <published>2023-03-01T07:05:01.000Z</published>
+    <updated>2023-03-01T07:05:01.332Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>从《运动稳定性的一般问题》到李雅普诺夫V函数，从稳定到预设时间稳定，从网络拓扑到网络动力学</title>
+    <link href="https://squ1rrel-k.github.io/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    <id>https://squ1rrel-k.github.io/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/</id>
+    <published>2023-03-01T00:59:30.000Z</published>
+    <updated>2023-03-06T00:00:40.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; V 函数，也称李雅普诺夫函数，是一种方便直观的，彰显系统部分性质的函数&lt;/p&gt;
+&lt;p&gt;我们可以利用这个非线性函数 V
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="note" scheme="https://squ1rrel-k.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近期阅读</title>
+    <link href="https://squ1rrel-k.github.io/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/"/>
+    <id>https://squ1rrel-k.github.io/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/</id>
+    <published>2023-02-21T04:18:07.000Z</published>
+    <updated>2023-02-21T04:20:51.780Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Essay&quot;&gt;&lt;a href=&quot;#Essay&quot; class=&quot;headerlink&quot; title=&quot;Essay&quot;&gt;&lt;/a&gt;Essay&lt;/h1&gt;&lt;p&gt;多智能体博弈，学习与控制&lt;/p&gt;
+&lt;h1 id=&quot;Book&quot;&gt;&lt;a href=&quot;#Book&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>工作指南</title>
@@ -38,33 +149,6 @@
     
     
       <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近期工作计划</title>
-    <link href="https://squ1rrel-k.github.io/2023/01/13/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
-    <id>https://squ1rrel-k.github.io/2023/01/13/%E8%BF%91%E6%9C%9F%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</id>
-    <published>2023-01-13T06:45:20.000Z</published>
-    <updated>2023-01-13T06:38:11.945Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;课程&quot;&gt;&lt;a href=&quot;#课程&quot; class=&quot;headerlink&quot; title=&quot;课程&quot;&gt;&lt;/a&gt;课程&lt;/h1&gt;&lt;p&gt;数据挖掘作业&lt;/p&gt;
-&lt;p&gt;统计学作业&lt;/p&gt;
-&lt;h1 id=&quot;项目&quot;&gt;&lt;a href=&quot;#项目&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="plan" scheme="https://squ1rrel-k.github.io/tags/plan/"/>
     
   </entry>
   
@@ -209,7 +293,7 @@
     <link href="https://squ1rrel-k.github.io/2022/11/17/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/"/>
     <id>https://squ1rrel-k.github.io/2022/11/17/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E8%A1%A8/</id>
     <published>2022-11-17T01:21:45.000Z</published>
-    <updated>2022-11-17T01:36:13.088Z</updated>
+    <updated>2023-03-06T00:41:47.038Z</updated>
     
     <summary type="html">
     
@@ -217,10 +301,12 @@
       
         
         
-          &lt;h1 id=&quot;非训练日&quot;&gt;&lt;a href=&quot;#非训练日&quot; class=&quot;headerlink&quot; title=&quot;非训练日&quot;&gt;&lt;/a&gt;非训练日&lt;/h1&gt;&lt;p&gt;07：20 起床&lt;/p&gt;
+          &lt;p&gt;07：30 起床&lt;/p&gt;
 &lt;p&gt;08：00 工作&lt;/p&gt;
-&lt;p&gt;11：00 午饭，午休&lt;/p&gt;
-&lt;p&gt;13：00
+&lt;p&gt;11：30 午饭，午休&lt;/p&gt;
+&lt;p&gt;14：00 工作&lt;/p&gt;
+&lt;p&gt;17：30 晚饭&lt;/p&gt;
+&lt;p&gt;22：40
         
       
     
@@ -442,105 +528,6 @@
     
     
       <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数学分析读书笔记</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/21/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-21T00:47:36.000Z</published>
-    <updated>2022-10-21T03:49:39.048Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;数学是最高抽象的学科，不要尝试具体的理解所有理论，即使有数形结合跟其他学科的应用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;数学是形而上的本能直觉&lt;/strong&gt;&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notebook - Prescribed-Time Stabilization of Controllable Planar Systems Using Switched State Feedback</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/17/Notebook%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/17/Notebook%20-%20Prescribed-Time%20Stabilization%20of%20Controllable%20Planar%20Systems%20Using%20Switched%20State%20Feedback/</id>
-    <published>2022-10-17T01:14:01.000Z</published>
-    <updated>2022-10-30T03:05:04.970Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;10.16   Tao&lt;/p&gt;
-&lt;h2 id=&quot;Thesis-Statement&quot;&gt;&lt;a href=&quot;#Thesis-Statement&quot; class=&quot;headerlink&quot; title=&quot;Thesis Statement&quot;&gt;&lt;/a&gt;Thesis
-        
-      
-    
-    </summary>
-    
-    
-      <category term="paper" scheme="https://squ1rrel-k.github.io/categories/paper/"/>
-    
-    
-      <category term="scientific research" scheme="https://squ1rrel-k.github.io/tags/scientific-research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Laravel Vue 项目本地化部署</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/14/Laravel-Vue-%E9%A1%B9%E7%9B%AE%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2/</id>
-    <published>2022-10-14T02:20:41.000Z</published>
-    <updated>2022-10-17T03:59:09.255Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;项目拷贝&quot;&gt;&lt;a href=&quot;#项目拷贝&quot; class=&quot;headerlink&quot; title=&quot;项目拷贝&quot;&gt;&lt;/a&gt;项目拷贝&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="tutorial" scheme="https://squ1rrel-k.github.io/categories/tutorial/"/>
-    
-    
-      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从递归到分治，贪心，动归</title>
-    <link href="https://squ1rrel-k.github.io/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/"/>
-    <id>https://squ1rrel-k.github.io/2022/10/13/%E4%BB%8E%E9%80%92%E5%BD%92%E5%88%B0%E5%88%86%E6%B2%BB%EF%BC%8C%E8%B4%AA%E5%BF%83%EF%BC%8C%E5%8A%A8%E5%BD%92/</id>
-    <published>2022-10-13T01:43:47.000Z</published>
-    <updated>2022-10-13T02:34:27.593Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-      <category term="coding" scheme="https://squ1rrel-k.github.io/tags/coding/"/>
     
   </entry>
   
