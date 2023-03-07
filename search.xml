@@ -50,6 +50,7 @@
 <p>本文从苏联数学家，李亚普洛夫博士论文《运动稳定性的一般问题》出发</p>
 <p>尝试说清楚从李提出稳定（stability）概念的分析性定义，到网络动力学发展至今最先进的预设时间稳定，中间发展的进步与脉络</p>
 <p>[3] <a href="https://zhuanlan.zhihu.com/p/58738073" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/58738073</a></p>
+<p>[4] <a href="https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A" target="_blank" rel="noopener">https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A</a></p>
 <p><br></p>
 <h1 id="前人的工作"><a href="#前人的工作" class="headerlink" title="前人的工作"></a>前人的工作</h1><p>在李之前，有数学家，物理学家已经研究了系统的稳定性问题 [1]</p>
 <p>这些工作往往需要了解运动的状态，能对运动的微分方程求积分，或是用线性方程近似原运动方程</p>
@@ -58,11 +59,16 @@
 <h1 id="从《运动稳定性的一般问题》开始-1892"><a href="#从《运动稳定性的一般问题》开始-1892" class="headerlink" title="从《运动稳定性的一般问题》开始 1892"></a>从《运动稳定性的一般问题》开始 1892</h1><p>《运动稳定性的一般问题》为苏联数学家李雅普诺夫的博士论文，针对上述问题，他在论文前言中提到自己的看法</p>
 <p><em>当我们可以对这些微分方程求积分时，往往问题不算什么事。但是找到一些能独立于方程可积性的方法，来解决这些问题就显得很重要了</em> [2]</p>
 <p><br></p>
-<h2 id="拉格朗日稳定"><a href="#拉格朗日稳定" class="headerlink" title="拉格朗日稳定"></a>拉格朗日稳定</h2><p>在李稳定之前，拉格朗日已经对系统稳定性有了比较弱化的定义，及</p>
+<h2 id="拉格朗日稳定"><a href="#拉格朗日稳定" class="headerlink" title="拉格朗日稳定"></a>拉格朗日稳定</h2><p>在李稳定之前，拉格朗日已经对系统稳定性有了比较弱化的定义，所谓拉格朗日稳定的定义</p>
+<p>对于保守系统$t_0$ 时刻后，有</p>
+<script type="math/tex; mode=display">\hat{x}(t)\in B_\delta(\hat{x}_r(t)), \forall t >t_0\tag{1}</script><p>其中 $\delta$ 不随时间变化</p>
+<p>称 $\hat{x}(t)$ 相对于追踪变量 $\hat{x}_r(t)$ $Lagrange$ 稳定</p>
+<p>如：无摩擦的钟摆系统中，若参考状态为最低点，则从任意高度静止释放摆锤，摆锤的运动高度不会超过初始高度。因此，此情况下系统具有拉格朗日稳定[4]</p>
+<p>可以看到 $\hat{x}$ 与目标系统距离始终有上限约束，换言之，离得不远，仅此而已</p>
 <p>下面简单介绍李在文中的工作</p>
 <p><br></p>
 <h2 id="稳定（stable）的分析学定义"><a href="#稳定（stable）的分析学定义" class="headerlink" title="稳定（stable）的分析学定义"></a>稳定（stable）的分析学定义</h2><p>对有初值 $x_0$，$t_0$ 的常微分系统，有其运动方程</p>
-<script type="math/tex; mode=display">\frac{dx}{dt} = X(x,t) \tag{1}</script><p>其中 $x=x(t,t_0,x_0)$</p>
+<script type="math/tex; mode=display">\frac{dx}{dt} = X(x,t) \tag{2}</script><p>其中 $x=x(t,t_0,x_0)$</p>
 <p>将系统在某一时刻 $t$ 后，$\dot{X}\equiv0$，称为稳定（stable），反之系统不稳定（unstable）</p>
 <p>简单看一下最初版本的稳定定义，只要求系统停下来，停在哪不知道，多长时间不知道，运动状态跟初值有严重依赖关系，这些问题后面都会得到分析与处理</p>
 <p><br></p>
