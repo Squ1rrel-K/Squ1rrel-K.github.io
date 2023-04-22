@@ -1,30 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第四周工作计划</title>
-    <url>/2023/03/13/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>完成 $V$ 函数篇</p>
-<p>完成稳定性的分类篇</p>
-<p>推进健身篇</p>
+    <title>常用矩阵数学公式</title>
+    <url>/2023/04/18/%E5%B8%B8%E7%94%A8%E7%9F%A9%E9%98%B5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+    <content><![CDATA[<p><strong>本文的公式讨论场景特指动力系统</strong></p>
+<h1 id="柯西-施瓦茨不等式-杨不等式及其变形"><a href="#柯西-施瓦茨不等式-杨不等式及其变形" class="headerlink" title="柯西 - 施瓦茨不等式 - 杨不等式及其变形"></a>柯西 - 施瓦茨不等式 - 杨不等式及其变形</h1><h5 id="矩阵形式"><a href="#矩阵形式" class="headerlink" title="矩阵形式"></a>矩阵形式</h5><script type="math/tex; mode=display">||AB||\leq \|A\|\cdot||B||</script><p>常用来处理类二次型，如其带有非线性项，则利用系数矩阵的对称性，结合 $Lipschitz$ 条件放缩</p>
+<p><br></p>
+<h5 id="二次型形式"><a href="#二次型形式" class="headerlink" title="二次型形式"></a>二次型形式</h5><p>若 $A$ 对称，有</p>
+<script type="math/tex; mode=display">x^TAy\leq \frac{1}{2}x^TAx+\frac{1}{2}y^TAy</script><p>此不等式在 $\dot V$ 向需要的稳定引理放缩时会经常使用</p>
+<p>将类二次型向二次型过渡，进而利用二次型更好的性质：放弃负项，或利用谱半径或最小特征值（非 $0$）放缩出 $V$ 函数，凑出引理项</p>
+<p><br></p>
+<h5 id="向量形式"><a href="#向量形式" class="headerlink" title="向量形式"></a>向量形式</h5><script type="math/tex; mode=display">|\langle\vec{a}, \vec{b}\rangle| \leq || \vec{a}|| \cdot || \vec{b}||</script><p><br></p>
+<h1 id="范数"><a href="#范数" class="headerlink" title="范数"></a>范数</h1><h5 id="三角不等式"><a href="#三角不等式" class="headerlink" title="三角不等式"></a>三角不等式</h5><script type="math/tex; mode=display">||A\pm B|| \leq ||A||+||B||</script><p>往往使用在范数内变量展开后放缩，如各类误差项：测量误差，追踪误差</p>
+<p><br></p>
+<h1 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h1><h5 id="特征值"><a href="#特征值" class="headerlink" title="特征值"></a>特征值</h5><p>对任意实对称矩阵 $A$，合适向量 $x$，有</p>
+<script type="math/tex; mode=display">\lambda_{min}x^Tx\leq x^TAx \leq \lambda_{max}x^Tx</script><p><br></p>
+<p>条件上回答了为什么原拓扑不对称时，要死命凑对称</p>
+<p>结果上以原二次型为基础，利用两个对称阵互相翻转，往往可以轻易凑出想要的 $V$ 函数引理的一次项（系数是一个最大特征值，一个最小特征值）</p>
+<p>多配合 $LMI$ ，代数 $Riccati$ 方程等使用</p>
+<p><br></p>
+<h1 id="克罗内克积"><a href="#克罗内克积" class="headerlink" title="克罗内克积"></a>克罗内克积</h1><script type="math/tex; mode=display">(A\otimes B)^T=A^T\otimes B^T</script><p><br></p>
+<script type="math/tex; mode=display">{||A\otimes B||}_2 = {||A||}_2 \cdot {||B||}_2</script><p><br></p>
+<p>同样适用与 $1$ 范数，$\infty$ 范数，$F$ 范数 </p>
+<p><br></p>
+<h1 id="符号函数"><a href="#符号函数" class="headerlink" title="符号函数"></a>符号函数</h1><script type="math/tex; mode=display">sgn(x) = \frac{x}{||x||}</script><p><br></p>
+<p>可以向矩阵，向量等延拓</p>
+<p><br></p>
+<h1 id="比较原则"><a href="#比较原则" class="headerlink" title="比较原则"></a>比较原则</h1>]]></content>
+      <tags>
+        <tag>scientific research</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>胸部动作鉴赏</title>
+    <url>/2023/03/30/%E5%81%A5%E8%BA%AB%E5%88%86%E5%8C%96%E8%AE%A1%E5%88%92%EF%BC%8C%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%EF%BC%8C%E5%8A%A8%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h1><p>a，b，c：组数，个数，重量（重量块，kg）的三元组</p>
+<p>全流程：指这个动作，某肌肉全程参与</p>
+<p>全行程：指这个动作，某肌肉从完全收缩到完全拉伸的全部行程，均有涵盖</p>
+<p>离心： 指某个动作的反向动作，此时目标肌群在做拉伸，可以更充分的锻炼肌群（离心重量不宜过大）</p>
+<h1 id="胸部训练"><a href="#胸部训练" class="headerlink" title="胸部训练"></a>胸部训练</h1><h2 id="蝴蝶机夹胸-热身组"><a href="#蝴蝶机夹胸-热身组" class="headerlink" title="蝴蝶机夹胸 - 热身组"></a>蝴蝶机夹胸 - 热身组</h2><p><strong>3，12，3|4</strong></p>
+<p>这个动作<strong>难点</strong>在于姿势不对的时候，胸部没有泵感，导致动作质量下降</p>
+<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><p><strong>起始位</strong>：调整座椅，不宜过低或过高，机器曲杆位置不宜过分靠后，在自然张开双臂到顶点时，手部的位置即为不错的起始位</p>
+<p><strong>握法</strong>：半握，大拇指不参与抓握，减少手臂参与，最大程度的胸部参与</p>
+<p><strong>坐姿</strong>：想象一下自己现在特别生气，坐直，背部自然上挺，深吸一口气，胸部会向斜上挺，保持这个姿势，进行动作</p>
+<p><strong>过程</strong>：终止位停 1 ~ 2 秒，有效锻炼胸中缝，<strong>做离心</strong></p>
+<h2 id="杠铃，哑铃卧推-力量组"><a href="#杠铃，哑铃卧推-力量组" class="headerlink" title="杠铃，哑铃卧推 - 力量组"></a>杠铃，哑铃卧推 - 力量组</h2><p><strong>4 - 10 - 50 kg</strong></p>
+<p>哑铃重量适当下降</p>
+<h2 id="杠铃，哑铃斜上卧推-力量组"><a href="#杠铃，哑铃斜上卧推-力量组" class="headerlink" title="杠铃，哑铃斜上卧推 - 力量组"></a>杠铃，哑铃斜上卧推 - 力量组</h2><p><strong>4 - 10 - 40 kg</strong></p>
+<p>哑铃重量适当下降</p>
+<h2 id="绳索单侧夹胸-训练组，间歇组"><a href="#绳索单侧夹胸-训练组，间歇组" class="headerlink" title="绳索单侧夹胸 - 训练组，间歇组"></a>绳索单侧夹胸 - 训练组，间歇组</h2><p><strong>4，12，5</strong></p>
+<p>根据龙门架滑轮位置，分为上，中，下，如当滑轮在上时，锻炼下胸</p>
+<p>重量不宜太大</p>
+<p>握把一定要越过人体中线，保证胸肌的<strong>全流程</strong>，<strong>全行程</strong>参与</p>
+<p>到达终点可以短暂停顿</p>
+<p>适当做离心</p>
+]]></content>
+      <tags>
+        <tag>body-building</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第六周工作计划</title>
+    <url>/2023/03/13/%E6%9C%AC%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>（✔）完成 $V$ 函数篇</p>
+<p>完成三大稳定，同步篇</p>
+<p>推进健身系列    </p>
 <p>推进 $Laplace$ 算子篇</p>
 <p><br></p>
-<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>大屏 - 刷卡机测试</p>
-<p>竞赛项目 - 完成 3d 库接口搭建，循环动画实现</p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>（✔）大屏完成开发</p>
+<p>（✔）竞赛项目 - 完成 3d 库接口搭建，循环动画实现</p>
 <p>（✔）少爷的项目 - 完成一个基本流程实现的测试性复现</p>
 <p><br></p>
 <h1 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h1><p>（✔）找到合适的论文管理软件</p>
 <h5 id="精读"><a href="#精读" class="headerlink" title="精读"></a>精读</h5><p><em>找到 $\lambda_{min}$ 的价值：</em></p>
-<p><em>《Consensus_problems_in_networks_of_agents_with_switching_topology_and_time-delays》</em></p>
-<p>本周论文：</p>
-<p><em>（✔）《Aperiodically Intermittent Event-Triggered Optimal Average Consensus for Nonlinear Multi-Agent Systems》</em></p>
-<p>兴趣扩散：</p>
-<p><em>《Event-trigger-based approximate optimal control of modular robot manipulators using zero-sum game》</em></p>
 <p><br></p>
-<h5 id="看乐子"><a href="#看乐子" class="headerlink" title="看乐子"></a>看乐子</h5><p>《多智能体博弈、学习与控制》</p>
 <p><br></p>
 <h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><p>（✔）三分化</p>
 <p><br></p>
-<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>头眼 22</p>
+<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>头眼 23</p>
 <p><br></p>
 ]]></content>
       <tags>
@@ -150,7 +203,7 @@
 <h2 id="有限时间稳定（同步）"><a href="#有限时间稳定（同步）" class="headerlink" title="有限时间稳定（同步）"></a>有限时间稳定（同步）</h2><p>有限时间最早于 60 年代由俄国数学家提出[4]</p>
 <p>在文献[4]中，有对有限时间的定量定义，与定性定义，后者为李的 $V$ 函数方法</p>
 <p>对任意 $x \in \mathscr{C}\subset\mathbb{R}^n$，$t \geq 0$，$\epsilon&gt;0$ ，存在 $\delta(t,x_0)&gt;0$，$T(x_0)&gt;0$；</p>
-<p>于是有 $||x<em>0||\leq\delta $，表明 $||x(t,x_0)||\leq\epsilon$，$\lim</em>{t\rightarrow\infty}||x(t,x_0)||=0$，以及对所有 $t&gt;T(x_0)$，有 $x(t)=0$</p>
+<p>于是有 $||x<em>0||\leq\delta$，表明 $||x(t,x_0)||\leq\epsilon$，$\lim</em>{t\rightarrow\infty}||x(t,x_0)||=0$，以及对所有 $t&gt;T(x_0)$，有 $x(t)=0$</p>
 <p>其中 $T(x_0) = \inf{T\geq0|x(t,x_0)=0,\forall t\geq T}$，称为驻留时间（setting time）</p>
 <p>特别的，若有 $\mathscr{C} = \mathbb{R}^n$，系统全局有限时间稳定</p>
 ]]></content>
@@ -299,43 +352,6 @@
       </categories>
       <tags>
         <tag>scientific research</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>健身分化计划，时间分配，动作记录</title>
-    <url>/2022/11/17/%E5%81%A5%E8%BA%AB%E5%88%86%E5%8C%96%E8%AE%A1%E5%88%92%EF%BC%8C%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%EF%BC%8C%E5%8A%A8%E4%BD%9C%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="分化训练-约-3-分化"><a href="#分化训练-约-3-分化" class="headerlink" title="分化训练 - 约 3 分化"></a>分化训练 - 约 3 分化</h1><p>胸</p>
-<p>背</p>
-<p>腿</p>
-<p>肩</p>
-<p>手臂的二头可以在宿舍练，三头可以作为间歇组</p>
-<h1 id="时间分配"><a href="#时间分配" class="headerlink" title="时间分配"></a>时间分配</h1><p>周六锻炼</p>
-<p>周日不练</p>
-<p>工作日根据时间选择 3 ~ 4 天锻炼</p>
-<h1 id="动作记录"><a href="#动作记录" class="headerlink" title="动作记录"></a>动作记录</h1><p>a，b，c：组数，个数，重量（重量块，kg）的三元组</p>
-<p>全流程：指这个动作，某肌肉全程参与</p>
-<p>全行程：指这个动作，某肌肉从完全收缩到完全拉伸的全部行程，均有涵盖</p>
-<p>离心： 指某个动作的反向动作，此时目标肌群在做拉伸，可以更充分的锻炼肌群（离心重量不宜过大）</p>
-<h2 id="胸"><a href="#胸" class="headerlink" title="胸"></a>胸</h2><h3 id="蝴蝶机夹胸-热身组"><a href="#蝴蝶机夹胸-热身组" class="headerlink" title="蝴蝶机夹胸 - 热身组"></a>蝴蝶机夹胸 - 热身组</h3><p><strong>3，12，3|4</strong></p>
-<p>这个动作难点在于姿势不对的时候，胸部没有泵感，导致动作质量下降</p>
-<p>解决方法：</p>
-<p><strong>起始位</strong>：机器曲杆位置不宜过分靠后，在自然张开双臂到顶点时，手部的位置即为不错的起始位</p>
-<p><strong>握法</strong>：半握，大拇指不参与抓握，减少小臂参与，最大程度的胸部参与</p>
-<p><strong>坐姿</strong>：想象一下自己现在特别生气，坐直，背部自然上挺，深吸一口气，胸部会向斜上挺，保持这个姿势，进行动作</p>
-<p><strong>过程</strong>：终止位停 1 ~ 2 秒，有效锻炼胸中缝，<strong>做离心</strong></p>
-<h3 id="杠铃，哑铃卧推-力量组"><a href="#杠铃，哑铃卧推-力量组" class="headerlink" title="杠铃，哑铃卧推 - 力量组"></a>杠铃，哑铃卧推 - 力量组</h3><p><strong>4 - 10 - 50 kg</strong></p>
-<p>哑铃重量适当下降</p>
-<h3 id="杠铃，哑铃斜上卧推-力量组"><a href="#杠铃，哑铃斜上卧推-力量组" class="headerlink" title="杠铃，哑铃斜上卧推 - 力量组"></a>杠铃，哑铃斜上卧推 - 力量组</h3><p><strong>4 - 10 - 40 kg</strong></p>
-<p>哑铃重量适当下降</p>
-<h3 id="绳索单侧夹胸-训练组，间歇组"><a href="#绳索单侧夹胸-训练组，间歇组" class="headerlink" title="绳索单侧夹胸 - 训练组，间歇组"></a>绳索单侧夹胸 - 训练组，间歇组</h3><p><strong>4，12，4</strong></p>
-<p>根据龙门架滑轮位置，分为上，中，下</p>
-<p>重量不宜太大</p>
-<p>握把一定要越过人体中线，保证胸肌的<strong>全流程</strong>，<strong>全行程</strong>参与</p>
-<p>到达终点可以短暂停顿</p>
-<p>适当做离心</p>
-]]></content>
-      <tags>
-        <tag>work out</tag>
       </tags>
   </entry>
   <entry>

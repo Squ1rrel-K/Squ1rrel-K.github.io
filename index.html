@@ -155,7 +155,7 @@
     
     
     <article
-  id="post-第三周工作计划"
+  id="post-常用矩阵数学公式"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -166,8 +166,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2023/03/13/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"
-    >第四周工作计划</a> 
+  <a class="article-title" href="/2023/04/18/%E5%B8%B8%E7%94%A8%E7%9F%A9%E9%98%B5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"
+    >常用矩阵数学公式</a> 
 </h2>
  
 
@@ -175,35 +175,172 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/03/13/%E7%AC%AC%E4%B8%89%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/" class="article-date">
+      <a href="/2023/04/18/%E5%B8%B8%E7%94%A8%E7%9F%A9%E9%98%B5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" class="article-date">
+  <time datetime="2023-04-18T02:20:05.000Z" itemprop="datePublished">2023-04-18</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><strong>本文的公式讨论场景特指动力系统</strong></p>
+<h1 id="柯西-施瓦茨不等式-杨不等式及其变形"><a href="#柯西-施瓦茨不等式-杨不等式及其变形" class="headerlink" title="柯西 - 施瓦茨不等式 - 杨不等式及其变形"></a>柯西 - 施瓦茨不等式 - 杨不等式及其变形</h1><h5 id="矩阵形式"><a href="#矩阵形式" class="headerlink" title="矩阵形式"></a>矩阵形式</h5><script type="math/tex; mode=display">||AB||\leq \|A\|\cdot||B||</script><p>常用来处理类二次型，如其带有非线性项，则利用系数矩阵的对称性，结合 $Lipschitz$ 条件放缩</p>
+<p><br></p>
+<h5 id="二次型形式"><a href="#二次型形式" class="headerlink" title="二次型形式"></a>二次型形式</h5><p>若 $A$ 对称，有</p>
+<script type="math/tex; mode=display">x^TAy\leq \frac{1}{2}x^TAx+\frac{1}{2}y^TAy</script><p>此不等式在 $\dot V$ 向需要的稳定引理放缩时会经常使用</p>
+<p>将类二次型向二次型过渡，进而利用二次型更好的性质：放弃负项，或利用谱半径或最小特征值（非 $0$）放缩出 $V$ 函数，凑出引理项</p>
+<p><br></p>
+<h5 id="向量形式"><a href="#向量形式" class="headerlink" title="向量形式"></a>向量形式</h5><script type="math/tex; mode=display">|\langle\vec{a}, \vec{b}\rangle| \leq || \vec{a}|| \cdot || \vec{b}||</script><p><br></p>
+<h1 id="范数"><a href="#范数" class="headerlink" title="范数"></a>范数</h1><h5 id="三角不等式"><a href="#三角不等式" class="headerlink" title="三角不等式"></a>三角不等式</h5><script type="math/tex; mode=display">||A\pm B|| \leq ||A||+||B||</script><p>往往使用在范数内变量展开后放缩，如各类误差项：测量误差，追踪误差</p>
+<p><br></p>
+<h1 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h1><h5 id="特征值"><a href="#特征值" class="headerlink" title="特征值"></a>特征值</h5><p>对任意实对称矩阵 $A$，合适向量 $x$，有</p>
+<script type="math/tex; mode=display">\lambda_{min}x^Tx\leq x^TAx \leq \lambda_{max}x^Tx</script><p><br></p>
+<p>条件上回答了为什么原拓扑不对称时，要死命凑对称</p>
+<p>结果上以原二次型为基础，利用两个对称阵互相翻转，往往可以轻易凑出想要的 $V$ 函数引理的一次项（系数是一个最大特征值，一个最小特征值）</p>
+<p>多配合 $LMI$ ，代数 $Riccati$ 方程等使用</p>
+<p><br></p>
+<h1 id="克罗内克积"><a href="#克罗内克积" class="headerlink" title="克罗内克积"></a>克罗内克积</h1><script type="math/tex; mode=display">(A\otimes B)^T=A^T\otimes B^T</script><p><br></p>
+<script type="math/tex; mode=display">{||A\otimes B||}_2 = {||A||}_2 \cdot {||B||}_2</script><p><br></p>
+<p>同样适用与 $1$ 范数，$\infty$ 范数，$F$ 范数 </p>
+<p><br></p>
+<h1 id="符号函数"><a href="#符号函数" class="headerlink" title="符号函数"></a>符号函数</h1><script type="math/tex; mode=display">sgn(x) = \frac{x}{||x||}</script><p><br></p>
+<p>可以向矩阵，向量等延拓</p>
+<p><br></p>
+<h1 id="比较原则"><a href="#比较原则" class="headerlink" title="比较原则"></a>比较原则</h1> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scientific-research/" rel="tag">scientific research</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-健身分化计划，时间分配，动作记录"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/03/30/%E5%81%A5%E8%BA%AB%E5%88%86%E5%8C%96%E8%AE%A1%E5%88%92%EF%BC%8C%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%EF%BC%8C%E5%8A%A8%E4%BD%9C%E8%AE%B0%E5%BD%95/"
+    >胸部动作鉴赏</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/03/30/%E5%81%A5%E8%BA%AB%E5%88%86%E5%8C%96%E8%AE%A1%E5%88%92%EF%BC%8C%E6%97%B6%E9%97%B4%E5%88%86%E9%85%8D%EF%BC%8C%E5%8A%A8%E4%BD%9C%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time datetime="2023-03-30T01:37:14.000Z" itemprop="datePublished">2023-03-30</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h1><p>a，b，c：组数，个数，重量（重量块，kg）的三元组</p>
+<p>全流程：指这个动作，某肌肉全程参与</p>
+<p>全行程：指这个动作，某肌肉从完全收缩到完全拉伸的全部行程，均有涵盖</p>
+<p>离心： 指某个动作的反向动作，此时目标肌群在做拉伸，可以更充分的锻炼肌群（离心重量不宜过大）</p>
+<h1 id="胸部训练"><a href="#胸部训练" class="headerlink" title="胸部训练"></a>胸部训练</h1><h2 id="蝴蝶机夹胸-热身组"><a href="#蝴蝶机夹胸-热身组" class="headerlink" title="蝴蝶机夹胸 - 热身组"></a>蝴蝶机夹胸 - 热身组</h2><p><strong>3，12，3|4</strong></p>
+<p>这个动作<strong>难点</strong>在于姿势不对的时候，胸部没有泵感，导致动作质量下降</p>
+<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><p><strong>起始位</strong>：调整座椅，不宜过低或过高，机器曲杆位置不宜过分靠后，在自然张开双臂到顶点时，手部的位置即为不错的起始位</p>
+<p><strong>握法</strong>：半握，大拇指不参与抓握，减少手臂参与，最大程度的胸部参与</p>
+<p><strong>坐姿</strong>：想象一下自己现在特别生气，坐直，背部自然上挺，深吸一口气，胸部会向斜上挺，保持这个姿势，进行动作</p>
+<p><strong>过程</strong>：终止位停 1 ~ 2 秒，有效锻炼胸中缝，<strong>做离心</strong></p>
+<h2 id="杠铃，哑铃卧推-力量组"><a href="#杠铃，哑铃卧推-力量组" class="headerlink" title="杠铃，哑铃卧推 - 力量组"></a>杠铃，哑铃卧推 - 力量组</h2><p><strong>4 - 10 - 50 kg</strong></p>
+<p>哑铃重量适当下降</p>
+<h2 id="杠铃，哑铃斜上卧推-力量组"><a href="#杠铃，哑铃斜上卧推-力量组" class="headerlink" title="杠铃，哑铃斜上卧推 - 力量组"></a>杠铃，哑铃斜上卧推 - 力量组</h2><p><strong>4 - 10 - 40 kg</strong></p>
+<p>哑铃重量适当下降</p>
+<h2 id="绳索单侧夹胸-训练组，间歇组"><a href="#绳索单侧夹胸-训练组，间歇组" class="headerlink" title="绳索单侧夹胸 - 训练组，间歇组"></a>绳索单侧夹胸 - 训练组，间歇组</h2><p><strong>4，12，5</strong></p>
+<p>根据龙门架滑轮位置，分为上，中，下，如当滑轮在上时，锻炼下胸</p>
+<p>重量不宜太大</p>
+<p>握把一定要越过人体中线，保证胸肌的<strong>全流程</strong>，<strong>全行程</strong>参与</p>
+<p>到达终点可以短暂停顿</p>
+<p>适当做离心</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/body-building/" rel="tag">body-building</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-本周工作计划"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/03/13/%E6%9C%AC%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"
+    >第六周工作计划</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/03/13/%E6%9C%AC%E5%91%A8%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/" class="article-date">
   <time datetime="2023-03-13T00:45:20.000Z" itemprop="datePublished">2023-03-13</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>完成 $V$ 函数篇</p>
-<p>完成稳定性的分类篇</p>
-<p>推进健身篇</p>
+  <h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>（✔）完成 $V$ 函数篇</p>
+<p>完成三大稳定，同步篇</p>
+<p>推进健身系列    </p>
 <p>推进 $Laplace$ 算子篇</p>
 <p><br></p>
-<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>大屏 - 刷卡机测试</p>
-<p>竞赛项目 - 完成 3d 库接口搭建，循环动画实现</p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>（✔）大屏完成开发</p>
+<p>（✔）竞赛项目 - 完成 3d 库接口搭建，循环动画实现</p>
 <p>（✔）少爷的项目 - 完成一个基本流程实现的测试性复现</p>
 <p><br></p>
 <h1 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h1><p>（✔）找到合适的论文管理软件</p>
 <h5 id="精读"><a href="#精读" class="headerlink" title="精读"></a>精读</h5><p><em>找到 $\lambda_{min}$ 的价值：</em></p>
-<p><em>《Consensus_problems_in_networks_of_agents_with_switching_topology_and_time-delays》</em></p>
-<p>本周论文：</p>
-<p><em>（✔）《Aperiodically Intermittent Event-Triggered Optimal Average Consensus for Nonlinear Multi-Agent Systems》</em></p>
-<p>兴趣扩散：</p>
-<p><em>《Event-trigger-based approximate optimal control of modular robot manipulators using zero-sum game》</em></p>
 <p><br></p>
-<h5 id="看乐子"><a href="#看乐子" class="headerlink" title="看乐子"></a>看乐子</h5><p>《多智能体博弈、学习与控制》</p>
 <p><br></p>
 <h1 id="健身"><a href="#健身" class="headerlink" title="健身"></a>健身</h1><p>（✔）三分化</p>
 <p><br></p>
-<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>头眼 22</p>
+<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>头眼 23</p>
 <p><br></p>
  
       <!-- reward -->
@@ -323,225 +460,13 @@
 </article>
 
     
-    <article
-  id="post-从《运动稳定性的一般问题》到李雅普诺夫V函数，从局部稳定到预设时间稳定，从网络拓扑到网络动力学"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/"
-    >从《运动稳定性的一般问题》到李雅普诺夫V函数，从稳定到预设时间稳定</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/" class="article-date">
-  <time datetime="2023-03-01T00:59:30.000Z" itemprop="datePublished">2023-03-01</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p> V 函数，也称李雅普诺夫函数，是一种方便直观的，彰显系统部分性质的函数</p>
-<p>我们可以利用这个非线性函数 V 的某些性质，判断系统的稳定性（stability）</p>
-<p>其对于单系统，多系统，抽象系统（社会网），具体系统（多智能体）都有分析价值</p>
-<p>本文从苏联数学家，李亚普洛夫博士论文《运动稳定性的一般问题》出发</p>
-<p>尝试说清楚从李提出稳定（stability）概念的分析性定义，到网络动力学发展至今最先进的预设时间稳定，中间发展的进步与脉络</p>
-<p>[1] 李文章</p>
-<p>[2] <a href="https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A" target="_blank" rel="noopener">https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A</a></p>
-<p>[3] <a href="https://zhuanlan.zhihu.com/p/58738073" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/58738073</a></p>
-<p>[4] 有限时间综述</p>
-<p><br></p>
-<h1 id="前人的工作"><a href="#前人的工作" class="headerlink" title="前人的工作"></a>前人的工作</h1><p>在李之前，有数学家，物理学家已经研究了系统的稳定性问题</p>
-<p>这些工作往往需要了解运动的状态，能对运动的微分方程求积分，或是用线性方程近似原运动方程</p>
-<p>面临问题是：更一般性的运动方程不知道是否可积；近似法不满足先验，条件极为苛刻，无法推广到更一般的情况上来</p>
-<p><br></p>
-<h1 id="从《运动稳定性的一般问题》开始-1892"><a href="#从《运动稳定性的一般问题》开始-1892" class="headerlink" title="从《运动稳定性的一般问题》开始 1892"></a>从《运动稳定性的一般问题》开始 1892</h1><p>《运动稳定性的一般问题》为苏联数学家李雅普诺夫的博士论文，针对上述问题，他在论文前言中提到自己的看法</p>
-<blockquote>
-<p> 当我们可以对这些微分方程求积分时，往往问题不算什么事。但是找到一些能独立于方程可积性的方法，来解决这些问题就显得很重要了 [1]</p>
-</blockquote>
-<p><br></p>
-<h2 id="拉格朗日稳定"><a href="#拉格朗日稳定" class="headerlink" title="拉格朗日稳定"></a>拉格朗日稳定</h2><p>在李稳定之前，拉格朗日已经对系统稳定性有了比较弱化的定义，所谓拉格朗日稳定的定义：</p>
-<p>对于保守系统 $t_0$ 时刻后，有</p>
-<script type="math/tex; mode=display">\hat{x}(t)\in B_\delta(\hat{x}_r(t)), \forall t >t_0\tag{1}</script><p>其中 $\delta$ 不随时间变化</p>
-<p>称 $\hat{x}(t)$ 相对于追踪变量 $\hat{x}_r(t)$ $Lagrange$ 稳定</p>
-<p>如：无摩擦的钟摆系统中，若参考状态为最低点，则从任意高度静止释放摆锤，摆锤的运动高度不会超过初始高度。因此，此情况下系统具有拉格朗日稳定[2]</p>
-<p>可以看到 $\hat{x}$ 与目标系统距离始终有上限约束，换言之，离得不远，<strong>仅此而已</strong></p>
-<p>下面简单介绍李在文中的工作</p>
-<p><br></p>
-<h2 id="稳定（stable）的分析学定义"><a href="#稳定（stable）的分析学定义" class="headerlink" title="稳定（stable）的分析学定义"></a>稳定（stable）的分析学定义</h2><p>对有初值 $x_0$，$t_0$ 的常微分系统，有其运动方程</p>
-<script type="math/tex; mode=display">\frac{dx}{dt} = X(x,t) \tag{2}</script><p>其中 $x=x(t,t_0,x_0)$</p>
-<p>将系统在某一时刻 $t$ 后，$\dot{X}\equiv0$，称为稳定（stable），反之系统不稳定（unstable）</p>
-<p>简单看一下最初版本的稳定定义，只要求系统停下来，停在哪不知道，多长时间不知道，运动状态跟初值有严重依赖关系，这些问题后面都会得到分析与处理</p>
-<p><br></p>
-<h3 id="常规解法为求解微分方程："><a href="#常规解法为求解微分方程：" class="headerlink" title="常规解法为求解微分方程："></a>常规解法为求解微分方程：</h3><p>如 $\dot{X}=x$，$x=t^2$，易得 $\dot{X} = t^2$，说明系统速度随时间增长而变大，该系统显然是不稳定的</p>
-<p><br></p>
-<h3 id="李的方法"><a href="#李的方法" class="headerlink" title="李的方法"></a>李的方法</h3><p>利用 $x \rightarrow x+\xi$ 变换，将问题转化为 $X(0,t)\equiv0$ 的零解存在性问题</p>
-<p>对于任意给定的 $\epsilon&gt;0$ 和时间 $t_0$，存在 $\eta&gt;0$，当 $t&gt;t_0$ 时，使对任意 $x_0$ 满足 $||x_0|| \leq \eta$，</p>
-<p>有 $||x(t,t_0,x_0)||&lt;\epsilon$，则称系统稳定，反之不稳定</p>
-<p>根据上式可以看出，当系统初值满足条件时，系统会在某一时刻停留到在原点的某一小邻域内</p>
-<p>换言之，系统在平衡状态 $x_e$ 收到扰动后，最终停留在 $x_e$ 附近，我们就称 $x_e$ 在李雅普诺夫意义下是稳定的（Lyapunov stable）[3]</p>
-<p><br></p>
-<p>根据条件的变化，收敛情况的要求，有下表</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>条件</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>（局部）稳定</td>
-<td>初值依赖</td>
-<td>停在小邻域</td>
-</tr>
-<tr>
-<td>全局稳定</td>
-<td>初值依赖</td>
-<td>能否稳定与 $x_0$ 无关</td>
-</tr>
-<tr>
-<td>一致稳定</td>
-<td>初值依赖，$\eta$ 与 $t_0$ 无关</td>
-<td>初值上届与时间无关，停在小邻域</td>
-</tr>
-<tr>
-<td>渐进稳定</td>
-<td>初值依赖，$t\rightarrow + \infty$ 时，有 $x(t,t_0,x_0) \rightarrow 0$</td>
-<td>趋向于 $0$</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>可以看到，效果最好的渐进稳定，依然有初值依赖（包括系统能否稳定依赖于初值，系统驻留时间依赖于初值）和稳定的驻留时间（setting time）长度不确定的问题</p>
-<p>正是对这两个问题的研究，催生出近期蓬勃发展的：</p>
-<p>有限时间稳定（finite time stable），固定时间稳定（fixed time stable），预设时间稳定（prescribed time stable）</p>
-<p><br>    </p>
-<h2 id="李雅普诺夫直接法"><a href="#李雅普诺夫直接法" class="headerlink" title="李雅普诺夫直接法"></a>李雅普诺夫直接法</h2><p>此为神来一笔</p>
-<p>李雅普诺夫在其博士论文中 [1]，严格证明了可以利用一个标量函数 $V$，检测系统的稳定性</p>
-<p>（证明过程超过了笔者能力范畴，会在自学完数学分析后再次尝试阅读）</p>
-<p>不是每个系统都有 $V$ 函数，反之亦然，一般情况下不需要考虑此类反例</p>
-<p><br></p>
-<p>当一个系统的 $V$ 函数正定，且 $\dot{V}\leq 0$（按照动力学速度方向，和时间方向），我们称 $V$ 函数对应系统稳定</p>
-<p>特别有，当对 $\forall x\in D$，有 $\dot{V}&lt; 0$，系统渐进稳定</p>
-<p><br></p>
-<h1 id="我们要控制系统了"><a href="#我们要控制系统了" class="headerlink" title="我们要控制系统了"></a>我们要控制系统了</h1><p>系统自己能保持平衡是挺好的，但是事实往往难遂人愿</p>
-<p>对于现实中大部分系统，不加以操作和控制，都是不稳定的，因此我们需要在系统的动力学方程中加入一项控制器 $u(t)$ 使其稳定下来</p>
-<p>那么，控制谁（部分节点还是全部节点），控制器使多大劲（如何评价其能量消耗），如何控制（连续控制还是离散控制），碰到系统时滞怎么办，都是需要讨论解决的问题，也对应了现代控制论的部分发展方向，关于控制器设计问题不在本文展开</p>
-<p><br></p>
-<h1 id="同步（synchronization）与稳定（stability）的关系"><a href="#同步（synchronization）与稳定（stability）的关系" class="headerlink" title="同步（synchronization）与稳定（stability）的关系"></a>同步（synchronization）与稳定（stability）的关系</h1><p>在笔者的理解中，这是个一体两面的说法</p>
-<p>当一个系统关于某一个初值 $x_e$ 不偏离时，称之为稳定</p>
-<p>而如果那这个初值换成另一个系统，则在讨论两个系统的同步问题</p>
-<p>本质上就是稳定的坐标系是自己的目标值，同步的坐标系是另一个目标系统而已</p>
-<p><br></p>
-<h1 id="我们对系统稳定提出了更苛刻的要求"><a href="#我们对系统稳定提出了更苛刻的要求" class="headerlink" title="我们对系统稳定提出了更苛刻的要求"></a>我们对系统稳定提出了更苛刻的要求</h1><p>现在我们要设计一款地对空导弹，使其能有效拦截敌人的对地导弹，那么用上述的知识尝试解决，会出现很多问题</p>
-<p>如果证明了两枚导弹的相对稳定性（同步），我们可以得知，拦截导弹会在某一时刻 $t$ 后，与敌方导弹保持不超过</p>
-<p>$\epsilon$ 的距离，有没有挡住是不知道的，反正离得不远</p>
-<p>如果证明两枚导弹渐进同步，我们可以得知，在无限的时间长河中，拦截导弹终究可以挡住对手，至于到底是什么时候，只有天知道</p>
-<p>这不就完蛋了吗家人们！</p>
-<p>所以我们要对同步的精度，同步的时间做严格要求</p>
-<p>进而我们引入有限时间同步（finite time synchronization），固定时间同步（fixed time synchronization），预设时间同步（prescribed time synchronization）</p>
-<p><br></p>
-<h2 id="有限时间稳定（同步）"><a href="#有限时间稳定（同步）" class="headerlink" title="有限时间稳定（同步）"></a>有限时间稳定（同步）</h2><p>有限时间最早于 60 年代由俄国数学家提出[4]</p>
-<p>在文献[4]中，有对有限时间的定量定义，与定性定义，后者为李的 $V$ 函数方法</p>
-<p>对任意 $x \in \mathscr{C}\subset\mathbb{R}^n$，$t \geq 0$，$\epsilon&gt;0$ ，存在 $\delta(t,x_0)&gt;0$，$T(x_0)&gt;0$；</p>
-<p>于是有 $||x<em>0||\leq\delta $，表明 $||x(t,x_0)||\leq\epsilon$，$\lim</em>{t\rightarrow\infty}||x(t,x_0)||=0$，以及对所有 $t&gt;T(x_0)$，有 $x(t)=0$</p>
-<p>其中 $T(x_0) = \inf{T\geq0|x(t,x_0)=0,\forall t\geq T}$，称为驻留时间（setting time）</p>
-<p>特别的，若有 $\mathscr{C} = \mathbb{R}^n$，系统全局有限时间稳定</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-近期阅读"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/"
-    >近期阅读</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/" class="article-date">
-  <time datetime="2023-02-21T04:18:07.000Z" itemprop="datePublished">2023-02-21</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="Essay"><a href="#Essay" class="headerlink" title="Essay"></a>Essay</h1><p>多智能体博弈，学习与控制</p>
-<h1 id="Book"><a href="#Book" class="headerlink" title="Book"></a>Book</h1><p>数学分析</p>
-<p>博弈论与经济行为</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plan/" rel="tag">plan</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
   </nav>
   
 </section>
@@ -620,6 +545,10 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags/scientific-research">科研</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/body-building">健身</a>
     </li>
     
     <li class="nav-item">

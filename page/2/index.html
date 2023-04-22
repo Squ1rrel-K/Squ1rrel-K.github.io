@@ -155,6 +155,218 @@
     
     
     <article
+  id="post-从《运动稳定性的一般问题》到李雅普诺夫V函数，从局部稳定到预设时间稳定，从网络拓扑到网络动力学"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/"
+    >从《运动稳定性的一般问题》到李雅普诺夫V函数，从稳定到预设时间稳定</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/03/01/%E4%BB%8E%E3%80%8A%E8%BF%90%E5%8A%A8%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E4%B8%80%E8%88%AC%E9%97%AE%E9%A2%98%E3%80%8B%E5%88%B0%E6%9D%8E%E9%9B%85%E6%99%AE%E8%AF%BA%E5%A4%ABV%E5%87%BD%E6%95%B0%EF%BC%8C%E4%BB%8E%E5%B1%80%E9%83%A8%E7%A8%B3%E5%AE%9A%E5%88%B0%E9%A2%84%E8%AE%BE%E6%97%B6%E9%97%B4%E7%A8%B3%E5%AE%9A%EF%BC%8C%E4%BB%8E%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%88%B0%E7%BD%91%E7%BB%9C%E5%8A%A8%E5%8A%9B%E5%AD%A6/" class="article-date">
+  <time datetime="2023-03-01T00:59:30.000Z" itemprop="datePublished">2023-03-01</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p> V 函数，也称李雅普诺夫函数，是一种方便直观的，彰显系统部分性质的函数</p>
+<p>我们可以利用这个非线性函数 V 的某些性质，判断系统的稳定性（stability）</p>
+<p>其对于单系统，多系统，抽象系统（社会网），具体系统（多智能体）都有分析价值</p>
+<p>本文从苏联数学家，李亚普洛夫博士论文《运动稳定性的一般问题》出发</p>
+<p>尝试说清楚从李提出稳定（stability）概念的分析性定义，到网络动力学发展至今最先进的预设时间稳定，中间发展的进步与脉络</p>
+<p>[1] 李文章</p>
+<p>[2] <a href="https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A" target="_blank" rel="noopener">https://sat.huijiwiki.com/wiki/%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%A8%B3%E5%AE%9A</a></p>
+<p>[3] <a href="https://zhuanlan.zhihu.com/p/58738073" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/58738073</a></p>
+<p>[4] 有限时间综述</p>
+<p><br></p>
+<h1 id="前人的工作"><a href="#前人的工作" class="headerlink" title="前人的工作"></a>前人的工作</h1><p>在李之前，有数学家，物理学家已经研究了系统的稳定性问题</p>
+<p>这些工作往往需要了解运动的状态，能对运动的微分方程求积分，或是用线性方程近似原运动方程</p>
+<p>面临问题是：更一般性的运动方程不知道是否可积；近似法不满足先验，条件极为苛刻，无法推广到更一般的情况上来</p>
+<p><br></p>
+<h1 id="从《运动稳定性的一般问题》开始-1892"><a href="#从《运动稳定性的一般问题》开始-1892" class="headerlink" title="从《运动稳定性的一般问题》开始 1892"></a>从《运动稳定性的一般问题》开始 1892</h1><p>《运动稳定性的一般问题》为苏联数学家李雅普诺夫的博士论文，针对上述问题，他在论文前言中提到自己的看法</p>
+<blockquote>
+<p> 当我们可以对这些微分方程求积分时，往往问题不算什么事。但是找到一些能独立于方程可积性的方法，来解决这些问题就显得很重要了 [1]</p>
+</blockquote>
+<p><br></p>
+<h2 id="拉格朗日稳定"><a href="#拉格朗日稳定" class="headerlink" title="拉格朗日稳定"></a>拉格朗日稳定</h2><p>在李稳定之前，拉格朗日已经对系统稳定性有了比较弱化的定义，所谓拉格朗日稳定的定义：</p>
+<p>对于保守系统 $t_0$ 时刻后，有</p>
+<script type="math/tex; mode=display">\hat{x}(t)\in B_\delta(\hat{x}_r(t)), \forall t >t_0\tag{1}</script><p>其中 $\delta$ 不随时间变化</p>
+<p>称 $\hat{x}(t)$ 相对于追踪变量 $\hat{x}_r(t)$ $Lagrange$ 稳定</p>
+<p>如：无摩擦的钟摆系统中，若参考状态为最低点，则从任意高度静止释放摆锤，摆锤的运动高度不会超过初始高度。因此，此情况下系统具有拉格朗日稳定[2]</p>
+<p>可以看到 $\hat{x}$ 与目标系统距离始终有上限约束，换言之，离得不远，<strong>仅此而已</strong></p>
+<p>下面简单介绍李在文中的工作</p>
+<p><br></p>
+<h2 id="稳定（stable）的分析学定义"><a href="#稳定（stable）的分析学定义" class="headerlink" title="稳定（stable）的分析学定义"></a>稳定（stable）的分析学定义</h2><p>对有初值 $x_0$，$t_0$ 的常微分系统，有其运动方程</p>
+<script type="math/tex; mode=display">\frac{dx}{dt} = X(x,t) \tag{2}</script><p>其中 $x=x(t,t_0,x_0)$</p>
+<p>将系统在某一时刻 $t$ 后，$\dot{X}\equiv0$，称为稳定（stable），反之系统不稳定（unstable）</p>
+<p>简单看一下最初版本的稳定定义，只要求系统停下来，停在哪不知道，多长时间不知道，运动状态跟初值有严重依赖关系，这些问题后面都会得到分析与处理</p>
+<p><br></p>
+<h3 id="常规解法为求解微分方程："><a href="#常规解法为求解微分方程：" class="headerlink" title="常规解法为求解微分方程："></a>常规解法为求解微分方程：</h3><p>如 $\dot{X}=x$，$x=t^2$，易得 $\dot{X} = t^2$，说明系统速度随时间增长而变大，该系统显然是不稳定的</p>
+<p><br></p>
+<h3 id="李的方法"><a href="#李的方法" class="headerlink" title="李的方法"></a>李的方法</h3><p>利用 $x \rightarrow x+\xi$ 变换，将问题转化为 $X(0,t)\equiv0$ 的零解存在性问题</p>
+<p>对于任意给定的 $\epsilon&gt;0$ 和时间 $t_0$，存在 $\eta&gt;0$，当 $t&gt;t_0$ 时，使对任意 $x_0$ 满足 $||x_0|| \leq \eta$，</p>
+<p>有 $||x(t,t_0,x_0)||&lt;\epsilon$，则称系统稳定，反之不稳定</p>
+<p>根据上式可以看出，当系统初值满足条件时，系统会在某一时刻停留到在原点的某一小邻域内</p>
+<p>换言之，系统在平衡状态 $x_e$ 收到扰动后，最终停留在 $x_e$ 附近，我们就称 $x_e$ 在李雅普诺夫意义下是稳定的（Lyapunov stable）[3]</p>
+<p><br></p>
+<p>根据条件的变化，收敛情况的要求，有下表</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>条件</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>（局部）稳定</td>
+<td>初值依赖</td>
+<td>停在小邻域</td>
+</tr>
+<tr>
+<td>全局稳定</td>
+<td>初值依赖</td>
+<td>能否稳定与 $x_0$ 无关</td>
+</tr>
+<tr>
+<td>一致稳定</td>
+<td>初值依赖，$\eta$ 与 $t_0$ 无关</td>
+<td>初值上届与时间无关，停在小邻域</td>
+</tr>
+<tr>
+<td>渐进稳定</td>
+<td>初值依赖，$t\rightarrow + \infty$ 时，有 $x(t,t_0,x_0) \rightarrow 0$</td>
+<td>趋向于 $0$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>可以看到，效果最好的渐进稳定，依然有初值依赖（包括系统能否稳定依赖于初值，系统驻留时间依赖于初值）和稳定的驻留时间（setting time）长度不确定的问题</p>
+<p>正是对这两个问题的研究，催生出近期蓬勃发展的：</p>
+<p>有限时间稳定（finite time stable），固定时间稳定（fixed time stable），预设时间稳定（prescribed time stable）</p>
+<p><br>    </p>
+<h2 id="李雅普诺夫直接法"><a href="#李雅普诺夫直接法" class="headerlink" title="李雅普诺夫直接法"></a>李雅普诺夫直接法</h2><p>此为神来一笔</p>
+<p>李雅普诺夫在其博士论文中 [1]，严格证明了可以利用一个标量函数 $V$，检测系统的稳定性</p>
+<p>（证明过程超过了笔者能力范畴，会在自学完数学分析后再次尝试阅读）</p>
+<p>不是每个系统都有 $V$ 函数，反之亦然，一般情况下不需要考虑此类反例</p>
+<p><br></p>
+<p>当一个系统的 $V$ 函数正定，且 $\dot{V}\leq 0$（按照动力学速度方向，和时间方向），我们称 $V$ 函数对应系统稳定</p>
+<p>特别有，当对 $\forall x\in D$，有 $\dot{V}&lt; 0$，系统渐进稳定</p>
+<p><br></p>
+<h1 id="我们要控制系统了"><a href="#我们要控制系统了" class="headerlink" title="我们要控制系统了"></a>我们要控制系统了</h1><p>系统自己能保持平衡是挺好的，但是事实往往难遂人愿</p>
+<p>对于现实中大部分系统，不加以操作和控制，都是不稳定的，因此我们需要在系统的动力学方程中加入一项控制器 $u(t)$ 使其稳定下来</p>
+<p>那么，控制谁（部分节点还是全部节点），控制器使多大劲（如何评价其能量消耗），如何控制（连续控制还是离散控制），碰到系统时滞怎么办，都是需要讨论解决的问题，也对应了现代控制论的部分发展方向，关于控制器设计问题不在本文展开</p>
+<p><br></p>
+<h1 id="同步（synchronization）与稳定（stability）的关系"><a href="#同步（synchronization）与稳定（stability）的关系" class="headerlink" title="同步（synchronization）与稳定（stability）的关系"></a>同步（synchronization）与稳定（stability）的关系</h1><p>在笔者的理解中，这是个一体两面的说法</p>
+<p>当一个系统关于某一个初值 $x_e$ 不偏离时，称之为稳定</p>
+<p>而如果那这个初值换成另一个系统，则在讨论两个系统的同步问题</p>
+<p>本质上就是稳定的坐标系是自己的目标值，同步的坐标系是另一个目标系统而已</p>
+<p><br></p>
+<h1 id="我们对系统稳定提出了更苛刻的要求"><a href="#我们对系统稳定提出了更苛刻的要求" class="headerlink" title="我们对系统稳定提出了更苛刻的要求"></a>我们对系统稳定提出了更苛刻的要求</h1><p>现在我们要设计一款地对空导弹，使其能有效拦截敌人的对地导弹，那么用上述的知识尝试解决，会出现很多问题</p>
+<p>如果证明了两枚导弹的相对稳定性（同步），我们可以得知，拦截导弹会在某一时刻 $t$ 后，与敌方导弹保持不超过</p>
+<p>$\epsilon$ 的距离，有没有挡住是不知道的，反正离得不远</p>
+<p>如果证明两枚导弹渐进同步，我们可以得知，在无限的时间长河中，拦截导弹终究可以挡住对手，至于到底是什么时候，只有天知道</p>
+<p>这不就完蛋了吗家人们！</p>
+<p>所以我们要对同步的精度，同步的时间做严格要求</p>
+<p>进而我们引入有限时间同步（finite time synchronization），固定时间同步（fixed time synchronization），预设时间同步（prescribed time synchronization）</p>
+<p><br></p>
+<h2 id="有限时间稳定（同步）"><a href="#有限时间稳定（同步）" class="headerlink" title="有限时间稳定（同步）"></a>有限时间稳定（同步）</h2><p>有限时间最早于 60 年代由俄国数学家提出[4]</p>
+<p>在文献[4]中，有对有限时间的定量定义，与定性定义，后者为李的 $V$ 函数方法</p>
+<p>对任意 $x \in \mathscr{C}\subset\mathbb{R}^n$，$t \geq 0$，$\epsilon&gt;0$ ，存在 $\delta(t,x_0)&gt;0$，$T(x_0)&gt;0$；</p>
+<p>于是有 $||x<em>0||\leq\delta$，表明 $||x(t,x_0)||\leq\epsilon$，$\lim</em>{t\rightarrow\infty}||x(t,x_0)||=0$，以及对所有 $t&gt;T(x_0)$，有 $x(t)=0$</p>
+<p>其中 $T(x_0) = \inf{T\geq0|x(t,x_0)=0,\forall t\geq T}$，称为驻留时间（setting time）</p>
+<p>特别的，若有 $\mathscr{C} = \mathbb{R}^n$，系统全局有限时间稳定</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-近期阅读"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/"
+    >近期阅读</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/02/21/%E8%BF%91%E6%9C%9F%E9%98%85%E8%AF%BB/" class="article-date">
+  <time datetime="2023-02-21T04:18:07.000Z" itemprop="datePublished">2023-02-21</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Essay"><a href="#Essay" class="headerlink" title="Essay"></a>Essay</h1><p>多智能体博弈，学习与控制</p>
+<h1 id="Book"><a href="#Book" class="headerlink" title="Book"></a>Book</h1><p>数学分析</p>
+<p>博弈论与经济行为</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plan/" rel="tag">plan</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-工作指南"
   class="article article-type-post"
   itemscope
@@ -364,146 +576,13 @@
 </article>
 
     
-    <article
-  id="post-碎碎念"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"
-    >碎碎念</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/12/05/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" class="article-date">
-  <time datetime="2022-12-05T13:47:42.000Z" itemprop="datePublished">2022-12-05</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="12-19"><a href="#12-19" class="headerlink" title="12.19"></a>12.19</h3><p>世界杯结束，心愿即成，恢复正常工作作息与锻炼</p>
-<h3 id="12-14"><a href="#12-14" class="headerlink" title="12.14"></a>12.14</h3><p>学会分时切块时间的模块化工作办法</p>
-<p>开机第一时间不要想着打开游戏</p>
-<h3 id="12-5"><a href="#12-5" class="headerlink" title="12.5"></a>12.5</h3><p>享受孤独 - BGM 【美丽世界的孤儿】</p>
-<h3 id="12-1"><a href="#12-1" class="headerlink" title="12.1"></a>12.1</h3><p>工作受到阻碍，或瓶颈期的时候，第一时间想到的应该是去健身</p>
-<h3 id="11-28"><a href="#11-28" class="headerlink" title="11.28"></a>11.28</h3><p>世界杯提到的半自动越位技术（VAR），本质上跟豪汇报的《Event-Triggered Distributed Average Tracking Control for Lipschitz-Type Nonlinear Multiagent Systems》差不多</p>
-<p>事件触发 $==$ 可能的越位事件（裁判组规定的触发事件，如红牌，越位）</p>
-<p>分布式观测器的平均值 $==$ $N$ 个高速摄像机拍摄画面信息的综合考察</p>
-<h3 id="11-27"><a href="#11-27" class="headerlink" title="11.27"></a>11.27</h3><p>看文章应该是每周优先级最高的工作</p>
-<h3 id="11-25"><a href="#11-25" class="headerlink" title="11.25"></a>11.25</h3><p>我的问题不就在答案里吗，sb</p>
-<h3 id="11-24"><a href="#11-24" class="headerlink" title="11.24"></a>11.24</h3><p>新的知识，第一次接触，不要贪图吃透，掌握最基本的概念即可，后面新接触的次数与其重要性是正相关的，无需担心</p>
-<h3 id="11-23"><a href="#11-23" class="headerlink" title="11.23"></a>11.23</h3><p>我们组的同步研究，往往多智能体是听话的，博弈的前提是个体自私，但是不好融入</p>
-<p>因为代价可能是没有熟悉的应用模型解释（自私无人器 == 模拟生物进化？）</p>
-<p>但是之前讲到的 DDOS 攻击，除了触发事件分布式的合作抵抗，加入博弈色彩有没有机会提升整体的防御水平</p>
-<p>博弈可能是完全或非完全信息的，但一定天然是分布式的</p>
-<h3 id="11-22"><a href="#11-22" class="headerlink" title="11.22"></a>11.22</h3><p>参与博弈的原因，就是因为自私个体拿不到所有的信息（如 Laplacian matrix $\lambda_2$）</p>
-<p>所以博弈天然是完全分布式的</p>
-<p>区别在于信息交互的时候要考虑广义人性</p>
-<h3 id="11-20"><a href="#11-20" class="headerlink" title="11.20"></a>11.20</h3><p>网络最本质的拓扑是图吗，还有比点，边表示更抽象的拓扑吗？</p>
-<p><br/></p>
-<p>不能解构的，就砌进神像里，但是神像的存在本身不就是提示了吗？</p>
-<p>有缺点的战士终竟是战士，完美的苍蝇也终竟不过是苍蝇</p>
-<h3 id="11-19-观《坠落》有感"><a href="#11-19-观《坠落》有感" class="headerlink" title="11.19 观《坠落》有感"></a>11.19 观《坠落》有感</h3><p>恐惧是生物进化的核心构成，克服所有恐惧是愚蠢的，学会敬畏</p>
-<p>运动的女性，有肌肉的身体曲线可真好看</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/anything/" rel="tag">anything</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-finite-fixed-and-prescribed-time-control"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/11/25/finite-fixed-and-prescribed-time-control/"
-    >finite, fixed, and prescribed time control</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/11/25/finite-fixed-and-prescribed-time-control/" class="article-date">
-  <time datetime="2022-11-25T06:35:05.000Z" itemprop="datePublished">2022-11-25</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/concept/">concept</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>一句话：理论收敛，初值依赖，初值不依赖但是无法用户设定，用户设定的</p>
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从 Lyapunov 提出系统稳定性概念以来，应用端对系统稳定（多系统同步）的收敛时间提出了更高的要求</p>
-<p>原有的渐进稳定：</p>
-<script type="math/tex; mode=display">\lim\limits_{t\rightarrow\infty}||x_i(t)-x_i||=0</script><p>只能证明收敛的存在性，无法在应用需要的<strong>有限时间</strong>内完成收敛</p>
-<p>因此对时间要求严格，不依赖系统初值的系统便更具有优势</p>
-<h1 id="Finite-time-control-有限时间控制"><a href="#Finite-time-control-有限时间控制" class="headerlink" title="Finite time control 有限时间控制"></a>Finite time control 有限时间控制</h1><h1 id="Fixed-time-control-固定时间控制"><a href="#Fixed-time-control-固定时间控制" class="headerlink" title="Fixed time control 固定时间控制"></a>Fixed time control 固定时间控制</h1><h1 id="Prescribed-time-control-有限时间控制"><a href="#Prescribed-time-control-有限时间控制" class="headerlink" title="Prescribed time control 有限时间控制"></a>Prescribed time control 有限时间控制</h1><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scientific-research/" rel="tag">scientific research</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
   </nav>
   
 </section>
@@ -582,6 +661,10 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags/scientific-research">科研</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/body-building">健身</a>
     </li>
     
     <li class="nav-item">
